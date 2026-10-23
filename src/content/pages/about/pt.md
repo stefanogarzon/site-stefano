@@ -1,8 +1,40 @@
 ---
 title: Sobre
-description: Quem é Stefano Garzon.
+description: Stefano Garzon, cardiologista intervencionista no Einstein Hospital Israelita e doutorando na FICSAE e na Sapienza Università di Roma.
 ---
-Texto a ser escrito por Stefano: formação, atuação, interesses.
+Sou cardiologista intervencionista no Einstein Hospital Israelita, em São Paulo, desde 2021. Sou doutorando direto na Faculdade Israelita de Ciências da Saúde Albert Einstein (FICSAE) e no programa DigiCardioPath da Sapienza Università di Roma.
 
-- Instagram: [@instagram](https://instagram.com/)
-- E-mail: contato@stefanogarzon.com
+Neste site publico avaliações críticas de artigos científicos e textos sobre estatística, pesquisa clínica e computação.
+
+## Formação
+
+- Medicina, Faculdade de Medicina de Botucatu (UNESP), 2011.
+- Residência em clínica médica (2013–2015), cardiologia (2015–2017) e hemodinâmica e cardiologia intervencionista (2017–2019) no InCor, HCFMUSP.
+- Título de especialista em cardiologia (SBC, 2017) e em hemodinâmica e cardiologia intervencionista (SBHCI/AMB, 2019). Certificação em TAVI (SBHCI/SBCCV/AMB).
+
+## Pesquisa
+
+- Imagem intravascular (IVUS e OCT) e fenótipo inflamatório da placa.
+- Fisiologia coronária (FFR, iFR, QFR, UFR).
+- Tomografia pré-TAVI e avaliação coronária.
+- Modificação de cálcio: litotripsia intravascular e aterectomia rotacional.
+- Balões farmacológicos.
+- Modelagem computacional da geometria coronária e do fluxo sanguíneo.
+
+São 19 publicações entre 2018 e 2026, entre elas artigos no *Journal of the American College of Cardiology*, *EuroIntervention* e *Coronary Artery Disease*. Apresentei trabalhos no EuroPCR todos os anos de 2022 a 2026. Recebi o prêmio de melhor tema livre no Congresso SBHCI 2025 (estudo FIRE-OCT) e no EuroPCR RioValves 2025 (estudo TACT).
+
+## Estatística e computação
+
+- Bioestatística aplicada: análise de sobrevida, riscos competitivos, regressão logística, pareamento por escore de propensão, Bland-Altman e coeficiente de correlação intraclasse.
+- Análises em R com pipeline reprodutível, do plano de análise às tabelas do manuscrito.
+- Python para auditoria de dados, análise exploratória e aprendizado de máquina.
+- Em desenvolvimento: software de segmentação automática de IVUS e um modelo de aprendizado profundo para detectar estenose aórtica grave a partir de vídeo facial.
+
+## Revisão de artigos
+
+Revisor para EuroIntervention, European Heart Journal, revistas BMC e Arquivos Brasileiros de Cardiologia.
+
+## Contato
+
+- E-mail: [contato@stefanogarzon.com](mailto:contato@stefanogarzon.com)
+- LinkedIn: [stefano-garzon](https://www.linkedin.com/in/stefano-garzon-41894b187/)
