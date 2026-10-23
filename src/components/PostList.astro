@@ -11,7 +11,7 @@ const kindLabel = (e: Props['items'][number]) =>
 <ul class="list">
   {items.map((e) => (
     <li>
-      <span class:list={['label', { accent: e.collection === 'reviews' }]}>
+      <span class:list={['eyebrow', { accent: e.collection === 'reviews' }]}>
         {kindLabel(e)} · {formatDate(e.data.date, lang)}
       </span>
       <a href={entryUrl(e)}>{e.data.title}</a>

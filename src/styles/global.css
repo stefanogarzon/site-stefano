@@ -51,8 +51,8 @@ img, svg { max-width: 100%; height: auto; }
 
 hr { border: 0; border-top: 1px solid var(--line); }
 
-.label { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-.label.accent { color: var(--accent); }
+.eyebrow { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.eyebrow.accent { color: var(--accent); }
 .muted { color: var(--muted); }
 
 code { font-family: var(--mono); font-size: 0.9em; }

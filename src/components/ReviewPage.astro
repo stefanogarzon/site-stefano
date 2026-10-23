@@ -27,7 +27,7 @@ const html = [d.summary, d.strengths, d.problems, d.opinion].join('\n');
   hasMermaid={html.includes('```mermaid')}
 >
   <article>
-    <p class="label accent">{t(lang, 'kind.reviews')} · {formatDate(d.date, lang)}</p>
+    <p class="eyebrow accent">{t(lang, 'kind.reviews')} · {formatDate(d.date, lang)}</p>
     <h1>{d.title}</h1>
     <div class="ref">
       <p>{d.reference}</p>

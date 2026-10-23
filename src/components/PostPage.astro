@@ -21,7 +21,7 @@ const { Content } = await render(entry);
   hasMermaid={(entry.body ?? '').includes('```mermaid')}
 >
   <article>
-    <p class="label">
+    <p class="eyebrow">
       <a class="cat" href={categoryUrl(d.category, d.lang)}>{t(d.lang, `cat.${d.category}`)}</a> · {formatDate(d.date, d.lang)}
     </p>
     <h1>{d.title}</h1>

@@ -15,7 +15,7 @@ const items = (await itemsIn(lang)).slice(0, 10);
 <Base title={home.data.title} description={home.data.description} lang={lang} alternate={routes(otherLang(lang)).home} hasTranslation>
   <p class="tagline">{home.data.description}</p>
   <div class="intro muted"><Content /></div>
-  <p class="label recent">{t(lang, 'recent')}</p>
+  <p class="eyebrow recent">{t(lang, 'recent')}</p>
   <PostList items={items} lang={lang} />
 </Base>
 
