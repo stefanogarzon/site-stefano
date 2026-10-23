@@ -26,7 +26,8 @@ I have 19 publications from 2018 to 2026, including papers in the *Journal of th
 ## Statistics and computing
 
 - Applied biostatistics in R and Python.
-- In development: automatic IVUS segmentation software and a deep-learning model to detect severe aortic stenosis from facial video.
+- Research software for IVUS, FFR and uFR, computational modeling of blood flow, and neural networks.
+- Software for data curation and statistical analysis.
 
 ## Peer review
 

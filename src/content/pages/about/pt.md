@@ -26,7 +26,8 @@ São 19 publicações entre 2018 e 2026, entre elas artigos no *Journal of the A
 ## Estatística e computação
 
 - Bioestatística aplicada em R e Python.
-- Em desenvolvimento: software de segmentação automática de IVUS e um modelo de aprendizado profundo para detectar estenose aórtica grave a partir de vídeo facial.
+- Desenvolvimento de softwares de pesquisa para IVUS, FFR e uFR, modelagem computacional de fluxo circulatório e redes neurais.
+- Desenvolvimento de softwares para curadoria de dados e análise estatística.
 
 ## Revisão de artigos
 
