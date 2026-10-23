@@ -1,0 +1,10 @@
+---
+import ListPage from '../../../components/ListPage.astro';
+import { categoryPaths } from '../../../lib/paths';
+
+export function getStaticPaths() {
+  return categoryPaths('pt');
+}
+const { category } = Astro.props;
+---
+<ListPage lang="pt" kind="posts" category={category} />

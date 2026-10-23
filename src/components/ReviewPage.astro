@@ -1,0 +1,57 @@
+---
+import Base from '../layouts/Base.astro';
+import { renderMarkdown } from '../lib/markdown';
+import { allItems } from '../lib/content';
+import { alternateUrl, findTranslation, formatDate, t } from '../i18n/utils';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props { entry: CollectionEntry<'reviews'> }
+const { entry } = Astro.props;
+const d = entry.data;
+const lang = d.lang;
+const all = await allItems();
+const sections = (['summary', 'strengths', 'problems'] as const).map(async (k) => ({ k, html: await renderMarkdown(d[k]) }));
+const rendered = await Promise.all(sections);
+const opinion = await renderMarkdown(d.opinion);
+const nFmt = d.n?.toLocaleString(lang === 'pt' ? 'pt-BR' : 'en-US');
+const html = [d.summary, d.strengths, d.problems, d.opinion].join('\n');
+---
+<Base
+  title={d.title}
+  description={d.description}
+  lang={lang}
+  alternate={alternateUrl(entry, all)}
+  hasTranslation={!!findTranslation(entry, all)}
+  image={d.cover?.src}
+  type="article"
+  hasMermaid={html.includes('```mermaid')}
+>
+  <article>
+    <p class="label accent">{t(lang, 'kind.reviews')} · {formatDate(d.date, lang)}</p>
+    <h1>{d.title}</h1>
+    <div class="ref">
+      <p>{d.reference}</p>
+      <p class="muted">
+        {d.doi && <><a href={`https://doi.org/${d.doi}`}>doi:{d.doi}</a> · </>}
+        {d.design}{nFmt && `, n = ${nFmt}`}
+      </p>
+    </div>
+    {rendered.map(({ k, html }) => (
+      <section>
+        <h2>{t(lang, k)}</h2>
+        <Fragment set:html={html} />
+      </section>
+    ))}
+    <section class="opinion">
+      <h2>{t(lang, 'opinion')}</h2>
+      <Fragment set:html={opinion} />
+    </section>
+  </article>
+</Base>
+
+<style>
+  .ref { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 12px 0; font-size: 0.9rem; }
+  .ref p { margin: 0.2em 0; }
+  .opinion { background: var(--soft); border-radius: 10px; padding: 4px 22px 10px; margin-top: 2.4em; }
+  .opinion h2 { margin-top: 0.9em; }
+</style>

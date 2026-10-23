@@ -1,0 +1,10 @@
+---
+import ReviewPage from '../../../components/ReviewPage.astro';
+import { entryPaths } from '../../../lib/paths';
+
+export function getStaticPaths() {
+  return entryPaths('reviews', 'en');
+}
+const { entry } = Astro.props;
+---
+<ReviewPage entry={entry} />

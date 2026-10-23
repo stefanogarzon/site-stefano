@@ -1,0 +1,34 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { allItems } from '../lib/content';
+import { alternateUrl, categoryUrl, findTranslation, formatDate, t } from '../i18n/utils';
+
+interface Props { entry: CollectionEntry<'posts'> }
+const { entry } = Astro.props;
+const d = entry.data;
+const all = await allItems();
+const { Content } = await render(entry);
+---
+<Base
+  title={d.title}
+  description={d.description}
+  lang={d.lang}
+  alternate={alternateUrl(entry, all)}
+  hasTranslation={!!findTranslation(entry, all)}
+  image={d.cover?.src}
+  type="article"
+  hasMermaid={(entry.body ?? '').includes('```mermaid')}
+>
+  <article>
+    <p class="label">
+      <a class="cat" href={categoryUrl(d.category, d.lang)}>{t(d.lang, `cat.${d.category}`)}</a> · {formatDate(d.date, d.lang)}
+    </p>
+    <h1>{d.title}</h1>
+    <Content />
+  </article>
+</Base>
+
+<style>
+  .cat { color: var(--accent); text-decoration: none; }
+</style>

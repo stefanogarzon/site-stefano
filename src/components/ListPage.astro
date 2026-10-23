@@ -1,0 +1,33 @@
+---
+import Base from '../layouts/Base.astro';
+import PostList from './PostList.astro';
+import { itemsIn } from '../lib/content';
+import { categoryUrl, otherLang, routes, t, type Kind } from '../i18n/utils';
+import { categories, type Category, type Lang } from '../i18n/ui';
+
+interface Props { lang: Lang; kind: Kind; category?: Category }
+const { lang, kind, category } = Astro.props;
+const items = (await itemsIn(lang)).filter(
+  (e) => e.collection === kind && (!category || (e.collection === 'posts' && e.data.category === category)),
+);
+const title = category ? t(lang, `cat.${category}`) : t(lang, kind === 'reviews' ? 'nav.reviews' : 'nav.posts');
+const alternate = category ? categoryUrl(category, otherLang(lang)) : routes(otherLang(lang))[kind];
+---
+<Base title={title} description={title} lang={lang} alternate={alternate} hasTranslation>
+  <h1>{title}</h1>
+  {kind === 'posts' && (
+    <nav class="cats">
+      <a href={routes(lang).posts} class:list={{ on: !category }}>{t(lang, 'all')}</a>
+      {categories.map((c) => (
+        <a href={categoryUrl(c, lang)} class:list={{ on: c === category }}>{t(lang, `cat.${c}`)}</a>
+      ))}
+    </nav>
+  )}
+  <PostList items={items} lang={lang} />
+</Base>
+
+<style>
+  .cats { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; font-size: 0.9rem; }
+  .cats a { color: var(--muted); text-decoration: none; }
+  .cats a.on { color: var(--text); border-bottom: 1px solid var(--accent); }
+</style>
