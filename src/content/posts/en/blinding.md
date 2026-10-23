@@ -6,7 +6,7 @@ translationKey: cegamento
 description: "Explains the levels of blinding in clinical trials, the PROBE design, how blinding is lost, and what a paper should report about who was blinded."
 category: pesquisa
 tags: [pesquisa-clinica, cegamento, vies, desenho-de-estudo]
-draft: true
+draft: false
 ---
 
 ## Concept

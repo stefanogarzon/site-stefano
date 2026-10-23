@@ -6,7 +6,7 @@ translationKey: adesao-run-in
 description: "Definições de adesão, cruzamento e retirada, efeito da baixa adesão no poder e na estimativa, uso do período de run-in e métodos de medida da adesão em ensaios clínicos."
 category: pesquisa
 tags: [pesquisa-clinica, adesao, desenho-de-estudo]
-draft: true
+draft: false
 ---
 
 ## Conceito

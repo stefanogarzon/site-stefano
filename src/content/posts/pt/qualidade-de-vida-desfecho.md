@@ -6,7 +6,7 @@ translationKey: qualidade-de-vida-desfecho
 description: "Dimensões, escolha de instrumentos, momento de aplicação e diferença mínima importante ao usar qualidade de vida relacionada à saúde como desfecho de ensaio clínico."
 category: pesquisa
 tags: [pesquisa-clinica, desfechos, qualidade-de-vida]
-draft: true
+draft: false
 ---
 
 ## Conceito

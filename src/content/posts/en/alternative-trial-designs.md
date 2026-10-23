@@ -6,7 +6,7 @@ translationKey: desenhos-alternativos-ensaio
 description: "Explains the variations on the parallel trial: crossover, factorial, withdrawal and group allocation, with the assumptions of each and what they require of the reader."
 category: pesquisa
 tags: [pesquisa-clinica, desenho-de-estudo, randomizacao, tamanho-amostral]
-draft: true
+draft: false
 ---
 
 ## Concept

@@ -6,7 +6,7 @@ translationKey: desfechos-substitutos
 description: "Defines surrogate endpoints, presents Prentice's criteria, and uses CAST, ILLUMINATE, fluoride, and CD4 to show why an effect on a biomarker does not always predict a clinical effect."
 category: pesquisa
 tags: [pesquisa-clinica, desfechos, biomarcadores, desenho-de-estudo]
-draft: true
+draft: false
 ---
 
 ## Concept

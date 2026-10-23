@@ -6,7 +6,7 @@ translationKey: controles-historicos
 description: "Explains non-randomized concurrent controls, historical controls and databases, the empirical evidence of bias toward the new intervention, and when these designs have a place."
 category: pesquisa
 tags: [pesquisa-clinica, desenho-de-estudo, vies, randomizacao]
-draft: true
+draft: false
 ---
 
 ## Concept

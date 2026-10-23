@@ -6,7 +6,7 @@ translationKey: adesao-run-in
 description: "Definitions of adherence, crossover and withdrawal, the effect of low adherence on power and on the estimate, the run-in period, and methods to measure adherence in clinical trials."
 category: pesquisa
 tags: [pesquisa-clinica, adesao, desenho-de-estudo]
-draft: true
+draft: false
 ---
 
 ## Concept

@@ -6,7 +6,7 @@ translationKey: populacao-do-estudo
 description: "Explica como os critérios de elegibilidade definem a população de um ensaio, como o enriquecimento aumenta o poder e quais limites isso impõe à generalização dos resultados."
 category: pesquisa
 tags: [pesquisa-clinica, populacao, validade-externa, desenho-de-estudo]
-draft: true
+draft: false
 ---
 
 ## Conceito

@@ -6,7 +6,7 @@ translationKey: comite-monitoramento-dados
 description: "Independence, membership, open and closed sessions, blinding and meeting frequency of the data monitoring committee (DMC/DSMB), with examples of stopping decisions."
 category: pesquisa
 tags: [pesquisa-clinica, monitoramento, analise-interina]
-draft: true
+draft: false
 ---
 
 ## Concept

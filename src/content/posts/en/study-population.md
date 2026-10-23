@@ -6,7 +6,7 @@ translationKey: populacao-do-estudo
 description: "Explains how eligibility criteria define a trial population, how enrichment increases power, and the limits this places on generalizing the results."
 category: pesquisa
 tags: [pesquisa-clinica, populacao, validade-externa, desenho-de-estudo]
-draft: true
+draft: false
 ---
 
 ## Concept

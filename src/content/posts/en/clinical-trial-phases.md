@@ -6,7 +6,7 @@ translationKey: fases-dos-ensaios-clinicos
 description: "Describes phases I to IV of clinical development, the question each one answers, typical designs, and the limits of each phase for clinical decisions."
 category: pesquisa
 tags: [pesquisa-clinica, desenho-de-estudo, fases, seguranca]
-draft: true
+draft: false
 ---
 
 ## Concept

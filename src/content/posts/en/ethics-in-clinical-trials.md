@@ -6,7 +6,7 @@ translationKey: etica-em-ensaios-clinicos
 description: "Summarizes the ethical requirements of a clinical trial, clinical equipoise, placebo use, informed consent, conflict of interest, and publication bias."
 category: pesquisa
 tags: [pesquisa-clinica, etica, placebo, vies-de-publicacao]
-draft: true
+draft: false
 ---
 
 ## Concept

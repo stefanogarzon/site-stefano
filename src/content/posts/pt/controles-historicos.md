@@ -6,7 +6,7 @@ translationKey: controles-historicos
 description: "Explica controles concorrentes não randomizados, controles históricos e bancos de dados, a evidência empírica de viés a favor da nova intervenção e quando esses desenhos têm lugar."
 category: pesquisa
 tags: [pesquisa-clinica, desenho-de-estudo, vies, randomizacao]
-draft: true
+draft: false
 ---
 
 ## Conceito

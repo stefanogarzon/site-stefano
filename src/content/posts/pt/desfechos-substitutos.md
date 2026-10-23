@@ -6,7 +6,7 @@ translationKey: desfechos-substitutos
 description: "Define desfecho substituto, apresenta os critérios de Prentice e mostra, com CAST, ILLUMINATE, fluoreto e CD4, por que o efeito no biomarcador nem sempre prevê o efeito clínico."
 category: pesquisa
 tags: [pesquisa-clinica, desfechos, biomarcadores, desenho-de-estudo]
-draft: true
+draft: false
 ---
 
 ## Conceito

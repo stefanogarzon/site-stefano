@@ -6,7 +6,7 @@ translationKey: fases-dos-ensaios-clinicos
 description: "Descreve as fases I a IV do desenvolvimento clínico, a pergunta que cada uma responde, seus desenhos típicos e os limites de cada fase para a decisão clínica."
 category: pesquisa
 tags: [pesquisa-clinica, desenho-de-estudo, fases, seguranca]
-draft: true
+draft: false
 ---
 
 ## Conceito

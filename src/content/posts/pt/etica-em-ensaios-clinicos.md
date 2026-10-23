@@ -6,7 +6,7 @@ translationKey: etica-em-ensaios-clinicos
 description: "Resume os requisitos éticos de um ensaio clínico, o conceito de equipoise clínica, o uso de placebo, o consentimento informado, o conflito de interesse e o viés de publicação."
 category: pesquisa
 tags: [pesquisa-clinica, etica, placebo, vies-de-publicacao]
-draft: true
+draft: false
 ---
 
 ## Conceito

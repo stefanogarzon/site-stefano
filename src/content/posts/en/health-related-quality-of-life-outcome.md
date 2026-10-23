@@ -6,7 +6,7 @@ translationKey: qualidade-de-vida-desfecho
 description: "Dimensions, instrument selection, timing of assessment and the minimal important difference when health-related quality of life is a clinical trial outcome."
 category: pesquisa
 tags: [pesquisa-clinica, desfechos, qualidade-de-vida]
-draft: true
+draft: false
 ---
 
 ## Concept

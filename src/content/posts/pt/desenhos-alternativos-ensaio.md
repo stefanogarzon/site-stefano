@@ -6,7 +6,7 @@ translationKey: desenhos-alternativos-ensaio
 description: "Explica as variações do ensaio paralelo: cruzado, fatorial, de retirada e com alocação por grupo, com as suposições de cada um e o que elas exigem do leitor."
 category: pesquisa
 tags: [pesquisa-clinica, desenho-de-estudo, randomizacao, tamanho-amostral]
-draft: true
+draft: false
 ---
 
 ## Conceito

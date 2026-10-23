@@ -6,7 +6,7 @@ translationKey: avaliacao-de-dano
 description: "Explica a diferença entre evento adverso e efeito adverso, as limitações dos ensaios para detectar dano, a forma de coleta e classificação dos eventos e o que um artigo deve relatar."
 category: pesquisa
 tags: [pesquisa-clinica, eventos-adversos, seguranca, relato]
-draft: true
+draft: false
 ---
 
 ## Conceito

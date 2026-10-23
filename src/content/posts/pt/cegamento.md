@@ -6,7 +6,7 @@ translationKey: cegamento
 description: "Explica os níveis de cegamento em ensaios clínicos, o desenho PROBE, como o cegamento se perde e o que um artigo deve relatar sobre quem estava cego."
 category: pesquisa
 tags: [pesquisa-clinica, cegamento, vies, desenho-de-estudo]
-draft: true
+draft: false
 ---
 
 ## Conceito

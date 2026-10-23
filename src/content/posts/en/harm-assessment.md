@@ -6,7 +6,7 @@ translationKey: avaliacao-de-dano
 description: "Explains the difference between adverse event and adverse effect, the limits of trials for detecting harm, how events are collected and classified, and what a paper should report."
 category: pesquisa
 tags: [pesquisa-clinica, eventos-adversos, seguranca, relato]
-draft: true
+draft: false
 ---
 
 ## Concept

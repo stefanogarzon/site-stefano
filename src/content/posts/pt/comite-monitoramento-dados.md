@@ -6,7 +6,7 @@ translationKey: comite-monitoramento-dados
 description: "Independência, composição, sessões abertas e fechadas, cegamento e frequência de reuniões do comitê de monitoramento de dados (DMC/DSMB), com exemplos de decisões de interrupção."
 category: pesquisa
 tags: [pesquisa-clinica, monitoramento, analise-interina]
-draft: true
+draft: false
 ---
 
 ## Conceito

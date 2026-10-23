@@ -6,7 +6,7 @@ translationKey: relato-interpretacao-resultados
 description: "Reporting guidelines, publication bias and the questions for interpreting a trial: whether it worked as planned, how it compares with other studies and to whom it applies."
 category: pesquisa
 tags: [pesquisa-clinica, relato, validade-externa]
-draft: true
+draft: false
 ---
 
 ## Concept

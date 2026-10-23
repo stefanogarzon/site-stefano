@@ -6,7 +6,7 @@ translationKey: relato-interpretacao-resultados
 description: "Diretrizes de relato, viés de publicação e as perguntas para interpretar um ensaio: se funcionou como planejado, como se compara a outros estudos e a quem se aplica."
 category: pesquisa
 tags: [pesquisa-clinica, relato, validade-externa]
-draft: true
+draft: false
 ---
 
 ## Conceito
