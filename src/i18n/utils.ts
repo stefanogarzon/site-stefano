@@ -20,6 +20,7 @@ export const routes = (lang: Lang) => {
     reviews: lang === 'pt' ? '/avaliacoes/' : '/en/reviews/',
     posts: lang === 'pt' ? '/textos/' : '/en/posts/',
     about: lang === 'pt' ? '/sobre/' : '/en/about/',
+    search: lang === 'pt' ? '/busca/' : '/en/search/',
     rss: `${p}/rss.xml`,
   };
 };

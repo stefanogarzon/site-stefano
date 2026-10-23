@@ -18,6 +18,9 @@ const r = routes(lang);
     <a href={r.reviews}>{t(lang, 'nav.reviews')}</a>
     <a href={r.posts}>{t(lang, 'nav.posts')}</a>
     <a href={r.about}>{t(lang, 'nav.about')}</a>
+    <a href={r.search} aria-label={t(lang, 'nav.search')} class="search">
+      <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2" /><line x1="13" y1="13" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+    </a>
     <a class="lang" href={alternate} hreflang={lang === 'pt' ? 'en' : 'pt'}>{lang === 'pt' ? 'EN' : 'PT'}</a>
   </nav>
 </header>
@@ -29,5 +32,6 @@ const r = routes(lang);
   nav { display: flex; gap: 18px; font-size: 0.9rem; }
   nav a { color: var(--muted); text-decoration: none; }
   nav a:hover { color: var(--text); }
+  .search { display: flex; align-items: center; }
   .lang { border-left: 1px solid var(--line); padding-left: 18px; }
 </style>

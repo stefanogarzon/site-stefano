@@ -21,7 +21,7 @@ const { Content } = await render(entry);
   type="article"
   hasMermaid={(entry.body ?? '').includes('```mermaid')}
 >
-  <article>
+  <article data-pagefind-body>
     <Shape shape={d.category} width={120} class="art" />
     <p class="eyebrow">
       <a class="cat" href={categoryUrl(d.category, d.lang)}>{t(d.lang, `cat.${d.category}`)}</a> · {formatDate(d.date, d.lang)}

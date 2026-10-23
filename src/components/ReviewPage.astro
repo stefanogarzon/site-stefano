@@ -27,7 +27,7 @@ const html = [d.summary, d.strengths, d.problems, d.opinion].join('\n');
   type="article"
   hasMermaid={html.includes('```mermaid')}
 >
-  <article>
+  <article data-pagefind-body>
     <Shape shape="reviews" width={120} class="art" />
     <p class="eyebrow accent">{t(lang, 'kind.reviews')} · {formatDate(d.date, lang)}</p>
     <h1>{d.title}</h1>

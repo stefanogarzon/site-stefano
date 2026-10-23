@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import { otherLang, routes, t } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const title = t(lang, 'nav.search');
+---
+<Base title={title} description={title} lang={lang} alternate={routes(otherLang(lang)).search} hasTranslation>
+  <h1>{title}</h1>
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <div id="search"></div>
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    new PagefindUI({ element: '#search', showSubResults: true, showImages: false, resetStyles: false });
+  </script>
+</Base>
+
+<style>
+  #search {
+    --pagefind-ui-scale: 0.9;
+    --pagefind-ui-primary: var(--accent);
+    --pagefind-ui-text: var(--text);
+    --pagefind-ui-background: var(--card);
+    --pagefind-ui-border: var(--line);
+    --pagefind-ui-tag: var(--soft);
+    --pagefind-ui-border-radius: 10px;
+    --pagefind-ui-font: var(--sans);
+  }
+</style>
