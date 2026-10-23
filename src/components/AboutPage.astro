@@ -12,5 +12,10 @@ const { Content } = await render(about);
 ---
 <Base title={about.data.title} description={about.data.description} lang={lang} alternate={routes(otherLang(lang)).about} hasTranslation>
   <h1>{about.data.title}</h1>
+  <img class="photo" src="/images/stefano.webp" alt="Stefano Garzon" width="1200" height="805" />
   <Content />
 </Base>
+
+<style>
+  .photo { width: 100%; height: auto; border-radius: 10px; margin: 8px 0 24px; }
+</style>

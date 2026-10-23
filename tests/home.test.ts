@@ -23,3 +23,11 @@ describe('home', () => {
     expect(h).toContain('href="/"');
   });
 });
+
+describe('foto', () => {
+  it('home e sobre mostram a foto com texto alternativo', () => {
+    expect(read('index.html')).toMatch(/<img[^>]+src="\/images\/stefano-quadrado\.webp"[^>]+alt="Stefano Garzon"/);
+    expect(read('sobre/index.html')).toMatch(/<img[^>]+src="\/images\/stefano\.webp"[^>]+alt="Stefano Garzon"/);
+    expect(read('en/about/index.html')).toContain('/images/stefano.webp');
+  });
+});

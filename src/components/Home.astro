@@ -13,14 +13,25 @@ const { Content } = await render(home);
 const items = (await itemsIn(lang)).slice(0, 10);
 ---
 <Base title={home.data.title} description={home.data.description} lang={lang} alternate={routes(otherLang(lang)).home} hasTranslation>
-  <p class="tagline">{home.data.description}</p>
-  <div class="intro muted"><Content /></div>
+  <div class="hero">
+    <img class="avatar" src="/images/stefano-quadrado.webp" alt="Stefano Garzon" width="112" height="112" />
+    <div>
+      <p class="tagline">{home.data.description}</p>
+      <div class="intro muted"><Content /></div>
+    </div>
+  </div>
   <p class="eyebrow recent">{t(lang, 'recent')}</p>
   <PostList items={items} lang={lang} />
 </Base>
 
 <style>
-  .tagline { font-family: var(--serif); font-size: clamp(1.7rem, 5vw, 2.3rem); line-height: 1.25; margin: 32px 0 12px; }
+  .hero { display: flex; gap: 28px; align-items: flex-start; margin-top: 32px; }
+  .avatar { width: 112px; height: 112px; border-radius: 50%; object-fit: cover; flex: none; }
+  .tagline { font-family: var(--serif); font-size: clamp(1.7rem, 5vw, 2.3rem); line-height: 1.25; margin: 0 0 12px; }
+  @media (max-width: 560px) {
+    .hero { flex-direction: column; gap: 20px; }
+    .avatar { width: 88px; height: 88px; }
+  }
   .intro { max-width: 520px; }
   .recent { margin-top: 56px; }
 </style>
