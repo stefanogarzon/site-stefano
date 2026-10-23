@@ -15,7 +15,7 @@ On this site I publish critical reviews of scientific papers and posts on statis
 ## Research
 
 - Intravascular imaging (IVUS and OCT) and plaque inflammatory phenotype.
-- Coronary physiology (FFR, iFR, QFR, UFR).
+- Coronary physiology (FFR, iFR, QFR, μFR).
 - Pre-TAVI computed tomography and coronary assessment.
 - Calcium modification: intravascular lithotripsy and rotational atherectomy.
 - Drug-coated balloons.
@@ -26,7 +26,7 @@ I have 19 publications from 2018 to 2026, including papers in the *Journal of th
 ## Statistics and computing
 
 - Applied biostatistics in R and Python.
-- Research software for IVUS, FFR and uFR, computational modeling of blood flow, and neural networks.
+- Research software for IVUS, FFR and μFR, computational modeling of blood flow, and neural networks.
 - Software for data curation and statistical analysis.
 
 ## Peer review

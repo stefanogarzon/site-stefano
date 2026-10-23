@@ -15,7 +15,7 @@ Neste site publico avaliações críticas de artigos científicos e textos sobre
 ## Pesquisa
 
 - Imagem intravascular (IVUS e OCT) e fenótipo inflamatório da placa.
-- Fisiologia coronária (FFR, iFR, QFR, UFR).
+- Fisiologia coronária (FFR, iFR, QFR, μFR).
 - Tomografia pré-TAVI e avaliação coronária.
 - Modificação de cálcio: litotripsia intravascular e aterectomia rotacional.
 - Balões farmacológicos.
@@ -26,7 +26,7 @@ São 19 publicações entre 2018 e 2026, entre elas artigos no *Journal of the A
 ## Estatística e computação
 
 - Bioestatística aplicada em R e Python.
-- Desenvolvimento de softwares de pesquisa para IVUS, FFR e uFR, modelagem computacional de fluxo circulatório e redes neurais.
+- Desenvolvimento de softwares de pesquisa para IVUS, FFR e μFR, modelagem computacional de fluxo circulatório e redes neurais.
 - Desenvolvimento de softwares para curadoria de dados e análise estatística.
 
 ## Revisão de artigos
