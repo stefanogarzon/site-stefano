@@ -47,7 +47,21 @@ describe('layout v3', () => {
     expect(read('textos/exemplo-git/index.html')).toContain('data-shape="computacao"');
   });
 
-  it('logo geométrico no cabeçalho', () => {
-    expect(read('sobre/index.html')).toMatch(/<a class="name"[^>]*>\s*<svg/);
+  it('logo no cabeçalho, antes do nome', () => {
+    expect(read('sobre/index.html')).toMatch(/<a class="name"[^>]*>\s*<picture/);
+  });
+});
+
+describe('logo', () => {
+  it('cabeçalho usa a marca, com versão para modo escuro', () => {
+    const h = read('sobre/index.html');
+    expect(h).toContain('srcset="/logo/marca-cor-fundo-escuro.svg" media="(prefers-color-scheme: dark)"');
+    expect(h).toMatch(/<img[^>]+src="\/logo\/marca-cor\.svg"/);
+  });
+
+  it('favicons e ícone de atalho', () => {
+    const h = read('index.html');
+    expect(h).toContain('href="/favicon.ico"');
+    expect(h).toContain('rel="apple-touch-icon" href="/apple-touch-icon.png"');
   });
 });

@@ -8,10 +8,10 @@ const r = routes(lang);
 ---
 <header class="wrap wide">
   <a class="name" href={r.home}>
-    <svg viewBox="0 0 28 22" width="28" height="22" aria-hidden="true">
-      <circle cx="9" cy="11" r="9" fill="var(--c-reviews)" />
-      <rect x="13" y="2" width="15" height="18" rx="2" fill="var(--c-estatistica)" opacity="0.9" />
-    </svg>
+    <picture>
+      <source srcset="/logo/marca-cor-fundo-escuro.svg" media="(prefers-color-scheme: dark)" />
+      <img src="/logo/marca-cor.svg" alt="" width="58" height="47" />
+    </picture>
     Stefano Garzon
   </a>
   <nav>
@@ -24,7 +24,8 @@ const r = routes(lang);
 
 <style>
   header { border-bottom: 1px solid var(--line); margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px 20px; padding-top: 22px; padding-bottom: 22px; }
-  .name { display: flex; gap: 10px; align-items: center; font-family: var(--serif); font-size: 1.2rem; color: var(--text); text-decoration: none; }
+  .name :global(img) { display: block; }
+  .name { display: flex; gap: 12px; align-items: center; font-family: var(--serif); font-size: 1.3rem; color: var(--text); text-decoration: none; }
   nav { display: flex; gap: 18px; font-size: 0.9rem; }
   nav a { color: var(--muted); text-decoration: none; }
   nav a:hover { color: var(--text); }
