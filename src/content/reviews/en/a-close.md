@@ -4,8 +4,9 @@ date: 2026-08-29
 lang: en
 translationKey: a-close
 description: "A-CLOSE met noninferiority on the primary endpoint because excess ischemic events and fewer bleeds cancelled out."
-reference: "A-CLOSE Investigators. [CONFIRM authors and title]. N Engl J Med. 2026."
-design: Randomized noninferiority trial
+reference: "Lee SJ, Lee YJ, Lee K, Cho DK, Cho YH, Ahn SG, et al. Clopidogrel or Dual Antiplatelet Therapy in High-Ischemic-Risk Patients. N Engl J Med. 2026 (published online Aug 29, 2026)."
+doi: 10.1056/NEJMoa2608533
+design: Open-label randomized noninferiority trial (South Korea; NCT03947229)
 n: 3203
 tags: [laao-antitrombotico, dapt, pci]
 draft: true

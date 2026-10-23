@@ -4,8 +4,9 @@ date: 2026-08-29
 lang: pt
 translationKey: a-close
 description: "A-CLOSE mostrou não-inferioridade no desfecho primário porque o excesso de eventos isquêmicos e a redução de sangramento se cancelaram."
-reference: "A-CLOSE Investigators. [CONFIRMAR autores e título]. N Engl J Med. 2026."
-design: Ensaio clínico randomizado de não-inferioridade
+reference: "Lee SJ, Lee YJ, Lee K, Cho DK, Cho YH, Ahn SG, et al. Clopidogrel or Dual Antiplatelet Therapy in High-Ischemic-Risk Patients. N Engl J Med. 2026 (publicado online em 29 ago 2026)."
+doi: 10.1056/NEJMoa2608533
+design: Ensaio clínico randomizado aberto de não-inferioridade (Coreia do Sul; NCT03947229)
 n: 3203
 tags: [laao-antitrombotico, dapt, pci]
 draft: true
