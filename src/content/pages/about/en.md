@@ -38,3 +38,5 @@ Reviewer for EuroIntervention, European Heart Journal, BMC journals and Arquivos
 
 - Email: [contato@stefanogarzon.com](mailto:contato@stefanogarzon.com)
 - LinkedIn: [stefano-garzon](https://www.linkedin.com/in/stefano-garzon-41894b187/)
+- Instagram: [@garzonstefano](https://www.instagram.com/garzonstefano/)
+- X: [@stefano_garzon](https://x.com/stefano_garzon)
