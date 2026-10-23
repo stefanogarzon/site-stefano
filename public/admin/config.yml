@@ -3,7 +3,6 @@ backend:
   name: github
   repo: stefanogarzon/site-stefano
   branch: main
-  base_url: https://sveltia-cms-auth.CHANGE-ME.workers.dev
 site_url: https://stefanogarzon.com
 locale: pt
 media_folder: public/images/uploads

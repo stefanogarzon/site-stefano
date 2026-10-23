@@ -4,7 +4,6 @@ import { writeFileSync } from 'node:fs';
 import { stringify } from 'yaml';
 
 const REPO = 'stefanogarzon/site-stefano';
-const AUTH_URL = 'https://sveltia-cms-auth.CHANGE-ME.workers.dev';
 
 const md = (name, label, required = true) => ({ name, label, widget: 'markdown', required });
 
@@ -84,7 +83,8 @@ const pageFile = (name, label, lang) => ({
 });
 
 const config = {
-  backend: { name: 'github', repo: REPO, branch: 'main', base_url: AUTH_URL },
+  // Login por token de acesso (fine-grained PAT) colado no painel; sem servidor OAuth.
+  backend: { name: 'github', repo: REPO, branch: 'main' },
   site_url: 'https://stefanogarzon.com',
   locale: 'pt',
   media_folder: 'public/images/uploads',
