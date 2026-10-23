@@ -1,4 +1,4 @@
-# drstefanogarzon.com
+# stefanogarzon.com
 
 Site pessoal (Astro, estático, PT/EN). Conteúdo em `src/content/`, painel em `/admin` (Sveltia CMS).
 

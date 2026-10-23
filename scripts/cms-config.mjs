@@ -85,7 +85,7 @@ const pageFile = (name, label, lang) => ({
 
 const config = {
   backend: { name: 'github', repo: REPO, branch: 'main', base_url: AUTH_URL },
-  site_url: 'https://drstefanogarzon.com',
+  site_url: 'https://stefanogarzon.com',
   locale: 'pt',
   media_folder: 'public/images/uploads',
   public_folder: '/images/uploads',

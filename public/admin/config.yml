@@ -4,7 +4,7 @@ backend:
   repo: stefanogarzon/site-stefano
   branch: main
   base_url: https://sveltia-cms-auth.CHANGE-ME.workers.dev
-site_url: https://drstefanogarzon.com
+site_url: https://stefanogarzon.com
 locale: pt
 media_folder: public/images/uploads
 public_folder: /images/uploads

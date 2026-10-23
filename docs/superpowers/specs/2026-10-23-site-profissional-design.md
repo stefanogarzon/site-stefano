@@ -1,4 +1,4 @@
-# Site profissional — drstefanogarzon.com
+# Site profissional — stefanogarzon.com
 
 ## Intenção
 Site pessoal de Stefano Garzon (médico e pesquisador) para publicar avaliações críticas de artigos científicos e textos sobre estatística, pesquisa e computação. Visitantes chegam por link no Instagram profissional ou por busca no Google, direto num texto específico.
@@ -58,7 +58,7 @@ Título, data, categoria, descrição curta (SEO), corpo em Markdown com imagens
 - Esquemas em Mermaid: blocos ```` ```mermaid ```` no Markdown. Renderização no navegador com mermaid.js, carregado só nas páginas que têm diagrama, com tema nas cores do site (decisão do Claude; evita navegador headless no build da Cloudflare). Imagens enviadas pelo painel continuam disponíveis para desenhos.
 
 ## Domínios e e-mail (decisão do usuário)
-- Registrar `drstefanogarzon.com` (Cloudflare Registrar) como domínio principal.
+- Registrar `stefanogarzon.com` (Cloudflare Registrar) como domínio principal.
 - `drstefanogarzon.com.br` (registro.br): nameservers para a Cloudflare, redirecionamento 301 de todas as URLs para o .com. Sem e-mail ou outros registros a migrar.
 - E-mail próprio no .com via Zoho Mail (plano gratuito): registros MX, SPF, DKIM e DMARC na Cloudflare. Endereço público a definir (ex.: contato@).
 
@@ -74,3 +74,4 @@ Textos de exemplo (uma avaliação e um texto fictícios, marcados como rascunho
 
 ## Conteúdo pendente do Stefano
 Frase de apresentação, texto do "Sobre", foto (opcional), link exato do Instagram, e-mail de contato público.
+- Mudança (2026-10-23, decisão do usuário): domínio principal passa a ser stefanogarzon.com; drstefanogarzon.com.br redireciona para ele.

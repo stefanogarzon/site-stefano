@@ -59,7 +59,7 @@ describe('textos', () => {
 describe('conteúdo salvo pelo CMS', () => {
   it('aceita doi vazio, n nulo e capa em /images/uploads', () => {
     const h = read('avaliacoes/fixture-cms-vazio/index.html');
-    expect(h).toContain('property="og:image" content="https://drstefanogarzon.com/images/uploads/capa-teste.png"');
+    expect(h).toContain('property="og:image" content="https://stefanogarzon.com/images/uploads/capa-teste.png"');
     expect(h).not.toContain('doi.org');
     expect(h).not.toContain('n = ');
   });

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://drstefanogarzon.com/sitemap-index.xml
+Sitemap: https://stefanogarzon.com/sitemap-index.xml
