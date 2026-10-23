@@ -2,7 +2,7 @@
 title: About
 description: Stefano Garzon, interventional cardiologist at Einstein Hospital Israelita and PhD candidate at FICSAE and Sapienza University of Rome.
 ---
-I am an interventional cardiologist at Einstein Hospital Israelita in São Paulo, Brazil, where I have worked since 2021. I am a PhD candidate in two programs: at the Albert Einstein Faculty of Health Sciences (FICSAE) and in DigiCardioPath at Sapienza University of Rome.
+I am an interventional cardiologist at Einstein Hospital Israelita in São Paulo, Brazil, where I have worked since 2021. I am a PhD candidate in two programs: at the Albert Einstein Faculty of Health Sciences (FICSAE, São Paulo, Brazil) and at Sapienza University of Rome (Rome, Italy).
 
 On this site I publish critical reviews of scientific papers and posts on statistics, clinical research and computing.
 

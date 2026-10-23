@@ -2,7 +2,7 @@
 title: Sobre
 description: Stefano Garzon, cardiologista intervencionista no Einstein Hospital Israelita e doutorando na FICSAE e na Sapienza Università di Roma.
 ---
-Sou cardiologista intervencionista no Einstein Hospital Israelita, em São Paulo, desde 2021. Sou doutorando em dois programas de PhD: na Faculdade Israelita de Ciências da Saúde Albert Einstein (FICSAE) e no DigiCardioPath da Sapienza Università di Roma.
+Sou cardiologista intervencionista no Einstein Hospital Israelita, em São Paulo, desde 2021. Sou doutorando em dois programas de PhD: na Faculdade Israelita de Ciências da Saúde Albert Einstein (FICSAE, São Paulo, Brasil) e na Sapienza Università di Roma (Roma, Itália).
 
 Neste site publico avaliações críticas de artigos científicos e textos sobre estatística, pesquisa clínica e computação.
 
