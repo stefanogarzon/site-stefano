@@ -25,6 +25,8 @@ I have 19 publications from 2018 to 2026, including papers in the *Journal of th
 
 ## Statistics and computing
 
+I have liked computers for as long as I can remember. I started programming in BASIC at age 7 and earned my first money with it at 13. Since then I have used Visual Basic, FoxPro, Delphi, HTML, JavaScript, C# and, today, Python. For about 30 years I have also been the IT person for friends and family. I now use Claude Code to write software, and some of the results are published in the [Computing](/en/posts/computing/) section.
+
 - Applied biostatistics in R and Python.
 - Research software for IVUS, FFR and μFR, computational modeling of blood flow, and neural networks.
 - Software for data curation and statistical analysis.

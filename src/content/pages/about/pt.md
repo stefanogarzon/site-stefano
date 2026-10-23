@@ -25,6 +25,8 @@ São 19 publicações entre 2018 e 2026, entre elas artigos no *Journal of the A
 
 ## Estatística e computação
 
+Gosto de computadores desde que me lembro. Comecei a programar em BASIC aos 7 anos e ganhei meu primeiro dinheiro com isso aos 13. Depois vieram Visual Basic, FoxPro, Delphi, HTML, JavaScript, C# e, hoje, Python. Há cerca de 30 anos sou também o "cara da informática" de amigos e família. Hoje uso o Claude Code para escrever software, e parte do resultado está publicada na seção [Computação](/textos/computacao/).
+
 - Bioestatística aplicada em R e Python.
 - Desenvolvimento de softwares de pesquisa para IVUS, FFR e μFR, modelagem computacional de fluxo circulatório e redes neurais.
 - Desenvolvimento de softwares para curadoria de dados e análise estatística.
