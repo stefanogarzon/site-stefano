@@ -46,6 +46,9 @@ describe('layout v3', () => {
   it('listas e artigos usam as formas', () => {
     expect(read('avaliacoes/index.html')).toContain('data-shape="reviews"');
     expect(read('textos/exemplo-git/index.html')).toContain('data-shape="computacao"');
+    expect(read('textos/computacao/index.html')).toContain('href="https://github.com/stefanogarzon/clinical-ai-skills"');
+    expect(read('en/posts/computing/index.html')).toContain('GitHub repositories');
+    expect(read('textos/estatistica/index.html')).not.toContain('clinical-ai-skills');
   });
 
   it('logo no cabeçalho, antes do nome', () => {

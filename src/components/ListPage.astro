@@ -5,6 +5,7 @@ import Shape from './Shape.astro';
 import { itemsIn } from '../lib/content';
 import { categoryUrl, otherLang, routes, t, type Kind } from '../i18n/utils';
 import { categories, type Category, type Lang } from '../i18n/ui';
+import { repos } from '../data/repos';
 
 interface Props { lang: Lang; kind: Kind; category?: Category }
 const { lang, kind, category } = Astro.props;
@@ -28,6 +29,14 @@ const shape = kind === 'reviews' ? 'reviews' : category;
       ))}
     </nav>
   )}
+  {category === 'computacao' && (
+    <section class="repos">
+      <h2>{lang === 'pt' ? 'Repositórios no GitHub' : 'GitHub repositories'}</h2>
+      <ul>
+        {repos.map((r) => <li><a href={r.url}>{r.name}</a> — {r.desc[lang]}</li>)}
+      </ul>
+    </section>
+  )}
   <div class="list"><Cards items={items} lang={lang} /></div>
 </Base>
 
@@ -35,4 +44,8 @@ const shape = kind === 'reviews' ? 'reviews' : category;
   .head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin: 40px 0 24px; }
   .head h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); margin: 0; }
   .list { margin-top: 28px; }
+  .repos { margin-top: 28px; }
+  .repos h2 { font-size: 1.2rem; margin: 0 0 8px; }
+  .repos ul { margin: 0; padding-left: 1.2em; }
+  .repos li { margin: 4px 0; }
 </style>
