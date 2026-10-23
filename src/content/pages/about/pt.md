@@ -25,9 +25,7 @@ São 19 publicações entre 2018 e 2026, entre elas artigos no *Journal of the A
 
 ## Estatística e computação
 
-- Bioestatística aplicada: análise de sobrevida, riscos competitivos, regressão logística, pareamento por escore de propensão, Bland-Altman e coeficiente de correlação intraclasse.
-- Análises em R com pipeline reprodutível, do plano de análise às tabelas do manuscrito.
-- Python para auditoria de dados, análise exploratória e aprendizado de máquina.
+- Bioestatística aplicada em R e Python.
 - Em desenvolvimento: software de segmentação automática de IVUS e um modelo de aprendizado profundo para detectar estenose aórtica grave a partir de vídeo facial.
 
 ## Revisão de artigos

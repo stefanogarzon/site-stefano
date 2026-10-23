@@ -25,9 +25,7 @@ I have 19 publications from 2018 to 2026, including papers in the *Journal of th
 
 ## Statistics and computing
 
-- Applied biostatistics: survival analysis, competing risks, logistic regression, propensity-score matching, Bland-Altman analysis and intraclass correlation.
-- Analysis in R with reproducible pipelines, from the analysis plan to the manuscript tables.
-- Python for data auditing, exploratory analysis and machine learning.
+- Applied biostatistics in R and Python.
 - In development: automatic IVUS segmentation software and a deep-learning model to detect severe aortic stenosis from facial video.
 
 ## Peer review
