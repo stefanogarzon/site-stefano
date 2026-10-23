@@ -16,7 +16,7 @@ const { Content } = await render(entry);
   lang={d.lang}
   alternate={alternateUrl(entry, all)}
   hasTranslation={!!findTranslation(entry, all)}
-  image={d.cover?.src}
+  image={d.cover}
   type="article"
   hasMermaid={(entry.body ?? '').includes('```mermaid')}
 >

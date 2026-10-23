@@ -1,4 +1,4 @@
-import { categorySlugs, ui, type Category, type Lang, type UiKey } from './ui';
+import { categories, categorySlugs, ui, type Category, type Lang, type UiKey } from './ui';
 
 export type Kind = 'reviews' | 'posts';
 
@@ -58,3 +58,9 @@ export const formatDate = (date: Date, lang: Lang) => {
   }).format(date);
   return lang === 'pt' ? s.replace(/ de /g, ' ').replace('.', '') : s;
 };
+
+/** Ids de textos cujo slug coincide com o de uma categoria (colidiriam com /textos/<categoria>/). */
+export const categoryCollisions = (entries: { id: string; data: { lang: Lang } }[]) =>
+  entries
+    .filter((e) => categories.some((c) => categorySlug(c, e.data.lang) === slugOf(e)))
+    .map((e) => e.id);

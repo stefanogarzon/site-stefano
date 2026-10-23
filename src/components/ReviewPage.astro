@@ -22,7 +22,7 @@ const html = [d.summary, d.strengths, d.problems, d.opinion].join('\n');
   lang={lang}
   alternate={alternateUrl(entry, all)}
   hasTranslation={!!findTranslation(entry, all)}
-  image={d.cover?.src}
+  image={d.cover}
   type="article"
   hasMermaid={html.includes('```mermaid')}
 >

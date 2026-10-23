@@ -90,6 +90,7 @@ const config = {
   media_folder: 'public/images/uploads',
   public_folder: '/images/uploads',
   slug: { encoding: 'ascii', clean_accents: true },
+  omit_empty_optional_fields: true,
   collections: [
     reviews('pt'), reviews('en'), posts('pt'), posts('en'),
     {

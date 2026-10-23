@@ -50,3 +50,10 @@ describe('i18n', () => {
     expect(published([a, b, c]).map((x) => x.id)).toEqual(['pt/b', 'pt/a']);
   });
 });
+
+describe('colisão de slug com categoria', () => {
+  it('detecta texto cujo slug é nome de categoria', async () => {
+    const { categoryCollisions } = await import('../src/i18n/utils');
+    expect(categoryCollisions([{ id: 'pt/estatistica', data: { lang: 'pt' } }, { id: 'en/statistics', data: { lang: 'en' } }, { id: 'pt/ok', data: { lang: 'pt' } }])).toEqual(['pt/estatistica', 'en/statistics']);
+  });
+});

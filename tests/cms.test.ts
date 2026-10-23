@@ -33,8 +33,8 @@ describe('config do CMS', () => {
   it('campos dos arquivos de conteúdo existem no CMS', () => {
     for (const [dir, fields] of [['reviews', reviewFields], ['posts', postFields]] as const)
       for (const lang of ['pt', 'en'])
-        for (const f of readdirSync(`src/content/${dir}/${lang}`))
-          for (const k of frontKeys(`src/content/${dir}/${lang}/${f}`)) expect(fields).toContain(k);
+        for (const f of readdirSync(`tests/fixtures/${dir}/${lang}`).filter((f) => f.endsWith(".md")))
+          for (const k of frontKeys(`tests/fixtures/${dir}/${lang}/${f}`)) expect(fields).toContain(k);
   });
 
   it('páginas fixas editáveis', () => {

@@ -55,3 +55,16 @@ describe('textos', () => {
     expect(read('textos/exemplo-git/index.html')).toContain('href="/en/"');
   });
 });
+
+describe('conteúdo salvo pelo CMS', () => {
+  it('aceita doi vazio, n nulo e capa em /images/uploads', () => {
+    const h = read('avaliacoes/fixture-cms-vazio/index.html');
+    expect(h).toContain('property="og:image" content="https://drstefanogarzon.com/images/uploads/capa-teste.png"');
+    expect(h).not.toContain('doi.org');
+    expect(h).not.toContain('n = ');
+  });
+
+  it('"US$10 e US$20" sem espaço não vira fórmula', () => {
+    expect(read('avaliacoes/fixture-cms-vazio/index.html')).toContain('Custa US$10 e US$20.');
+  });
+});
