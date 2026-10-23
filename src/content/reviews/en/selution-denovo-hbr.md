@@ -9,7 +9,7 @@ doi: 10.4244/EIJ-D-26-00889
 design: Prespecified subgroup of an open-label randomized trial (SELUTION DeNovo; NCT04859985)
 n: 522
 tags: [dcb, hbr, subgroup]
-draft: true
+draft: false
 summary: |
   SELUTION DeNovo randomized 3323 patients with de novo coronary lesions to a sirolimus-eluting balloon (SEB) strategy with provisional stenting or to systematic DES. Of the 3064 with bleeding risk data, 522 (17.0%) met ARC-HBR criteria: 269 in the SEB arm and 253 in the DES arm. In the SEB arm, 17.1% received a bailout stent. About 68% were discharged on oral anticoagulation.
 

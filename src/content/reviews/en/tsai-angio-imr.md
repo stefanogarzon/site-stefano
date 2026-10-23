@@ -9,7 +9,7 @@ doi: 10.1016/j.jcin.2025.10.027
 design: Diagnostic accuracy study with blinded analysis at an independent core lab (CORRIB, Galway)
 n: 270
 tags: [fisiologia-imagem, imr, microcirculation]
-draft: true
+draft: false
 summary: |
   The study compared 5 angio-IMR formulas from 3 platforms (QAngio XA 3D, FlashAngio and AngioPlus Core) with pressure-wire IMR (PW-IMR) in 274 vessels and with absolute resistance by continuous thermodilution (Rmicro) in 109 vessels. Three independent analysts used anonymized software; a dedicated investigator selected the frames.
 

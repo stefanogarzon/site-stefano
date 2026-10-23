@@ -6,7 +6,7 @@ translationKey: charm-aderente-saudavel
 description: "No CHARM, a boa adesão ao placebo reduziu mortalidade tanto quanto a adesão ao candesartan. Pesos de probabilidade inversa para a adesão variável no tempo removem boa parte dessa associação."
 category: estatistica
 tags: [ic, adesao, inferencia-causal]
-draft: true
+draft: false
 ---
 
 David Cohen publicou recentemente sobre o CHARM. Aqui aprofundo um ponto da análise de adesão.

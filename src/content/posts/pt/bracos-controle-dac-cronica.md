@@ -6,7 +6,7 @@ translationKey: bracos-controle-dac-cronica
 description: "Mahesh et al. reuniram os braços controle de 29 ensaios em uma curva de Kaplan-Meier. A ideia é original, mas a curva mistura quatro décadas de tratamento e não sustenta a tese de aceleração do risco."
 category: pesquisa
 tags: [cto-pci-complexa, dac-cronica, meta-analise, ipd-reconstruido]
-draft: true
+draft: false
 ---
 
 Mahesh R, Wong DHC, Anand VV, Soh DKE, Low GZ, Hao Y, et al. Natural history and outcomes of medically treated coronary artery disease: insights from reconstructed individual patient data of 29 randomized trials. Clin Res Cardiol. 2025 (publicado online). doi: 10.1007/s00392-025-02800-7

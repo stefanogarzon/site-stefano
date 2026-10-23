@@ -6,7 +6,7 @@ translationKey: champion-af-nao-inferioridade
 description: "CHAMPION-AF met noninferiority with a wide margin and a low event rate, but stroke alone was 3.6% vs 2.5% against the device."
 category: estatistica
 tags: [laao-antitrombotico, laao, noninferiority]
-draft: true
+draft: false
 ---
 
 CHAMPION-AF (Doshi et al., N Engl J Med 2026; DOI 10.1056/NEJMoa2517213) randomised 3000 anticoagulation-eligible AF patients to left atrial appendage closure (LAAC) or a direct oral anticoagulant (DOAC). Closure was noninferior for the composite of cardiovascular death, stroke or systemic embolism at 3 years. The reading changes once the composite is broken down.

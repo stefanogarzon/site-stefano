@@ -6,7 +6,7 @@ translationKey: trombose-tavi
 description: "A joint reading of the Jacobsen et al. review and the SAPIEN 3 Ultra RESILIA data from OCEAN-TAVI on leaflet thrombosis after TAVI."
 category: pesquisa
 tags: [tavi-valvar, thrombosis, halt]
-draft: true
+draft: false
 ---
 
 ## The two sources

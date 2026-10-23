@@ -9,7 +9,7 @@ doi: 10.1016/j.jcin.2025.11.036
 design: Observational study with individual data from RENOVATE-COMPLEX-PCI and Samsung Medical Center institutional registries (South Korea)
 n: 3402
 tags: [tronco, intravascular-imaging, diabetes]
-draft: true
+draft: false
 summary: |
   The study included 3402 diabetic patients with left main or three-vessel disease, out of 6962 patients. Intravascular imaging-guided PCI (n = 392) came from RENOVATE-COMPLEX-PCI, which enrolled from May 2018 to May 2021. CABG came from the Samsung Medical Center registry, 2001 to 2017.
 

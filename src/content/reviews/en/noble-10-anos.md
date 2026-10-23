@@ -9,7 +9,7 @@ doi: 10.1016/S0140-6736(26)00205-9
 design: Open-label randomized trial, 36 sites in Northern Europe and the UK
 n: 1201
 tags: [tronco, pci-vs-cabg, non-inferiority]
-draft: true
+draft: false
 summary: |
   NOBLE randomized 1201 patients with unprotected left main disease, eligible for both treatments by heart-team consensus, between 2008 and 2015. 598 were assigned to PCI and 603 to CABG; 592 per arm entered the intention-to-treat analysis. Most received second-generation drug-eluting stents.
 

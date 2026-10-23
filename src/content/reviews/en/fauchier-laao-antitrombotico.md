@@ -9,7 +9,7 @@ doi: 10.4244/EIJ-D-26-00102
 design: Retrospective propensity-matched cohort (TriNetX network, 2010–2025)
 n: 48788
 tags: [laao-antitrombotico, laao, observational]
-draft: true
+draft: false
 summary: |
   The study used the TriNetX network to identify 48,788 AF patients who underwent percutaneous left atrial appendage occlusion (LAAO) between 2010 and 2025. Three independent comparisons were run, with 1:1 propensity score matching on 89 covariates. Mean follow-up was 1.4 to 1.6 years.
 

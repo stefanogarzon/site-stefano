@@ -9,7 +9,7 @@ doi: 10.4244/EIJ-D-26-00421
 design: Open-label multicentre randomised pilot trial (the Netherlands; NCT05986968)
 n: 200
 tags: [laao-antitrombotico, stemi, dapt]
-draft: true
+draft: false
 summary: |
   STOP-IMH randomised 200 STEMI patients to ticagrelor monotherapy or ticagrelor plus aspirin, directly after primary PCI. Follow-up was 13 months. A cardiac magnetic resonance (CMR) substudy assessed intramyocardial haemorrhage (IMH).
 

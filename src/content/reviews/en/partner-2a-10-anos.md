@@ -9,7 +9,7 @@ doi: 10.1016/j.jacc.2026.03.169
 design: Randomized clinical trial, 10-year follow-up (57 centers; NCT01314313)
 n: 1910
 tags: [tavi-valvar, durability, competing-risks]
-draft: true
+draft: false
 summary: |
   Between 2011 and 2013, PARTNER 2A randomized patients with severe aortic stenosis at intermediate surgical risk to TAVI with SAPIEN XT or surgery. In the valve implant population, 974 received TAVI and 936 surgery. Mean age 81.6 years, mean STS score 5.8%.
 

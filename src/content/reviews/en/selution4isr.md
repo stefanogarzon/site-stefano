@@ -9,7 +9,7 @@ doi: 10.1016/j.jacc.2026.03.021
 design: Single-blind Bayesian noninferiority randomized trial (48 sites, 7 countries; NCT04280029)
 n: 418
 tags: [dcb, in-stent-restenosis, bayesian]
-draft: true
+draft: false
 summary: |
   SELUTION4ISR randomized 418 of 1508 screened patients to a sirolimus drug-eluting balloon (DEB) or a "usual care" control designed to mirror NCDR 2009–2017. The control was contemporary DES (everolimus or zotarolimus) in 80% and balloon angioplasty in up to 20%. The operator chose DES or balloon before randomization. The balloon cap was reached after 176 patients; after that, randomization was DEB vs DES.
 

@@ -9,7 +9,7 @@ doi: 10.4244/EIJ-D-25-01174
 design: Single-centre retrospective cohort (Mount Sinai, New York, 2012–2022)
 n: 15336
 tags: [laao-antitrombotico, dapt, ischaemic-risk]
-draft: true
+draft: false
 summary: |
   The study assessed 15,336 chronic coronary syndrome patients treated with drug-eluting stents at Mount Sinai between 2012 and 2022. The 2024 ESC high-ischaemic-risk (HIR) criteria used were left main, stent length > 60 mm, diabetes, CKD, bifurcation and chronic total occlusion (CTO). The primary endpoint was MACCE (death, MI or stroke) at 1 year.
 

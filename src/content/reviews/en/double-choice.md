@@ -9,7 +9,7 @@ doi: 10.4244/EIJ-D-26-00001
 design: 2x2 factorial, open-label, multicenter randomized noninferiority trial (10 centers, Germany)
 n: 835
 tags: [tavi-valvar, pacemaker, self-expanding]
-draft: true
+draft: false
 summary: |
   DOUBLE-CHOICE randomized 835 patients with symptomatic severe aortic stenosis, in selected anatomies, to ACURATE neo2 or Evolut PRO/PRO+/FX. The 30-day primary endpoint combined death, stroke, moderate or severe prosthetic regurgitation and pacemaker implantation.
 

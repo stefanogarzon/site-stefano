@@ -9,7 +9,7 @@ doi: 10.4244/EIJ-D-26-00416
 design: Prospective multicenter observational study (NCT03857971)
 n: 438
 tags: [fisiologia-imagem, oct, vulnerable-plaque]
-draft: true
+draft: false
 summary: |
   PECTUS-obs enrolled 438 patients with recent myocardial infarction and performed OCT of all FFR-negative non-culprit lesions, which were deferred. Of the 420 with core-lab OCT analysis, 143 (34.0%) had at least one high-risk plaque (HRP). Median follow-up was 1828 days, complete in 99.0%.
 

@@ -9,7 +9,7 @@ doi: 10.1016/j.cjca.2026.03.047
 design: Retrospective single-arm cohort from an administrative database (research letter)
 n: 617
 tags: [cto-pci-complexa, cardiogenic-shock, cto]
-draft: true
+draft: false
 summary: |
   Research letter on chronic total occlusion (CTO) PCI in patients with acute MI complicated by cardiogenic shock. CTO-PCI was identified by CPT/HCPCS billing codes. The time criterion required a shock diagnosis on the day before or the same day as the CTO-PCI.
 

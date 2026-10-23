@@ -6,7 +6,7 @@ translationKey: dcb-cto-sequencia
 description: "A comparação entre DCB e DES em CTO está sendo feita antes de duas perguntas anteriores estarem respondidas."
 category: pesquisa
 tags: [dcb, cto, desenho-de-estudo]
-draft: true
+draft: false
 ---
 
 O debate sobre DCB em oclusão crônica total (CTO) ganhou espaço. Na minha leitura, a comparação com DES está sendo feita antes de duas perguntas anteriores estarem resolvidas.

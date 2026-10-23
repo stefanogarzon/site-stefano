@@ -6,7 +6,7 @@ translationKey: obstrucao-coronaria-tavi
 description: "Five studies on coronary obstruction in TAVI (Ojeda, Ribeiro, Khan, Jabbour, ICARO) and what CT screening still misses."
 category: pesquisa
 tags: [tavi-valvar, coronary-obstruction, ct]
-draft: true
+draft: false
 ---
 
 ## The rate has not changed in 13 years

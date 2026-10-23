@@ -6,7 +6,7 @@ translationKey: dcb-cto-sequencia
 description: "The comparison between DCB and DES in CTO is being made before two upstream questions have been answered."
 category: pesquisa
 tags: [dcb, cto, trial-design]
-draft: true
+draft: false
 ---
 
 The debate on DCB in chronic total occlusion (CTO) is gaining ground. In my reading, the comparison with DES is being made before two upstream questions have been settled.

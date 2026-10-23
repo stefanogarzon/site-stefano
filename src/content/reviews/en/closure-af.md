@@ -9,7 +9,7 @@ doi: 10.1056/NEJMoa2513310
 design: Multicentre randomised noninferiority trial (Germany; NCT03463317)
 n: 912
 tags: [laao-antitrombotico, laao, rmst]
-draft: true
+draft: false
 summary: |
   CLOSURE-AF randomised 912 AF patients at high risk of stroke and bleeding to left atrial appendage closure (LAAC) or physician-directed best medical care, including DOACs when eligible. The primary analysis included 888 patients. Mean age 78, CHA₂DS₂-VASc 5.2 and HAS-BLED 3.0.
 

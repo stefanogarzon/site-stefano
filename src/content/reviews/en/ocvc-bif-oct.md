@@ -9,7 +9,7 @@ doi: 10.4244/EIJ-D-26-00428
 design: Prespecified OCT substudy of a randomized trial (Japan; jRCTs052200077)
 n: 221
 tags: [dcb, bifurcation, oct]
-draft: true
+draft: false
 summary: |
   OCVC-BIF randomized 299 patients with bifurcation lesions, after main vessel stenting and kissing balloon, to adjunctive side branch DCB (n=149) or no DCB (n=150). The OCT substudy included 221 patients with analysable follow-up OCT. 198 had paired lumen volume.
 

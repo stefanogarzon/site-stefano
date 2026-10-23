@@ -9,7 +9,7 @@ doi: 10.1056/NEJMoa2516567
 design: Open-label multinational adaptive randomised trial with blinded adjudication (NCT04790370; funded by Boston Scientific)
 n: 544
 tags: [tep, fibrinolysis, composite-endpoint]
-draft: true
+draft: false
 summary: |
   HI-PEITHO randomised 544 patients with intermediate-risk pulmonary embolism to ultrasound-facilitated catheter-directed fibrinolysis (USAT, alteplase) plus anticoagulation or anticoagulation alone. The primary endpoint was the composite of PE-related death, cardiorespiratory decompensation or collapse, and symptomatic PE recurrence within 7 days.
 

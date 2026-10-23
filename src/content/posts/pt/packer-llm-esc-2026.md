@@ -6,7 +6,7 @@ translationKey: packer-llm-esc-2026
 description: "Milton Packer argumentou contra LLMs comerciais na decisão clínica. Os dois estudos citados não envolvem LLMs, e a evidência randomizada localiza o déficit na passagem entre médico e ferramenta."
 category: computacao
 tags: [ia, llm, vies-de-automacao]
-draft: true
+draft: false
 ---
 
 No ESC Congress 2026, em Munique, o Dr. Milton Packer argumentou contra o uso dos grandes modelos de linguagem (LLMs) comerciais atuais na decisão clínica. O histórico dele em ensaios de insuficiência cardíaca justifica avaliar a palestra com cuidado. Discordo da conclusão. Os slides foram publicados no X.

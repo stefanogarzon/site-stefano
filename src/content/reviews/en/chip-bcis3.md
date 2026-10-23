@@ -9,7 +9,7 @@ doi: 10.1056/NEJMoa2515704
 design: Open-label randomized trial with blinded outcome adjudication (United Kingdom; NCT05003817)
 n: 300
 tags: [cto-pci-complexa, impella, mechanical-support, win-ratio]
-draft: true
+draft: false
 summary: |
   CHIP-BCIS3 randomized 300 patients with severe left ventricular dysfunction and extensive coronary disease undergoing planned complex PCI. 148 were assigned to elective unloading with a microaxial flow pump (Impella CP) and 152 to standard care. Median LVEF was 27% and median SYNTAX score 38. The trial was funded by the UK NIHR.
 

@@ -6,7 +6,7 @@ translationKey: packer-llm-esc-2026
 description: "Milton Packer argued against commercial LLMs in clinical decision-making. The two studies he cited do not involve LLMs, and the randomized evidence locates the deficit in the physician-tool handoff."
 category: computacao
 tags: [ia, llm, automation-bias]
-draft: true
+draft: false
 ---
 
 At ESC Congress 2026 in Munich, Dr. Milton Packer argued against the use of current commercial large language models (LLMs) in clinical decision-making. His record in heart failure trials is why the talk deserves appraisal. I disagree with his conclusion. The slides were posted on X.

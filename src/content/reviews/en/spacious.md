@@ -9,7 +9,7 @@ doi: 10.4244/EIJ-D-24-00742
 design: Multicenter randomized noninferiority trial (China, 14 centers; NCT04899583)
 n: 230
 tags: [dcb, bifurcation, noninferiority]
-draft: true
+draft: false
 summary: |
   SPACIOUS randomized 230 patients 1:1 to a sirolimus DCB (SCB, Acotec) or a paclitaxel DCB (PCB, Bingo) for side branch dilation after main vessel stenting, in non-left main true bifurcations. The primary endpoint was side branch diameter stenosis (DS) by QCA at 9 months, with a noninferiority margin of 15 absolute points.
 

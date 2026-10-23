@@ -9,7 +9,7 @@ doi: 10.1161/JAHA.126.050299
 design: Systematic review and meta-analysis of 13 observational studies, with individual data reconstructed from Kaplan–Meier curves
 n: 15941
 tags: [tavi-valvar, mitral, meta-analysis]
-draft: true
+draft: false
 summary: |
   The meta-analysis included 13 observational studies with 15,941 patients (ViV-TMVR 5465; redo-SMVR 10,476).
 

@@ -6,7 +6,7 @@ translationKey: bracos-controle-dac-cronica
 description: "Mahesh et al. pooled the control arms of 29 trials into one Kaplan-Meier curve. The idea is original, but the curve mixes four decades of therapy and does not support the claim that risk accelerates."
 category: pesquisa
 tags: [cto-pci-complexa, chronic-cad, meta-analysis, reconstructed-ipd]
-draft: true
+draft: false
 ---
 
 Mahesh R, Wong DHC, Anand VV, Soh DKE, Low GZ, Hao Y, et al. Natural history and outcomes of medically treated coronary artery disease: insights from reconstructed individual patient data of 29 randomized trials. Clin Res Cardiol. 2025 (published online). doi: 10.1007/s00392-025-02800-7

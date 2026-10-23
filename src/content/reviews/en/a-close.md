@@ -9,7 +9,7 @@ doi: 10.1056/NEJMoa2608533
 design: Open-label randomized noninferiority trial (South Korea; NCT03947229)
 n: 3203
 tags: [laao-antitrombotico, dapt, pci]
-draft: true
+draft: false
 summary: |
   A-CLOSE randomized 3203 patients at high ischemic risk to clopidogrel monotherapy or extended DAPT. Randomization took place 12 months after drug-eluting stent implantation, with 24 months of follow-up.
 

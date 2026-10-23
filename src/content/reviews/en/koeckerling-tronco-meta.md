@@ -9,7 +9,7 @@ doi: 10.1016/j.jacc.2026.01.079
 design: Meta-analysis of 5 randomized trials using reconstructed individual survival data
 n: 4499
 tags: [tronco, pci-vs-cabg, meta-analysis]
-draft: true
+draft: false
 summary: |
   The meta-analysis pooled the 5 randomized trials of PCI versus CABG for left main disease: LE MANS, SYNTAX, PRECOMBAT, EXCEL and NOBLE, with 4499 patients. Individual time-to-event data were reconstructed from Kaplan-Meier curves (IPDfromKM algorithm), with 98.7% accuracy for event counts.
 

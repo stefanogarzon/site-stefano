@@ -6,7 +6,7 @@ translationKey: charm-aderente-saudavel
 description: "In CHARM, good adherence to placebo reduced mortality as much as adherence to candesartan. Inverse probability weighting for time-varying adherence removes most of that association."
 category: estatistica
 tags: [ic, adherence, causal-inference]
-draft: true
+draft: false
 ---
 
 David Cohen recently posted about CHARM. Here I look more closely at one point of the adherence analysis.

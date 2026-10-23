@@ -9,7 +9,7 @@ doi: 10.1056/NEJMoa2606934
 design: Open-label randomized trial, 2:1, 29 centers in Germany (NCT04634266)
 n: 360
 tags: [ic, tricuspid, win-ratio]
-draft: true
+draft: false
 summary: |
   TRIC-I-HF randomized 360 patients with at least severe tricuspid regurgitation and increased risk of heart failure (HF) events. Allocation was 2:1 to transcatheter repair plus medical therapy (237) or medical therapy alone (123). The trial was open label, at 29 German centers, with enrollment from March 2022 to June 2025. Mean age 80.3 years, 56.4% women.
 

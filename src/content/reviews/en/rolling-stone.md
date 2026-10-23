@@ -9,7 +9,7 @@ doi: 10.1016/j.jcin.2025.11.033
 design: Prospective multicenter registry with blinded core lab and independent events committee (Italy; NCT05016726)
 n: 1005
 tags: [cto-pci-complexa, calcium, lithotripsy, atherectomy]
-draft: true
+draft: false
 summary: |
   ROLLING STONE enrolled 1,005 consecutive patients with calcified coronary disease at 23 Italian centers. The comparison was intravascular lithotripsy (IVL, n = 544) versus rotational or orbital atherectomy (AT, n = 380); 81 patients treated with both were excluded. Angiograms were analyzed at a blinded core lab, and 30-day follow-up was complete in 99.8%.
 

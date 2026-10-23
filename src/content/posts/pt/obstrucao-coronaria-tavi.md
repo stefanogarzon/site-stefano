@@ -6,7 +6,7 @@ translationKey: obstrucao-coronaria-tavi
 description: "Cinco estudos sobre obstrução coronária na TAVI (Ojeda, Ribeiro, Khan, Jabbour, ICARO) e o que o rastreio por TC ainda não detecta."
 category: pesquisa
 tags: [tavi-valvar, obstrucao-coronaria, tomografia]
-draft: true
+draft: false
 ---
 
 ## A taxa não mudou em 13 anos

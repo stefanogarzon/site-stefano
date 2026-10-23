@@ -9,7 +9,7 @@ doi: 10.1002/ccd.70597
 design: Retrospective multicenter study with serial IVUS
 n: 47
 tags: [cto-pci-complexa, calcium, cutting-balloon, ivus]
-draft: true
+draft: false
 summary: |
   The study proposes the Index of Device Efficiency (IDE), an IVUS-derived ratio: maximal luminal diameter after the cutting balloon divided by the balloon's nominal diameter, × 100. The aim is to quantify cutting balloon performance in calcified lesions with the RODIN-CUT technique of repeated inflations.
 

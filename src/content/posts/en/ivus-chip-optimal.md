@@ -6,7 +6,7 @@ translationKey: ivus-chip-optimal
 description: "IVUS-CHIP and OPTIMAL were neutral. Optimization rates are similar to those of the positive trials, and the angiography arm already applies what IVUS taught."
 category: pesquisa
 tags: [fisiologia-imagem, ivus, pci]
-draft: true
+draft: false
 ---
 
 Conflict of interest: I am a proctor and speaker for Boston Scientific, specifically for CHIP interventions, and have been for years. These results challenge some of my own beliefs about how we practice interventional cardiology.

@@ -9,7 +9,7 @@ doi: 10.1016/S0140-6736(26)00308-9
 design: Investigator-initiated open-label randomized noninferiority trial (12 centers, the Netherlands; NCT05078619)
 n: 466
 tags: [tavi-valvar, pci, noninferiority]
-draft: true
+draft: false
 summary: |
   PRO-TAVI randomized 466 patients with coronary artery disease undergoing TAVI to PCI deferral or routine PCI before TAVI. Median age 81 years, 36% women, median SYNTAX 10, no left main disease.
 

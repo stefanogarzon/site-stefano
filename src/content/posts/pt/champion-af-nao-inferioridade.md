@@ -6,7 +6,7 @@ translationKey: champion-af-nao-inferioridade
 description: "O CHAMPION-AF passou na não-inferioridade com margem larga e taxa de eventos baixa, mas o AVC isolado foi 3,6% vs 2,5% contra o oclusor."
 category: estatistica
 tags: [laao-antitrombotico, laao, nao-inferioridade]
-draft: true
+draft: false
 ---
 
 O CHAMPION-AF (Doshi et al., N Engl J Med 2026; DOI 10.1056/NEJMoa2517213) randomizou 3000 pacientes com FA elegíveis para anticoagulação para fechamento do apêndice atrial esquerdo (LAAC) ou anticoagulante oral direto (DOAC). O fechamento foi não-inferior para o composto de morte cardiovascular, AVC ou embolia sistêmica em 3 anos. A leitura muda quando o composto é decomposto.

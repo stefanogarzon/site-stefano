@@ -6,7 +6,7 @@ translationKey: trombose-tavi
 description: "Leitura conjunta da revisão de Jacobsen et al. e dos dados da SAPIEN 3 Ultra RESILIA no OCEAN-TAVI sobre trombose de folhetos após TAVI."
 category: pesquisa
 tags: [tavi-valvar, trombose, halt]
-draft: true
+draft: false
 ---
 
 ## As duas fontes

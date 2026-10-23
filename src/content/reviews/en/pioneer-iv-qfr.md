@@ -7,7 +7,7 @@ description: "PIONEER IV declared QFR-guided PCI non-inferior to usual care, but
 reference: "[CONFIRMAR authors and title]. PIONEER IV: QFR-guided PCI versus usual care, interim analysis. Eur Heart J. 2026 [CONFIRMAR volume and pages]."
 design: Randomized non-inferiority trial, 26 European sites, all-comer population
 tags: [fisiologia-imagem, qfr, non-inferiority]
-draft: true
+draft: false
 summary: |
   In the interim analysis, QFR-guided PCI was declared non-inferior to usual care. The patient-oriented composite endpoint (POCE) occurred in 6.9% with QFR and 6.8% with usual care (non-inferiority p 0.015).
 

@@ -9,7 +9,7 @@ doi: 10.1016/j.jacc.2026.03.027
 design: Randomized, double-blind, placebo-controlled trial with Bayesian analysis (United Kingdom; NCT05142215)
 n: 50
 tags: [cto-pci-complexa, cto, placebo, angina]
-draft: true
+draft: false
 summary: |
   ORBITA-CTO randomized 50 patients between October 2021 and October 2025. Criteria were single-vessel CTO, confirmed ischemia and viability, J-CTO ≤3 and no relevant bystander disease. Randomization 1:1 to CTO PCI or placebo took place after dual-injection angiography.
 
