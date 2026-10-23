@@ -1,6 +1,6 @@
 # Pauta: posts do X para reescrever no site
 
-Base: índice de critical appraisal de @stefano_garzon no X, atualizado em 23/out/2026. Texto integral de todos os itens em `writings/criticas-de-estudos-x-stefano-garzon.md` (posts em inglês). Datas de 2026, salvo indicação.
+Base: índice de critical appraisal de @stefano_garzon no X, atualizado em 23/out/2026. Texto integral de todos os itens em `~/Downloads/criticas-de-estudos-x-stefano-garzon.md` (fora do repositório) (posts em inglês). Datas de 2026, salvo indicação.
 
 Andamento: A-CLOSE em rascunho (PT/EN), com referência e DOI conferidos no PDF. Falta revisão do autor.
 
