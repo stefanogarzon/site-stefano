@@ -1,0 +1,71 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/source-serif-4';
+
+:root {
+  --bg: #faf9f5;
+  --text: #191919;
+  --muted: #555;
+  --line: #e6e3da;
+  --accent: #c96442;
+  --soft: #f0eee6;
+  --serif: 'Source Serif 4 Variable', Georgia, serif;
+  --sans: 'Inter Variable', system-ui, sans-serif;
+  --mono: ui-monospace, 'SF Mono', Menlo, monospace;
+  --measure: 680px;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1f1e1c;
+    --text: #ece9e1;
+    --muted: #a8a49a;
+    --line: #3a3833;
+    --accent: #e08a6a;
+    --soft: #2a2926;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.65 var(--sans);
+}
+
+.wrap { max-width: var(--measure); margin: 0 auto; padding: 0 20px; }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.25; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); margin: 0.4em 0 0.5em; }
+h2 { font-size: 1.35rem; margin: 2em 0 0.4em; }
+h3 { font-size: 1.1rem; margin: 1.6em 0 0.3em; }
+
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+
+img, svg { max-width: 100%; height: auto; }
+
+hr { border: 0; border-top: 1px solid var(--line); }
+
+.label { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.label.accent { color: var(--accent); }
+.muted { color: var(--muted); }
+
+code { font-family: var(--mono); font-size: 0.9em; }
+pre { padding: 14px 16px; border-radius: 8px; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; }
+pre.mermaid { background: transparent; text-align: center; }
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
+
+blockquote { margin: 1.2em 0; padding-left: 16px; border-left: 2px solid var(--line); color: var(--muted); }
+
+table { border-collapse: collapse; width: 100%; font-size: 0.9rem; display: block; overflow-x: auto; }
+th, td { border-bottom: 1px solid var(--line); padding: 6px 10px; text-align: left; }
+
+.astro-code { background-color: var(--soft) !important; }
+@media (prefers-color-scheme: dark) {
+  .astro-code, .astro-code span { color: var(--shiki-dark) !important; background-color: var(--soft) !important; }
+}

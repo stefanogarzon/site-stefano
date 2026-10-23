@@ -1,0 +1,58 @@
+---
+import '../styles/global.css';
+import 'katex/dist/katex.min.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  title: string;
+  description: string;
+  lang: Lang;
+  /** URL da página equivalente no outro idioma (tradução ou home). */
+  alternate: string;
+  /** true quando `alternate` é uma tradução real desta página (gera hreflang). */
+  hasTranslation?: boolean;
+  image?: string;
+  type?: 'website' | 'article';
+  hasMermaid?: boolean;
+}
+
+const { title, description, lang, alternate, hasTranslation = false, image, type = 'website', hasMermaid = false } = Astro.props;
+const site = Astro.site!;
+const canonical = new URL(Astro.url.pathname, site).href;
+const ogImage = new URL(image ?? '/og-default.png', site).href;
+const fullTitle = title === 'Stefano Garzon' ? title : `${title} · Stefano Garzon`;
+const other = lang === 'pt' ? 'en' : 'pt';
+const ptUrl = lang === 'pt' ? canonical : new URL(alternate, site).href;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title="Stefano Garzon" href={lang === 'pt' ? '/rss.xml' : '/en/rss.xml'} />
+    <link rel="alternate" hreflang={lang} href={canonical} />
+    {hasTranslation && <link rel="alternate" hreflang={other} href={new URL(alternate, site).href} />}
+    {hasTranslation && <link rel="alternate" hreflang="x-default" href={ptUrl} />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={lang === 'pt' ? 'pt_BR' : 'en_US'} />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <Header lang={lang} alternate={alternate} />
+    <main class="wrap">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+    {hasMermaid && <script src="../scripts/mermaid.ts"></script>}
+  </body>
+</html>

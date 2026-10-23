@@ -1,0 +1,26 @@
+---
+import { routes, t } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props { lang: Lang; alternate: string }
+const { lang, alternate } = Astro.props;
+const r = routes(lang);
+---
+<header class="wrap">
+  <a class="name" href={r.home}>Stefano Garzon</a>
+  <nav>
+    <a href={r.reviews}>{t(lang, 'nav.reviews')}</a>
+    <a href={r.posts}>{t(lang, 'nav.posts')}</a>
+    <a href={r.about}>{t(lang, 'nav.about')}</a>
+    <a class="lang" href={alternate} hreflang={lang === 'pt' ? 'en' : 'pt'}>{lang === 'pt' ? 'EN' : 'PT'}</a>
+  </nav>
+</header>
+
+<style>
+  header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px 20px; padding-top: 28px; padding-bottom: 28px; }
+  .name { font-family: var(--serif); font-size: 1.15rem; color: var(--text); text-decoration: none; }
+  nav { display: flex; gap: 18px; font-size: 0.9rem; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover { color: var(--text); }
+  .lang { border-left: 1px solid var(--line); padding-left: 18px; }
+</style>
