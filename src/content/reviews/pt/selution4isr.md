@@ -1,16 +1,14 @@
 ---
-title: "SELUTION4ISR: balão de sirolimus versus DES ou angioplastia com balão na reestenose intrastent"
+translationKey: selution4isr
+title: 'SELUTION4ISR: balão de sirolimus versus DES ou angioplastia com balão na reestenose intrastent'
 date: 2026-08-03
 lang: pt
-translationKey: selution4isr
-description: "O SELUTION4ISR atingiu o desfecho primário contra um controle misto, mas falhou na comparação com DES na reestenose de camada única."
-reference: "Cutlip DE, Mehran R, Sharma S, Doros G, Jefferson B, Stefanini G, et al. Sirolimus-Eluting Balloon vs Repeat Drug-Eluting Stent or Balloon Angioplasty for Coronary In-Stent Restenosis. J Am Coll Cardiol. 2026;88:62-72."
+description: O SELUTION4ISR atingiu o desfecho primário contra um controle misto, mas falhou na comparação com DES na reestenose de camada única.
+reference: Cutlip DE, Mehran R, Sharma S, Doros G, Jefferson B, Stefanini G, et al. Sirolimus-Eluting Balloon vs Repeat Drug-Eluting Stent or Balloon Angioplasty for Coronary In-Stent Restenosis. J Am Coll Cardiol. 2026;88:62-72.
 doi: 10.1016/j.jacc.2026.03.021
 design: Ensaio clínico randomizado simples-cego, bayesiano, de não-inferioridade (48 centros, 7 países; NCT04280029)
-n: 418
-tags: [dcb, reestenose-intrastent, bayesiano]
-draft: true
-summary: |
+'n': 418
+summary: |-
   O SELUTION4ISR randomizou 418 de 1508 pacientes triados para balão eluidor de sirolimus (DEB) ou controle de "cuidado usual", desenhado para espelhar o NCDR 2009–2017. O controle era DES contemporâneo (everolimus ou zotarolimus) em 80% e angioplastia com balão em até 20%. O operador escolhia DES ou balão antes da randomização. O teto de balão foi atingido após 176 pacientes; depois disso, a randomização foi DEB vs DES.
 
   Lesões de até 26 mm, diâmetro de referência de 2,5–2,6 mm, 78% com uma camada de stent prévia e 88–92% com DES prévio. A randomização ocorreu após pré-dilatação bem-sucedida, requisito que falhou em 15 dos 1508 triados (1%). Imagem intracoronária em 98% dos dois braços.
@@ -32,7 +30,7 @@ summary: |
   | Trombose da lesão | 2,0% | 2,1% |
   | IAM periprocedimento (SCAI) | 1,0% | 2,1% |
   | IAM do vaso-alvo pós-procedimento (4ª definição universal) | 6,6% (13) | 3,6% (7) |
-strengths: |
+strengths: |-
   - Análise primária por protocolo, com justificativa declarada: a intenção de tratar é anticonservadora em não-inferioridade.
   - Priors não informativos declarados, análises de sensibilidade por ponto de virada e por riscos competitivos.
   - Patrocinador excluído explicitamente da análise, interpretação e redação.
@@ -40,7 +38,7 @@ strengths: |
   - Margem de 10 pontos derivada como 50% de um efeito estimado de DES sobre balão de pelo menos 20 pontos: construção M1/M2 explícita.
   - Os autores relatam quantos pacientes falharam na pré-dilatação (15 de 1508), o que permite avaliar o enriquecimento da amostra.
   - O secundário que falhou, a interação, a largura da margem e as falhas de triagem estão no artigo, vários no resumo e na conclusão.
-problems: |
+problems: |-
   - **Margem ancorada em outro contraste.** O M1 vem do contraste DES vs balão, mas o comparador testado é 80% DES. Contra a taxa observada no controle (14,5%), a margem de 10 pontos permite risco relativo de 1,69. O M1 foi tomado como estimativa mínima: um M1 conservador deveria encolher a margem, não alargá-la.
   - **Resolução do estudo igual à margem.** Reconstruindo a partir dos dados publicados, o efeito mínimo detectável com o poder de desenho (85%) é 10,9 pontos; com 80%, 10,2 pontos. Os próprios autores dizem que um limite superior abaixo de 8,9% "exigiria um estudo muito maior".
   - **Sensibilidade à margem e fragilidade.** Com limiar de 97,5%, o estudo falha com qualquer margem de 8 pontos ou menos. Com margem de 5 pontos, a probabilidade posterior é 81%. O índice de fragilidade é de cerca de 3 eventos em 390 pacientes. O poder realizado para não-inferioridade foi 78% com diferença verdadeira zero e 62% com a diferença observada.
@@ -48,7 +46,7 @@ problems: |
   - **Comparador misto.** As duas metades do controle deram respostas opostas, com intervalos que excluem zero. O resultado principal é a média aritmética das duas. "Não-inferior ao cuidado usual" não descreve uma terapia que o clínico possa escolher. A comparação por controle não é randomizada (escolha antes da alocação, sem estratificação) e os estratos diferem em complexidade: é exploratória, mas aponta na mesma direção do teste hierárquico.
   - **Diferença concentrada em IAM pós-procedimento.** O IAM do vaso-alvo pós-procedimento (13 vs 7; +2,9, IC −1,5 a 7,6) responde por quase toda a diferença no composto. O intervalo cruza zero: gera hipótese, não estabelece.
   - **Resultado agudo e DAPT diferentes.** Os braços eram iguais após o preparo (DLM 1,9 vs 1,9 mm; DS 23,8% vs 22,8%) e divergiram após o dispositivo (DLM 2,3 vs 2,5 mm; DS 15,6% vs 11,4%). O protocolo proibia otimização após o DEB. A DAPT recomendada foi de 6 meses após DES e 1 mês após DEB ou balão, embora DAPT ou monoterapia com P2Y12 tenha permanecido alta aos 6 meses em todos os grupos.
-opinion: |
+opinion: |-
   O estudo foi mais bem conduzido do que a manchete sugere, mas a conclusão que sustenta é mais fraca. O secundário que falhou responde à pergunta que a maioria de nós tem.
 
   O resultado no braço balão: TLF de 43,6% em 1 ano. O DEB reduziu à metade, NNT de cerca de 4. O sirolimus tem efeito antirreestenótico real, mas menor que o de um DES novo na reestenose de camada única.
@@ -60,4 +58,10 @@ opinion: |
   Mudaria de opinião com o subestudo de OCT e angiografia (30 por grupo), se ele der uma base anatômica para o sinal de IAM pós-procedimento. Também com dados de 5 anos mostrando que evitar uma segunda camada de metal recupera a diferença de 1 ano. Essa é uma troca de manejo ao longo da vida, não um teste de não-inferioridade em 12 meses, e os autores a enquadraram assim.
 
   Os números reconstruídos (fragilidade, efeito mínimo detectável, sensibilidade à margem, poder realizado) são meus, calculados a partir dos dados agregados publicados e calibrados contra os intervalos de credibilidade relatados. Os demais resultados são do artigo.
+tags:
+  - dcb
+  - reestenose-intrastent
+  - bayesiano
+cover: ''
+draft: false
 ---
