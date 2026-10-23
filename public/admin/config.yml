@@ -1,0 +1,331 @@
+# Gerado por scripts/cms-config.mjs — não editar à mão.
+backend:
+  name: github
+  repo: stefanogarzon/site-stefano
+  branch: main
+  base_url: https://sveltia-cms-auth.CHANGE-ME.workers.dev
+site_url: https://drstefanogarzon.com
+locale: pt
+media_folder: public/images/uploads
+public_folder: /images/uploads
+slug:
+  encoding: ascii
+  clean_accents: true
+collections:
+  - name: reviews_pt
+    label: Avaliações (PT)
+    folder: src/content/reviews/pt
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    sortable_fields:
+      - date
+      - title
+    fields:
+      - name: title
+        label: Título
+        widget: string
+      - name: date
+        label: Data
+        widget: datetime
+        format: YYYY-MM-DD
+        time_format: false
+      - name: lang
+        label: Idioma
+        widget: hidden
+        default: pt
+      - name: translationKey
+        label: Chave de tradução (igual nas versões PT e EN)
+        widget: string
+      - name: description
+        label: Descrição curta (Google e Instagram)
+        widget: text
+      - name: reference
+        label: Referência (Vancouver)
+        widget: text
+      - name: doi
+        label: DOI (só o código, ex. 10.1056/...)
+        widget: string
+        required: false
+      - name: design
+        label: Desenho do estudo
+        widget: string
+      - name: n
+        label: n
+        widget: number
+        value_type: int
+        required: false
+      - name: summary
+        label: Resumo
+        widget: markdown
+        required: true
+      - name: strengths
+        label: Pontos fortes
+        widget: markdown
+        required: true
+      - name: problems
+        label: Problemas metodológicos
+        widget: markdown
+        required: true
+      - name: opinion
+        label: Opinião
+        widget: markdown
+        required: true
+      - name: tags
+        label: Tags
+        widget: list
+        required: false
+        default: []
+      - name: cover
+        label: Imagem de capa
+        widget: image
+        required: false
+      - name: draft
+        label: Rascunho (não publicar)
+        widget: boolean
+        default: true
+  - name: reviews_en
+    label: Avaliações (EN)
+    folder: src/content/reviews/en
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    sortable_fields:
+      - date
+      - title
+    fields:
+      - name: title
+        label: Título
+        widget: string
+      - name: date
+        label: Data
+        widget: datetime
+        format: YYYY-MM-DD
+        time_format: false
+      - name: lang
+        label: Idioma
+        widget: hidden
+        default: en
+      - name: translationKey
+        label: Chave de tradução (igual nas versões PT e EN)
+        widget: string
+      - name: description
+        label: Descrição curta (Google e Instagram)
+        widget: text
+      - name: reference
+        label: Referência (Vancouver)
+        widget: text
+      - name: doi
+        label: DOI (só o código, ex. 10.1056/...)
+        widget: string
+        required: false
+      - name: design
+        label: Desenho do estudo
+        widget: string
+      - name: n
+        label: n
+        widget: number
+        value_type: int
+        required: false
+      - name: summary
+        label: Resumo
+        widget: markdown
+        required: true
+      - name: strengths
+        label: Pontos fortes
+        widget: markdown
+        required: true
+      - name: problems
+        label: Problemas metodológicos
+        widget: markdown
+        required: true
+      - name: opinion
+        label: Opinião
+        widget: markdown
+        required: true
+      - name: tags
+        label: Tags
+        widget: list
+        required: false
+        default: []
+      - name: cover
+        label: Imagem de capa
+        widget: image
+        required: false
+      - name: draft
+        label: Rascunho (não publicar)
+        widget: boolean
+        default: true
+  - name: posts_pt
+    label: Textos (PT)
+    folder: src/content/posts/pt
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    sortable_fields:
+      - date
+      - title
+    fields:
+      - name: title
+        label: Título
+        widget: string
+      - name: date
+        label: Data
+        widget: datetime
+        format: YYYY-MM-DD
+        time_format: false
+      - name: lang
+        label: Idioma
+        widget: hidden
+        default: pt
+      - name: translationKey
+        label: Chave de tradução (igual nas versões PT e EN)
+        widget: string
+      - name: description
+        label: Descrição curta (Google e Instagram)
+        widget: text
+      - name: category
+        label: Categoria
+        widget: select
+        options:
+          - label: Estatística
+            value: estatistica
+          - label: Pesquisa
+            value: pesquisa
+          - label: Computação
+            value: computacao
+      - name: tags
+        label: Tags
+        widget: list
+        required: false
+        default: []
+      - name: cover
+        label: Imagem de capa
+        widget: image
+        required: false
+      - name: draft
+        label: Rascunho (não publicar)
+        widget: boolean
+        default: true
+      - name: body
+        label: Texto
+        widget: markdown
+        required: true
+  - name: posts_en
+    label: Textos (EN)
+    folder: src/content/posts/en
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    sortable_fields:
+      - date
+      - title
+    fields:
+      - name: title
+        label: Título
+        widget: string
+      - name: date
+        label: Data
+        widget: datetime
+        format: YYYY-MM-DD
+        time_format: false
+      - name: lang
+        label: Idioma
+        widget: hidden
+        default: en
+      - name: translationKey
+        label: Chave de tradução (igual nas versões PT e EN)
+        widget: string
+      - name: description
+        label: Descrição curta (Google e Instagram)
+        widget: text
+      - name: category
+        label: Categoria
+        widget: select
+        options:
+          - label: Statistics
+            value: estatistica
+          - label: Research
+            value: pesquisa
+          - label: Computing
+            value: computacao
+      - name: tags
+        label: Tags
+        widget: list
+        required: false
+        default: []
+      - name: cover
+        label: Imagem de capa
+        widget: image
+        required: false
+      - name: draft
+        label: Rascunho (não publicar)
+        widget: boolean
+        default: true
+      - name: body
+        label: Texto
+        widget: markdown
+        required: true
+  - name: pages
+    label: Páginas fixas
+    files:
+      - name: home_pt
+        label: Início (PT)
+        file: src/content/pages/home/pt.md
+        fields:
+          - name: title
+            label: Título
+            widget: string
+          - name: description
+            label: Frase de apresentação
+            widget: text
+          - name: body
+            label: Texto
+            widget: markdown
+            required: true
+      - name: home_en
+        label: Início (EN)
+        file: src/content/pages/home/en.md
+        fields:
+          - name: title
+            label: Título
+            widget: string
+          - name: description
+            label: Frase de apresentação
+            widget: text
+          - name: body
+            label: Texto
+            widget: markdown
+            required: true
+      - name: about_pt
+        label: Sobre (PT)
+        file: src/content/pages/about/pt.md
+        fields:
+          - name: title
+            label: Título
+            widget: string
+          - name: description
+            label: Descrição
+            widget: text
+          - name: body
+            label: Texto
+            widget: markdown
+            required: true
+      - name: about_en
+        label: Sobre (EN)
+        file: src/content/pages/about/en.md
+        fields:
+          - name: title
+            label: Título
+            widget: string
+          - name: description
+            label: Descrição
+            widget: text
+          - name: body
+            label: Texto
+            widget: markdown
+            required: true
