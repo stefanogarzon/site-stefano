@@ -6,7 +6,7 @@ translationKey: nao-inferioridade-margem
 description: "Explica como se define e se testa a margem de não inferioridade, por que a análise por intenção de tratar favorece a conclusão de não inferioridade e o que conferir ao ler esse tipo de ensaio."
 category: estatistica
 tags: [metodos, nao-inferioridade, itt, ensaios-clinicos]
-draft: true
+draft: false
 ---
 
 ## Conceito

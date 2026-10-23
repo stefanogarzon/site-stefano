@@ -6,7 +6,7 @@ translationKey: confundidores-dag
 description: "Como um diagrama acíclico direcionado (DAG) define quais covariáveis ajustar em um estudo observacional, e por que ajustar mediadores ou colisores introduz viés."
 category: estatistica
 tags: [metodos, confundimento, estudos-observacionais, dag]
-draft: true
+draft: false
 ---
 
 ## Conceito

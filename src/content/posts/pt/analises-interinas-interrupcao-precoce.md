@@ -6,7 +6,7 @@ translationKey: analises-interinas-interrupcao-precoce
 description: "Por que olhar os dados de um ensaio várias vezes infla o erro tipo I, como as fronteiras de O'Brien-Fleming, Pocock e Haybittle-Peto controlam esse erro, e o que conferir quando um ensaio é interrompido cedo."
 category: estatistica
 tags: [metodos, analise-interina, monitoramento, interrupcao-precoce]
-draft: true
+draft: false
 ---
 
 ## Conceito

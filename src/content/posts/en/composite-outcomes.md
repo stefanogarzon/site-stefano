@@ -6,7 +6,7 @@ translationKey: desfechos-compostos
 description: "Explains why trials use composite outcomes, how the overall result relates to each component, and what to check when reading a trial with a composite outcome."
 category: estatistica
 tags: [metodos, desfechos, ensaios-clinicos]
-draft: true
+draft: false
 ---
 
 ## Concept

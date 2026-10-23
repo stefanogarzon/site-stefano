@@ -6,7 +6,7 @@ translationKey: vies-tempo-imortal
 description: "Como o viés de tempo imortal surge quando uma exposição iniciada durante o seguimento é tratada como presente desde o início, e como a covariável dependente do tempo e o landmark o evitam."
 category: estatistica
 tags: [metodos, sobrevida, vies, estudos-observacionais]
-draft: true
+draft: false
 ---
 
 ## Conceito

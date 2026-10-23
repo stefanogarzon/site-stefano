@@ -6,7 +6,7 @@ translationKey: valor-de-p-intervalo-de-confianca
 description: "O que o valor de p e o intervalo de confiança informam sobre o resultado de um ensaio, a relação entre os dois e as leituras incorretas mais frequentes."
 category: estatistica
 tags: [metodos, valor-de-p, intervalo-de-confianca, inferencia]
-draft: true
+draft: false
 ---
 
 ## Conceito

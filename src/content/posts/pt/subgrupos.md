@@ -6,7 +6,7 @@ translationKey: subgrupos
 description: "Explica como interpretar análises de subgrupos em ensaios randomizados: teste de interação, multiplicidade, poder, pré-especificação e falta de replicação."
 category: estatistica
 tags: [metodos, subgrupos, interacao, multiplicidade]
-draft: true
+draft: false
 ---
 
 ## Conceito

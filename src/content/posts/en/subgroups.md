@@ -6,7 +6,7 @@ translationKey: subgrupos
 description: "Explains how to interpret subgroup analyses in randomized trials: interaction tests, multiplicity, power, prespecification, and failure to replicate."
 category: estatistica
 tags: [metodos, subgrupos, interacao, multiplicidade]
-draft: true
+draft: false
 ---
 
 ## Concept

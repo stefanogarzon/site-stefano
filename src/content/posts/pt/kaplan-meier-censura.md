@@ -6,7 +6,7 @@ translationKey: kaplan-meier-censura
 description: "Como o estimador de Kaplan-Meier usa o tempo censurado, quais são os tipos de censura e por que a premissa de censura independente define a validade da curva."
 category: estatistica
 tags: [metodos, sobrevida, kaplan-meier, censura]
-draft: true
+draft: false
 ---
 
 ## Conceito

@@ -6,7 +6,7 @@ translationKey: intencao-de-tratar
 description: "Defines intention-to-treat analysis, explains why excluding randomized participants introduces bias, and lists what to check in a trial's methods and flow diagram."
 category: estatistica
 tags: [metodos, itt, vies, ensaios-clinicos]
-draft: true
+draft: false
 ---
 
 ## Concept

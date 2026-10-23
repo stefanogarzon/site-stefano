@@ -6,7 +6,7 @@ translationKey: discriminacao-calibracao-curva-decisao
 description: "The two performance properties of a prediction model, how they relate, and how net benefit assesses clinical usefulness across decision thresholds."
 category: estatistica
 tags: [metodos, prediction-models, calibration, net-benefit]
-draft: true
+draft: false
 ---
 
 ## Concept

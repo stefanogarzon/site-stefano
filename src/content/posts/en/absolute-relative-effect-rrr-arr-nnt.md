@@ -6,7 +6,7 @@ translationKey: efeito-absoluto-relativo-rrr-rar-nnt
 description: "Definitions of relative risk reduction, absolute risk reduction, and number needed to treat, and why a relative effect alone does not tell the benefit for a patient."
 category: estatistica
 tags: [metodos, rrr, rar, nnt, risco-basal]
-draft: true
+draft: false
 ---
 
 ## Concept

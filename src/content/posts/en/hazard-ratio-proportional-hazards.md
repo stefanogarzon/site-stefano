@@ -6,7 +6,7 @@ translationKey: hazard-ratio-riscos-proporcionais
 description: "What the hazard ratio summarizes, what the proportional hazards assumption means, and how it is checked with the log-minus-log plot and Schoenfeld residuals."
 category: estatistica
 tags: [metodos, sobrevida, cox, hazard-ratio]
-draft: true
+draft: false
 ---
 
 ## Concept

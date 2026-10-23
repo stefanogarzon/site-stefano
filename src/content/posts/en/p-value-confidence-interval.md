@@ -6,7 +6,7 @@ translationKey: valor-de-p-intervalo-de-confianca
 description: "What the p-value and the confidence interval tell about a trial result, how the two relate, and the most frequent misreadings."
 category: estatistica
 tags: [metodos, valor-de-p, intervalo-de-confianca, inferencia]
-draft: true
+draft: false
 ---
 
 ## Concept

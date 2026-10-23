@@ -6,7 +6,7 @@ translationKey: kaplan-meier-censura
 description: "How the Kaplan-Meier estimator uses censored follow-up, which types of censoring exist, and why the independent censoring assumption determines whether the curve is valid."
 category: estatistica
 tags: [metodos, sobrevida, kaplan-meier, censura]
-draft: true
+draft: false
 ---
 
 ## Concept

@@ -6,7 +6,7 @@ translationKey: ocultacao-da-alocacao
 description: "Explains concealment of the randomization sequence, its empirical link to baseline imbalance, and how to interpret and adjust for differences in a trial's table 1."
 category: estatistica
 tags: [metodos, randomizacao, vies, covariaveis]
-draft: true
+draft: false
 ---
 
 ## Concept

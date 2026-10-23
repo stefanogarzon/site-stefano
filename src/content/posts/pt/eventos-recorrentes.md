@@ -6,7 +6,7 @@ translationKey: eventos-recorrentes
 description: "Quando usar o número total de eventos em vez do tempo até o primeiro evento, quais modelos se aplicam (Poisson, binomial negativa, extensões de Cox com fragilidade) e o papel do óbito como evento terminal."
 category: estatistica
 tags: [metodos, sobrevida, eventos-recorrentes, dados-de-contagem]
-draft: true
+draft: false
 ---
 
 ## Conceito

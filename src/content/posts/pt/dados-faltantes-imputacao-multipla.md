@@ -6,7 +6,7 @@ translationKey: dados-faltantes-imputacao-multipla
 description: "Os três mecanismos de dados faltantes, o que cada um permite concluir, e como a imputação múltipla combina estimativas e incerteza."
 category: estatistica
 tags: [metodos, dados-faltantes, imputacao-multipla, ensaios-clinicos]
-draft: true
+draft: false
 ---
 
 ## Conceito

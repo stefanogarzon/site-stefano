@@ -6,7 +6,7 @@ translationKey: dados-faltantes-imputacao-multipla
 description: "The three missing-data mechanisms, what each one allows you to conclude, and how multiple imputation combines estimates and uncertainty."
 category: estatistica
 tags: [metodos, missing-data, multiple-imputation, clinical-trials]
-draft: true
+draft: false
 ---
 
 ## Concept

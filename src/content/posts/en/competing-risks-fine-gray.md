@@ -6,7 +6,7 @@ translationKey: riscos-competitivos-fine-gray
 description: "What a competing risk is, why Kaplan-Meier overstates absolute risk in that setting, and how the cause-specific hazard differs from the Fine-Gray subdistribution hazard."
 category: estatistica
 tags: [metodos, sobrevida, riscos-competitivos, fine-gray]
-draft: true
+draft: false
 ---
 
 ## Concept

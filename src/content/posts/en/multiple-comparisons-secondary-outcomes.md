@@ -6,7 +6,7 @@ translationKey: multiplas-comparacoes-desfechos-secundarios
 description: "How the number of tests in a trial raises the chance of a significant result by chance, and how to read secondary outcomes and subgroups with that problem in mind."
 category: estatistica
 tags: [metodos, multiplicidade, desfechos-secundarios, subgrupos]
-draft: true
+draft: false
 ---
 
 ## Concept

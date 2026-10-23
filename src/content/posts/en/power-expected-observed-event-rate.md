@@ -6,7 +6,7 @@ translationKey: poder-taxa-de-eventos-esperada-observada
 description: "How the event rate assumed at the design stage determines sample size, why the observed rate is often lower, and how that reduces a trial's power."
 category: estatistica
 tags: [metodos, poder, tamanho-amostral, taxa-de-eventos]
-draft: true
+draft: false
 ---
 
 ## Concept

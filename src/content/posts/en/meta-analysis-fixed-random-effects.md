@@ -6,7 +6,7 @@ translationKey: metanalise-efeito-fixo-aleatorio
 description: "How fixed-effect and random-effects models weight studies, how to interpret heterogeneity, and how study selection and publication bias affect the pooled estimate."
 category: estatistica
 tags: [metodos, meta-analysis, heterogeneity, publication-bias]
-draft: true
+draft: false
 ---
 
 ## Concept

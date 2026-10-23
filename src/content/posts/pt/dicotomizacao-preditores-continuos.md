@@ -6,7 +6,7 @@ translationKey: dicotomizacao-preditores-continuos
 description: "O que se perde ao transformar uma variável contínua em duas categorias, por que pontos de corte escolhidos nos dados distorcem resultados, e quais alternativas usar."
 category: estatistica
 tags: [metodos, modelos-de-predicao, regressao, pontos-de-corte]
-draft: true
+draft: false
 ---
 
 ## Conceito

@@ -6,7 +6,7 @@ translationKey: confundidores-dag
 description: "How a directed acyclic graph (DAG) defines which covariates to adjust for in an observational study, and why adjusting for mediators or colliders introduces bias."
 category: estatistica
 tags: [metodos, confounding, observational-studies, dag]
-draft: true
+draft: false
 ---
 
 ## Concept

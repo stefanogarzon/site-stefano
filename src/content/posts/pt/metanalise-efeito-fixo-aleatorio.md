@@ -6,7 +6,7 @@ translationKey: metanalise-efeito-fixo-aleatorio
 description: "Como os modelos de efeito fixo e aleatório ponderam os estudos, como interpretar a heterogeneidade, e como a seleção de estudos e o viés de publicação afetam a estimativa combinada."
 category: estatistica
 tags: [metodos, metanalise, heterogeneidade, vies-de-publicacao]
-draft: true
+draft: false
 ---
 
 ## Conceito

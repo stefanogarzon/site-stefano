@@ -6,7 +6,7 @@ translationKey: ocultacao-da-alocacao
 description: "Explica a ocultação da sequência de randomização, sua relação empírica com desequilíbrio basal e como interpretar e ajustar diferenças na tabela 1 de um ensaio."
 category: estatistica
 tags: [metodos, randomizacao, vies, covariaveis]
-draft: true
+draft: false
 ---
 
 ## Conceito

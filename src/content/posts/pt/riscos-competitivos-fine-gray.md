@@ -6,7 +6,7 @@ translationKey: riscos-competitivos-fine-gray
 description: "O que é um risco competitivo, por que o Kaplan-Meier superestima o risco absoluto nesse cenário e como diferem o hazard causa-específico e o hazard de subdistribuição de Fine-Gray."
 category: estatistica
 tags: [metodos, sobrevida, riscos-competitivos, fine-gray]
-draft: true
+draft: false
 ---
 
 ## Conceito

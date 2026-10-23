@@ -6,7 +6,7 @@ translationKey: vies-tempo-imortal
 description: "How immortal time bias arises when an exposure that starts during follow-up is treated as present from the start, and how time-dependent covariates and landmark analysis avoid it."
 category: estatistica
 tags: [metodos, sobrevida, vies, estudos-observacionais]
-draft: true
+draft: false
 ---
 
 ## Concept

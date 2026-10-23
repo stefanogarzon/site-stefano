@@ -6,7 +6,7 @@ translationKey: nao-inferioridade-margem
 description: "Explains how the noninferiority margin is set and tested, why intention-to-treat analysis favors a noninferiority conclusion, and what to check when reading this type of trial."
 category: estatistica
 tags: [metodos, nao-inferioridade, itt, ensaios-clinicos]
-draft: true
+draft: false
 ---
 
 ## Concept

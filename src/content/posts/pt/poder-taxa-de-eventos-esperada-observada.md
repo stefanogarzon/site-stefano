@@ -6,7 +6,7 @@ translationKey: poder-taxa-de-eventos-esperada-observada
 description: "Como a taxa de eventos assumida no planejamento determina o tamanho amostral, por que a taxa observada costuma ser menor, e como isso reduz o poder de um ensaio."
 category: estatistica
 tags: [metodos, poder, tamanho-amostral, taxa-de-eventos]
-draft: true
+draft: false
 ---
 
 ## Conceito

@@ -6,7 +6,7 @@ translationKey: dicotomizacao-preditores-continuos
 description: "What is lost when a continuous variable is split into two groups, why data-driven cutpoints distort results, and which alternatives to use."
 category: estatistica
 tags: [metodos, prediction-models, regression, cutpoints]
-draft: true
+draft: false
 ---
 
 ## Concept

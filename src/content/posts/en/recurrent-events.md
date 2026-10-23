@@ -6,7 +6,7 @@ translationKey: eventos-recorrentes
 description: "When to use the total number of events instead of time to first event, which models apply (Poisson, negative binomial, Cox extensions with frailty), and the role of death as a terminal event."
 category: estatistica
 tags: [metodos, sobrevida, eventos-recorrentes, dados-de-contagem]
-draft: true
+draft: false
 ---
 
 ## Concept

@@ -6,7 +6,7 @@ translationKey: discriminacao-calibracao-curva-decisao
 description: "As duas propriedades de desempenho de um modelo de predição, como se relacionam, e como o benefício líquido avalia a utilidade clínica em limiares de decisão."
 category: estatistica
 tags: [metodos, modelos-de-predicao, calibracao, net-benefit]
-draft: true
+draft: false
 ---
 
 ## Conceito

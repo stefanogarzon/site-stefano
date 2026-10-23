@@ -6,7 +6,7 @@ translationKey: analises-interinas-interrupcao-precoce
 description: "Why looking at trial data repeatedly inflates type I error, how the O'Brien-Fleming, Pocock, and Haybittle-Peto boundaries control it, and what to check when a trial stops early."
 category: estatistica
 tags: [metodos, analise-interina, monitoramento, interrupcao-precoce]
-draft: true
+draft: false
 ---
 
 ## Concept

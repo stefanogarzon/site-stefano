@@ -6,7 +6,7 @@ translationKey: efeito-absoluto-relativo-rrr-rar-nnt
 description: "Definição de redução relativa de risco, redução absoluta de risco e número necessário para tratar, e por que o efeito relativo isolado não informa o benefício para o paciente."
 category: estatistica
 tags: [metodos, rrr, rar, nnt, risco-basal]
-draft: true
+draft: false
 ---
 
 ## Conceito

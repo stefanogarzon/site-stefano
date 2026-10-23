@@ -6,7 +6,7 @@ translationKey: multiplas-comparacoes-desfechos-secundarios
 description: "Como o número de testes de um ensaio aumenta a chance de resultado significativo por acaso, e como ler desfechos secundários e subgrupos com esse problema em mente."
 category: estatistica
 tags: [metodos, multiplicidade, desfechos-secundarios, subgrupos]
-draft: true
+draft: false
 ---
 
 ## Conceito

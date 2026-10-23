@@ -6,7 +6,7 @@ translationKey: hazard-ratio-riscos-proporcionais
 description: "O que o hazard ratio resume, o que significa a premissa de riscos proporcionais e como ela é verificada com o gráfico log-menos-log e os resíduos de Schoenfeld."
 category: estatistica
 tags: [metodos, sobrevida, cox, hazard-ratio]
-draft: true
+draft: false
 ---
 
 ## Conceito

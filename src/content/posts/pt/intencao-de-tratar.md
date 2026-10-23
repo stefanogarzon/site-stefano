@@ -6,7 +6,7 @@ translationKey: intencao-de-tratar
 description: "Define a análise por intenção de tratar, explica por que excluir participantes randomizados introduz viés e lista o que conferir na seção de métodos e no fluxograma de um ensaio."
 category: estatistica
 tags: [metodos, itt, vies, ensaios-clinicos]
-draft: true
+draft: false
 ---
 
 ## Conceito

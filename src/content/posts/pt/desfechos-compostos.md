@@ -6,7 +6,7 @@ translationKey: desfechos-compostos
 description: "Explica por que ensaios usam desfechos compostos, como o resultado global se relaciona com cada componente e o que conferir ao ler um ensaio com desfecho composto."
 category: estatistica
 tags: [metodos, desfechos, ensaios-clinicos]
-draft: true
+draft: false
 ---
 
 ## Conceito
