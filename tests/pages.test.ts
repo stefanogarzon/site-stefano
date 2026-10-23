@@ -1,7 +1,6 @@
-import { beforeAll, describe, expect, it } from 'vitest';
-import { build, exists, read } from './dist';
+import { describe, expect, it } from 'vitest';
+import { exists, read } from './dist';
 
-beforeAll(build);
 
 describe('avaliações', () => {
   it('mostra referência, DOI e seções na ordem, com Opinião destacada', () => {

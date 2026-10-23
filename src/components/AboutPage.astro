@@ -1,0 +1,16 @@
+---
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { page } from '../lib/content';
+import { otherLang, routes } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const about = await page('about', lang);
+const { Content } = await render(about);
+---
+<Base title={about.data.title} description={about.data.description} lang={lang} alternate={routes(otherLang(lang)).about} hasTranslation>
+  <h1>{about.data.title}</h1>
+  <Content />
+</Base>

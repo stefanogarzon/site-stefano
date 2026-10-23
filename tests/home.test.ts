@@ -1,7 +1,6 @@
-import { beforeAll, describe, expect, it } from 'vitest';
-import { build, read } from './dist';
+import { describe, expect, it } from 'vitest';
+import { read } from './dist';
 
-beforeAll(build);
 
 describe('home', () => {
   it('PT tem nome, menu e recentes de ambos os tipos', () => {
