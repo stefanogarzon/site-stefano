@@ -17,3 +17,16 @@ export async function page(name: 'home' | 'about', lang: Lang) {
   if (!entry) throw new Error(`Página ausente: src/content/pages/${name}/${lang}.md`);
   return entry;
 }
+
+/** Tipo do item para a home: avaliação ou a categoria do texto. */
+const kind = (e: Item) => (e.collection === 'reviews' ? 'reviews' : e.data.category);
+
+/** Até `n` itens mais recentes de cada tipo, em ordem de data. */
+export function perKind(items: Item[], n: number): Item[] {
+  const count = new Map<string, number>();
+  return items.filter((e) => {
+    const c = count.get(kind(e)) ?? 0;
+    count.set(kind(e), c + 1);
+    return c < n;
+  });
+}

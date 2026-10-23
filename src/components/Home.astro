@@ -2,7 +2,7 @@
 import { render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Cards from './Cards.astro';
-import { itemsIn, page } from '../lib/content';
+import { itemsIn, page, perKind } from '../lib/content';
 import { categoryUrl, otherLang, routes, t } from '../i18n/utils';
 import { categories, type Lang } from '../i18n/ui';
 
@@ -10,7 +10,7 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const home = await page('home', lang);
 const { Content } = await render(home);
-const items = (await itemsIn(lang)).slice(0, 7);
+const items = perKind(await itemsIn(lang), 2);
 ---
 <Base title={home.data.title} description={home.data.description} lang={lang} alternate={routes(otherLang(lang)).home} hasTranslation wide>
   <section class="hero">

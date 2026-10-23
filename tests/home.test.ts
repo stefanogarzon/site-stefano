@@ -11,6 +11,7 @@ describe('home', () => {
     expect(h).toContain('Recentes');
     expect(h).toContain('href="/avaliacoes/exemplo-estatina/"');
     expect(h).toContain('href="/textos/exemplo-valor-p/"');
+    expect(h).toContain('href="/textos/exemplo-git/"');
     expect(h).not.toContain('Rascunho que não pode aparecer');
     expect(h).toContain('href="/en/"');
   });
