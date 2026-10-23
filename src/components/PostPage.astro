@@ -1,6 +1,7 @@
 ---
 import { render, type CollectionEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import Shape from './Shape.astro';
 import { allItems } from '../lib/content';
 import { alternateUrl, categoryUrl, findTranslation, formatDate, t } from '../i18n/utils';
 
@@ -21,6 +22,7 @@ const { Content } = await render(entry);
   hasMermaid={(entry.body ?? '').includes('```mermaid')}
 >
   <article>
+    <Shape shape={d.category} width={120} class="art" />
     <p class="eyebrow">
       <a class="cat" href={categoryUrl(d.category, d.lang)}>{t(d.lang, `cat.${d.category}`)}</a> · {formatDate(d.date, d.lang)}
     </p>
@@ -30,5 +32,6 @@ const { Content } = await render(entry);
 </Base>
 
 <style>
+  article :global(.art) { display: block; margin: 32px 0 8px; }
   .cat { color: var(--accent); text-decoration: none; }
 </style>

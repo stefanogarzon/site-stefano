@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
-import PostList from './PostList.astro';
+import Cards from './Cards.astro';
+import Shape from './Shape.astro';
 import { itemsIn } from '../lib/content';
 import { categoryUrl, otherLang, routes, t, type Kind } from '../i18n/utils';
 import { categories, type Category, type Lang } from '../i18n/ui';
@@ -12,22 +13,26 @@ const items = (await itemsIn(lang)).filter(
 );
 const title = category ? t(lang, `cat.${category}`) : t(lang, kind === 'reviews' ? 'nav.reviews' : 'nav.posts');
 const alternate = category ? categoryUrl(category, otherLang(lang)) : routes(otherLang(lang))[kind];
+const shape = kind === 'reviews' ? 'reviews' : category;
 ---
-<Base title={title} description={title} lang={lang} alternate={alternate} hasTranslation>
-  <h1>{title}</h1>
+<Base title={title} description={title} lang={lang} alternate={alternate} hasTranslation wide>
+  <div class="head">
+    <h1>{title}</h1>
+    {shape && <Shape shape={shape} width={140} />}
+  </div>
   {kind === 'posts' && (
-    <nav class="cats">
-      <a href={routes(lang).posts} class:list={{ on: !category }}>{t(lang, 'all')}</a>
+    <nav class="chips">
+      <a href={routes(lang).posts} class:list={['chip', { on: !category }]}>{t(lang, 'all')}</a>
       {categories.map((c) => (
-        <a href={categoryUrl(c, lang)} class:list={{ on: c === category }}>{t(lang, `cat.${c}`)}</a>
+        <a href={categoryUrl(c, lang)} class:list={['chip', { on: c === category }]}>{t(lang, `cat.${c}`)}</a>
       ))}
     </nav>
   )}
-  <PostList items={items} lang={lang} />
+  <div class="list"><Cards items={items} lang={lang} /></div>
 </Base>
 
 <style>
-  .cats { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; font-size: 0.9rem; }
-  .cats a { color: var(--muted); text-decoration: none; }
-  .cats a.on { color: var(--text); border-bottom: 1px solid var(--accent); }
+  .head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin: 40px 0 24px; }
+  .head h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); margin: 0; }
+  .list { margin-top: 28px; }
 </style>

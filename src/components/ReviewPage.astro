@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Shape from './Shape.astro';
 import { renderMarkdown } from '../lib/markdown';
 import { allItems } from '../lib/content';
 import { alternateUrl, findTranslation, formatDate, t } from '../i18n/utils';
@@ -27,6 +28,7 @@ const html = [d.summary, d.strengths, d.problems, d.opinion].join('\n');
   hasMermaid={html.includes('```mermaid')}
 >
   <article>
+    <Shape shape="reviews" width={120} class="art" />
     <p class="eyebrow accent">{t(lang, 'kind.reviews')} · {formatDate(d.date, lang)}</p>
     <h1>{d.title}</h1>
     <div class="ref">
@@ -50,8 +52,10 @@ const html = [d.summary, d.strengths, d.problems, d.opinion].join('\n');
 </Base>
 
 <style>
+  article :global(.art) { display: block; margin: 32px 0 8px; }
+  .opinion { border: 1px solid var(--line); }
   .ref { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 12px 0; font-size: 0.9rem; }
   .ref p { margin: 0.2em 0; }
-  .opinion { background: var(--soft); border-radius: 10px; padding: 4px 22px 10px; margin-top: 2.4em; }
+  .opinion { background: var(--card); border-radius: 10px; padding: 4px 22px 10px; margin-top: 2.4em; }
   .opinion h2 { margin-top: 0.9em; }
 </style>

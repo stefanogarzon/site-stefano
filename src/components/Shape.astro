@@ -1,0 +1,44 @@
+---
+/** Forma geométrica de cada tipo de conteúdo. Cores vêm de --c-<tipo>; traços usam a cor do texto. */
+import type { Category } from '../i18n/ui';
+
+interface Props { shape: 'reviews' | Category; width?: number; class?: string }
+const { shape, width = 160, class: cls } = Astro.props;
+const fill = `var(--c-${shape})`;
+const ink = 'var(--text)';
+---
+<svg class:list={['shape', cls]} data-shape={shape} viewBox="0 0 160 120" width={width} height={width * 0.75} aria-hidden="true">
+  {shape === 'reviews' && (
+    <>
+      <path d="M10 112 A70 70 0 0 1 150 112 Z" fill={fill} />
+      <line x1="80" y1="14" x2="80" y2="112" stroke={ink} stroke-width="3" />
+      <circle cx="80" cy="14" r="7" fill={ink} />
+      <rect x="28" y="50" width="34" height="7" fill={ink} />
+      <rect x="98" y="38" width="34" height="7" fill={ink} />
+    </>
+  )}
+  {shape === 'estatistica' && (
+    <>
+      {[[20, 80], [40, 58], [60, 34], [80, 22], [100, 40], [120, 70]].map(([x, y]) => (
+        <rect x={x} y={y} width="16" height={112 - y} fill={fill} />
+      ))}
+      <path d="M8 110 C52 110 62 16 88 16 S124 110 152 110" fill="none" stroke={ink} stroke-width="3" />
+    </>
+  )}
+  {shape === 'pesquisa' && (
+    <>
+      <circle cx="52" cy="62" r="40" fill={fill} />
+      <circle cx="96" cy="62" r="40" fill="none" stroke={ink} stroke-width="3" />
+      <polygon points="118,108 152,108 135,76" fill="var(--c-reviews)" />
+    </>
+  )}
+  {shape === 'computacao' && (
+    <>
+      <rect x="8" y="14" width="34" height="34" rx="4" fill={fill} />
+      <rect x="74" y="14" width="34" height="34" rx="4" fill={fill} />
+      <rect x="118" y="72" width="34" height="34" rx="4" fill={fill} />
+      <path d="M42 31 H74 M108 31 C134 31 134 72 135 72" fill="none" stroke={ink} stroke-width="3" />
+      <circle cx="40" cy="92" r="16" fill="var(--c-estatistica)" />
+    </>
+  )}
+</svg>

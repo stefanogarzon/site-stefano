@@ -5,7 +5,7 @@ import type { Lang } from '../i18n/ui';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 ---
-<footer class="wrap">
+<footer class="wrap wide">
   <hr />
   <p class="muted">© {new Date().getFullYear()} Stefano Garzon · <a href={routes(lang).rss}>RSS</a></p>
 </footer>

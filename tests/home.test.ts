@@ -31,3 +31,23 @@ describe('foto', () => {
     expect(read('en/about/index.html')).toContain('/images/stefano.webp');
   });
 });
+
+describe('layout v3', () => {
+  it('home tem cartões com barra de tipo, forma geométrica por categoria e destaque', () => {
+    const h = read('index.html');
+    expect(h).toMatch(/class="card feature[^"]*"/);
+    expect(h).toContain('data-shape="reviews"');
+    expect(h).toContain('data-shape="estatistica"');
+    expect(h).toContain('Médico e pesquisador');
+    expect(h).toContain('href="/textos/estatistica/"');
+  });
+
+  it('listas e artigos usam as formas', () => {
+    expect(read('avaliacoes/index.html')).toContain('data-shape="reviews"');
+    expect(read('textos/exemplo-git/index.html')).toContain('data-shape="computacao"');
+  });
+
+  it('logo geométrico no cabeçalho', () => {
+    expect(read('sobre/index.html')).toMatch(/<a class="name"[^>]*>\s*<svg/);
+  });
+});

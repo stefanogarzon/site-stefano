@@ -1,37 +1,55 @@
 ---
 import { render } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import PostList from './PostList.astro';
+import Cards from './Cards.astro';
 import { itemsIn, page } from '../lib/content';
-import { otherLang, routes, t } from '../i18n/utils';
-import type { Lang } from '../i18n/ui';
+import { categoryUrl, otherLang, routes, t } from '../i18n/utils';
+import { categories, type Lang } from '../i18n/ui';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const home = await page('home', lang);
 const { Content } = await render(home);
-const items = (await itemsIn(lang)).slice(0, 10);
+const items = (await itemsIn(lang)).slice(0, 7);
 ---
-<Base title={home.data.title} description={home.data.description} lang={lang} alternate={routes(otherLang(lang)).home} hasTranslation>
-  <div class="hero">
-    <img class="avatar" src="/images/stefano-quadrado.webp" alt="Stefano Garzon" width="112" height="112" />
+<Base title={home.data.title} description={home.data.description} lang={lang} alternate={routes(otherLang(lang)).home} hasTranslation wide>
+  <section class="hero">
     <div>
-      <p class="tagline">{home.data.description}</p>
-      <div class="intro muted"><Content /></div>
+      <p class="eyebrow accent">{t(lang, 'eyebrow')}</p>
+      <h1>{home.data.description}</h1>
+      <div class="lead"><Content /></div>
     </div>
+    <div class="portrait">
+      <svg viewBox="0 0 300 300" aria-hidden="true">
+        <circle cx="252" cy="58" r="48" fill="var(--c-estatistica)" />
+        <rect x="0" y="196" width="110" height="104" rx="8" fill="var(--c-pesquisa)" />
+      </svg>
+      <img src="/images/stefano-quadrado.webp" alt="Stefano Garzon" width="270" height="270" />
+    </div>
+  </section>
+
+  <div class="recent-head">
+    <span class="eyebrow">{t(lang, 'recent')}</span>
+    <nav class="chips">
+      <a class="chip" href={routes(lang).reviews}>{t(lang, 'nav.reviews')}</a>
+      {categories.map((c) => <a class="chip" href={categoryUrl(c, lang)}>{t(lang, `cat.${c}`)}</a>)}
+    </nav>
   </div>
-  <p class="eyebrow recent">{t(lang, 'recent')}</p>
-  <PostList items={items} lang={lang} />
+  <Cards items={items} lang={lang} feature />
 </Base>
 
 <style>
-  .hero { display: flex; gap: 28px; align-items: flex-start; margin-top: 32px; }
-  .avatar { width: 112px; height: 112px; border-radius: 50%; object-fit: cover; flex: none; }
-  .tagline { font-family: var(--serif); font-size: clamp(1.7rem, 5vw, 2.3rem); line-height: 1.25; margin: 0 0 12px; }
-  @media (max-width: 560px) {
-    .hero { flex-direction: column; gap: 20px; }
-    .avatar { width: 88px; height: 88px; }
+  .hero { display: grid; grid-template-columns: 1fr 300px; gap: 48px; align-items: center; padding: 48px 0 56px; }
+  .hero h1 { font-size: clamp(2.2rem, 5.2vw, 3.6rem); line-height: 1.06; letter-spacing: -0.01em; margin: 0.2em 0 0.4em; }
+  .lead { font-size: 1.15rem; color: var(--muted); max-width: 560px; }
+  .lead :global(p) { margin: 0; }
+  .portrait { position: relative; width: 300px; height: 300px; }
+  .portrait svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .portrait img { position: absolute; left: 0; top: 30px; width: 270px; height: 270px; object-fit: cover; border-radius: 50% 50% 12px 12px; }
+  .recent-head { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; }
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 24px; }
+    .portrait { width: 200px; height: 200px; order: -1; }
+    .portrait img { width: 180px; height: 180px; top: 20px; }
   }
-  .intro { max-width: 520px; }
-  .recent { margin-top: 56px; }
 </style>

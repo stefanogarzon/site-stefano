@@ -6,8 +6,14 @@ interface Props { lang: Lang; alternate: string }
 const { lang, alternate } = Astro.props;
 const r = routes(lang);
 ---
-<header class="wrap">
-  <a class="name" href={r.home}>Stefano Garzon</a>
+<header class="wrap wide">
+  <a class="name" href={r.home}>
+    <svg viewBox="0 0 28 22" width="28" height="22" aria-hidden="true">
+      <circle cx="9" cy="11" r="9" fill="var(--c-reviews)" />
+      <rect x="13" y="2" width="15" height="18" rx="2" fill="var(--c-estatistica)" opacity="0.9" />
+    </svg>
+    Stefano Garzon
+  </a>
   <nav>
     <a href={r.reviews}>{t(lang, 'nav.reviews')}</a>
     <a href={r.posts}>{t(lang, 'nav.posts')}</a>
@@ -17,8 +23,8 @@ const r = routes(lang);
 </header>
 
 <style>
-  header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px 20px; padding-top: 28px; padding-bottom: 28px; }
-  .name { font-family: var(--serif); font-size: 1.15rem; color: var(--text); text-decoration: none; }
+  header { border-bottom: 1px solid var(--line); margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px 20px; padding-top: 22px; padding-bottom: 22px; }
+  .name { display: flex; gap: 10px; align-items: center; font-family: var(--serif); font-size: 1.2rem; color: var(--text); text-decoration: none; }
   nav { display: flex; gap: 18px; font-size: 0.9rem; }
   nav a { color: var(--muted); text-decoration: none; }
   nav a:hover { color: var(--text); }
