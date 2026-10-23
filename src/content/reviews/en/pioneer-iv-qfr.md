@@ -4,7 +4,8 @@ date: 2026-03-22
 lang: en
 translationKey: pioneer-iv-qfr
 description: "PIONEER IV declared QFR-guided PCI non-inferior to usual care, but 59% of the comparator used no physiology, and for those patients the question should be superiority."
-reference: "[CONFIRMAR authors and title]. PIONEER IV: QFR-guided PCI versus usual care, interim analysis. Eur Heart J. 2026 [CONFIRMAR volume and pages]."
+reference: "Serruys PW, Tsai TY, et al. Angiography-derived fractional flow reserve- vs usual care-guided percutaneous coronary intervention: interim analysis of the PIONEER IV trial. Eur Heart J. 2026."
+doi: 10.1093/eurheartj/ehag174
 design: Randomized non-inferiority trial, 26 European sites, all-comer population
 tags: [fisiologia-imagem, qfr, non-inferiority]
 draft: false

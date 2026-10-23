@@ -4,7 +4,7 @@ date: 2026-04-03
 lang: en
 translationKey: koeckerling-tronco-meta
 description: "The meta-analysis of the 5 left main randomized trials showed equal 10-year mortality with PCI and CABG; EXCEL stops at 5 years and non-fatal outcomes were left out."
-reference: "Koeckerling D, Reddy RK, Howard JP, Bansal R, Bernstein H, Lehmann L, et al. Long-Term Mortality After PCI or CABG for Left Main Stem Disease: Updated Meta-Analysis of Randomized Trials Using Reconstructed Individual-Participant Survival Data. J Am Coll Cardiol. 2026 [CONFIRMAR volume and pages]."
+reference: "Koeckerling D, Reddy RK, Howard JP, Bansal R, Bernstein H, Lehmann L, et al. Long-Term Mortality After PCI or CABG for Left Main Stem Disease: Updated Meta-Analysis of Randomized Trials Using Reconstructed Individual-Participant Survival Data. J Am Coll Cardiol. 2026."
 doi: 10.1016/j.jacc.2026.01.079
 design: Meta-analysis of 5 randomized trials using reconstructed individual survival data
 n: 4499

@@ -4,7 +4,7 @@ title: 'Koeckerling et al.: mortalidade em 10 anos após ICP ou CRM no tronco, m
 date: 2026-04-03
 lang: pt
 description: A meta-análise dos 5 estudos randomizados de tronco mostrou mortalidade igual em 10 anos com ICP e CRM; o EXCEL termina em 5 anos e os desfechos não fatais ficaram de fora.
-reference: 'Koeckerling D, Reddy RK, Howard JP, Bansal R, Bernstein H, Lehmann L, et al. Long-Term Mortality After PCI or CABG for Left Main Stem Disease: Updated Meta-Analysis of Randomized Trials Using Reconstructed Individual-Participant Survival Data. J Am Coll Cardiol. 2026 [CONFIRMAR volume e páginas].'
+reference: 'Koeckerling D, Reddy RK, Howard JP, Bansal R, Bernstein H, Lehmann L, et al. Long-Term Mortality After PCI or CABG for Left Main Stem Disease: Updated Meta-Analysis of Randomized Trials Using Reconstructed Individual-Participant Survival Data. J Am Coll Cardiol. 2026.'
 doi: 10.1016/j.jacc.2026.01.079
 design: Meta-análise de 5 estudos randomizados com dados individuais de sobrevida reconstruídos
 'n': 4499

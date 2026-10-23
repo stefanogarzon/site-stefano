@@ -4,7 +4,7 @@ date: 2026-04-06
 lang: en
 translationKey: tsai-angio-imr
 description: "The five angio-IMR methods had AUCs of 0.53 to 0.58 against invasive IMR; part of the problem lies in the variability of the IMR used as reference."
-reference: "Tsai TY, [CONFIRMAR coauthors]. Core Laboratory Comparison of Angiography-Derived Indexes of Microvascular Resistance Versus Pressure-Wire IMR and Absolute Resistance. JACC Cardiovasc Interv. 2026;19(6):755-72."
+reference: "Tsai TY, et al. Core Laboratory Comparison of Angiography-Derived Indexes of Microvascular Resistance Versus Pressure-Wire IMR and Absolute Resistance. JACC Cardiovasc Interv. 2026;19(6):755-72."
 doi: 10.1016/j.jcin.2025.10.027
 design: Diagnostic accuracy study with blinded analysis at an independent core lab (CORRIB, Galway)
 n: 270

@@ -4,7 +4,7 @@ title: 'Tsai et al.: cinco métodos de angio-IMR comparados com IMR por guia de 
 date: 2026-04-06
 lang: pt
 description: Os cinco métodos de angio-IMR tiveram AUC de 0,53 a 0,58 contra o IMR invasivo; parte do problema está na variabilidade do próprio IMR usado como referência.
-reference: Tsai TY, [CONFIRMAR coautores]. Core Laboratory Comparison of Angiography-Derived Indexes of Microvascular Resistance Versus Pressure-Wire IMR and Absolute Resistance. JACC Cardiovasc Interv. 2026;19(6):755-72.
+reference: Tsai TY, et al. Core Laboratory Comparison of Angiography-Derived Indexes of Microvascular Resistance Versus Pressure-Wire IMR and Absolute Resistance. JACC Cardiovasc Interv. 2026;19(6):755-72.
 doi: 10.1016/j.jcin.2025.10.027
 design: Estudo de acurácia diagnóstica com análise cega em core lab independente (CORRIB, Galway)
 'n': 270

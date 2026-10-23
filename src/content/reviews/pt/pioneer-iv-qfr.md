@@ -4,8 +4,8 @@ title: 'PIONEER IV (análise interina): ICP guiada por QFR versus cuidado usual'
 date: 2026-03-22
 lang: pt
 description: O PIONEER IV declarou a ICP guiada por QFR não inferior ao cuidado usual, mas 59% do comparador não usou fisiologia, e para esses pacientes a pergunta seria de superioridade.
-reference: '[CONFIRMAR autores e título]. PIONEER IV: ICP guiada por QFR versus cuidado usual, análise interina. Eur Heart J. 2026 [CONFIRMAR volume e páginas].'
-doi: ''
+reference: "Serruys PW, Tsai TY, et al. Angiography-derived fractional flow reserve- vs usual care-guided percutaneous coronary intervention: interim analysis of the PIONEER IV trial. Eur Heart J. 2026."
+doi: 10.1093/eurheartj/ehag174
 design: Ensaio clínico randomizado de não-inferioridade, 26 centros europeus, população all-comers
 'n': null
 summary: |-
