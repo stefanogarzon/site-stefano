@@ -34,6 +34,7 @@ const txt = {
           'nome, sobrenome e e-mail, como você os digitou no cadastro;',
           'a data do aceite deste aviso;',
           'o hash do token de acesso enviado a você (o token em si não fica guardado);',
+          'do aparelho em que o app foi ativado: a chave pública do aparelho, se essa chave fica no chip de segurança do aparelho, a data da ativação e a da última checagem do token pelo app;',
           'o registro de cada pedido de cadastro ou de exclusão: um HMAC do IP (o IP em si não fica guardado), o e-mail informado e a hora. O HMAC do IP limita os pedidos por hora e o e-mail limita os pedidos em 24 h.',
         ],
       },
@@ -64,7 +65,7 @@ const txt = {
       {
         titulo: 'Por quanto tempo',
         paragrafos: [
-          'Nome, sobrenome, e-mail e data do aceite ficam enquanto o cadastro existir, até a confirmação da exclusão pelo link (um pedido de exclusão sem confirmação não apaga nada). Na exclusão o token é revogado e o hash dele continua guardado, sem o e-mail e sem prazo, para auditoria. O registro de cada pedido é apagado no primeiro pedido que chegar depois de 24 h e passar pelas verificações do formulário e anti-robô, ou na exclusão.',
+          'Nome, sobrenome, e-mail e data do aceite ficam enquanto o cadastro existir, até a confirmação da exclusão pelo link (um pedido de exclusão sem confirmação não apaga nada). Na exclusão o token é revogado e o hash do token revogado continua guardado, sem o e-mail e sem prazo, para auditoria, junto com a chave pública do aparelho e as datas da ativação e da última checagem. O registro de cada pedido é apagado no primeiro pedido que chegar depois de 24 h e passar pelas verificações do formulário e anti-robô, ou na exclusão.',
         ],
       },
       {
@@ -83,7 +84,7 @@ const txt = {
       {
         titulo: 'Como pedir a exclusão',
         paragrafos: [
-          'Informe o e-mail do cadastro no formulário abaixo. Se ele estiver cadastrado, você recebe nele um link de confirmação, válido por 24 h. Confirmada, a exclusão apaga o seu cadastro e os registros dos seus pedidos e revoga o seu token de acesso. O hash do token revogado continua guardado, sem o e-mail, para auditoria.',
+          'Informe o e-mail do cadastro no formulário abaixo. Se ele estiver cadastrado, você recebe nele um link de confirmação, válido por 24 h. Confirmada, a exclusão apaga o seu cadastro e os registros dos seus pedidos e revoga o seu token de acesso. O hash do token revogado continua guardado, sem o e-mail, para auditoria, com a chave pública do aparelho e as datas da ativação e da última checagem.',
         ],
       },
     ] satisfies Secao[],
@@ -113,6 +114,7 @@ const txt = {
           'your first name, last name and email, as you typed them in the sign-up;',
           'the date you accepted this notice;',
           'a hash of the access token sent to you (the token itself is not stored);',
+          'about the device where the app was activated: the public key of the device, whether that key is kept in the device’s security chip, the date of activation and the date of the last check of the token by the app;',
           'a record of each request (sign-up or deletion): an HMAC of your IP address (the IP address itself is not stored), the email entered and the time. The HMAC of your IP limits requests per hour and the email limits requests over 24 hours.',
         ],
       },
@@ -143,7 +145,7 @@ const txt = {
       {
         titulo: 'For how long',
         paragrafos: [
-          'Your first name, last name, email and acceptance date are kept as long as the sign-up exists, until the deletion is confirmed through the link (a deletion request that is not confirmed deletes nothing). On deletion the token is revoked and its hash stays, without your email and with no time limit, for auditing. The record of each request is deleted by the first request that arrives after 24 hours and passes the form and anti-bot checks, or on deletion.',
+          'Your first name, last name, email and acceptance date are kept as long as the sign-up exists, until the deletion is confirmed through the link (a deletion request that is not confirmed deletes nothing). On deletion the token is revoked and the hash of the revoked token stays, without your email and with no time limit, for auditing, together with the public key of the device and the dates of activation and of the last check. The record of each request is deleted by the first request that arrives after 24 hours and passes the form and anti-bot checks, or on deletion.',
         ],
       },
       {
@@ -162,7 +164,7 @@ const txt = {
       {
         titulo: 'How to ask for deletion',
         paragrafos: [
-          'Enter your sign-up email in the form below. If it is registered, you will receive a confirmation link at that address, valid for 24 hours. Once confirmed, the deletion erases your sign-up and the records of your requests and revokes your access token. The hash of the revoked token stays, without your email, for auditing.',
+          'Enter your sign-up email in the form below. If it is registered, you will receive a confirmation link at that address, valid for 24 hours. Once confirmed, the deletion erases your sign-up and the records of your requests and revokes your access token. The hash of the revoked token stays, without your email, for auditing, with the public key of the device and the dates of activation and of the last check.',
         ],
       },
     ] satisfies Secao[],

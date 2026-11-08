@@ -18,7 +18,11 @@ const paginas = [
       baseLegal: /^Base legal$/,
       direitos: /^Seus direitos$/,
       artigos: /^(Para quê|Os artigos que você lê)$/,
+      prazo: /^Por quanto tempo$/,
+      exclusao: /^Como pedir a exclusão$/,
     },
+    aparelho: [/chave pública do aparelho/i, /chip/i, /data da ativação/i, /última checagem/i],
+    ficaComHash: [/chave pública do aparelho/i, /datas? da ativação/i, /última checagem/i, /hash do token revogado/i],
     aprovado: {
       baseLegal: [/execução de contrato/i, /procedimentos preliminares/i, /a pedido do titular/i, /LGPD/, /art\. 7º, V/],
       direitos: [/acesso/i, /correção/i, /portabilidade/i, /compartilhamento/i, /revogação/i, /exclusão/i, /LGPD/, /art\. 18/, /formulário/i, /privacidade@sarzel\.com/],
@@ -46,7 +50,11 @@ const paginas = [
       baseLegal: /^Legal basis$/,
       direitos: /^Your rights$/,
       artigos: /^(Why|The articles you read)$/,
+      prazo: /^For how long$/,
+      exclusao: /^How to ask for deletion$/,
     },
+    aparelho: [/public key of the device/i, /chip/i, /date of activation/i, /last check/i],
+    ficaComHash: [/public key of the device/i, /dates? of activation/i, /last check/i, /hash of the revoked token/i],
     aprovado: {
       baseLegal: [/performance of a contract/i, /preliminary (steps|procedures)/i, /at the request of the data subject/i, /LGPD/, /Art\. 7\(V\)/],
       direitos: [/access/i, /correct/i, /portability/i, /shar/i, /revo/i, /delet/i, /LGPD/, /Art\. 18/, /form/i, /privacidade@sarzel\.com/],
@@ -122,6 +130,16 @@ describe.each(paginas)('aviso de privacidade ($lang)', (p) => {
   it.each(['baseLegal', 'direitos', 'artigos'] as const)('texto aprovado: seção %s', (chave) => {
     const texto = semTags(secoes(read(p.arquivo), p.secoes[chave]));
     for (const re of p.aprovado[chave]) expect(texto, `${chave}: ${re}`).toMatch(re);
+  });
+
+  it('o que é guardado inclui os dados do aparelho gravados na ativação e na checagem do token', () => {
+    const texto = semTags(secoes(read(p.arquivo), /^(O que é guardado|What is stored)$/));
+    for (const re of p.aparelho) expect(texto, `aparelho: ${re}`).toMatch(re);
+  });
+
+  it.each(['prazo', 'exclusao'] as const)('seção %s: os dados do aparelho ficam com o hash do token revogado', (chave) => {
+    const texto = semTags(secoes(read(p.arquivo), p.secoes[chave]));
+    for (const re of p.ficaComHash) expect(texto, `${chave}: ${re}`).toMatch(re);
   });
 
   it.each(['responsavel', 'direitos'] as const)('contato privacidade@sarzel.com na seção %s', (chave) => {
