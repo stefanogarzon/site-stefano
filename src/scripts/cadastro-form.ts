@@ -103,7 +103,7 @@ function mostrarErros(form: HTMLFormElement, erros: Partial<Record<Campo, string
 }
 
 /**
- * POSTs `corpo` as JSON, aborting after TIMEOUT_MS. Returns null on the `esperado` status, otherwise
+ * POSTs `corpo` as JSON, aborting when the response (body included) takes over TIMEOUT_MS. Returns null on the `esperado` status, otherwise
  * the message to show: the server's `message` as sent (pt-BR), or a client message for network
  * failure, timeout and bodies without a usable `message`.
  */
@@ -115,23 +115,37 @@ export async function enviarJson(
   msg: { conexao: string; generica: string },
 ): Promise<string | null> {
   const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
-  let res: Response;
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  // One deadline for the whole exchange: headers and body. A body that stops arriving is a timeout too.
+  const prazo = new Promise<never>((_ok, falha) => {
+    timer = setTimeout(() => {
+      ctrl.abort();
+      falha(new DOMException('Timeout', 'TimeoutError'));
+    }, TIMEOUT_MS);
+  });
   try {
-    res = await fetchFn(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(corpo),
-      signal: ctrl.signal,
-    });
+    const res = await Promise.race([
+      fetchFn(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(corpo),
+        signal: ctrl.signal,
+      }),
+      prazo,
+    ]);
+    if (res.status === esperado) return null;
+    let dados: { message?: unknown } | null = null;
+    try {
+      dados = (await Promise.race([res.json(), prazo])) as { message?: unknown } | null;
+    } catch {
+      if (ctrl.signal.aborted) return msg.conexao;
+    }
+    return typeof dados?.message === 'string' && dados.message ? dados.message : msg.generica;
   } catch {
     return msg.conexao;
   } finally {
     clearTimeout(timer);
   }
-  if (res.status === esperado) return null;
-  const dados = (await res.json().catch(() => null)) as { message?: unknown } | null;
-  return typeof dados?.message === 'string' && dados.message ? dados.message : msg.generica;
 }
 
 /** Wires the sign-up form; `null` when the page has none (build without PUBLIC_TURNSTILE_SITEKEY). */

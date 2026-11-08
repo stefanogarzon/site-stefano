@@ -362,3 +362,33 @@ describe.each(paginas)('formulário de cadastro ($lang): falhas do envio', (p) =
     expect(fetch).toHaveBeenCalledTimes(2);
   });
 });
+
+describe.each(paginas)('formulário de cadastro ($lang): corpo da resposta que não termina', (p) => {
+  const html = read(p.arquivo);
+  const f = msgFalha[p.lang];
+
+  beforeEach(() => {
+    vi.useRealTimers();
+    document.body.innerHTML = corpo(html);
+  });
+
+  it('cabeçalhos chegam e o corpo não: aos 15 s, falha de conexão', async () => {
+    vi.useFakeTimers();
+    const { deps, fetch, turnstile } = criarDeps();
+    // Resposta cujo corpo nunca termina de chegar (conexão que cai no meio, sem reset).
+    const pendurada = { status: 503, ok: false, json: () => new Promise(() => {}), text: () => new Promise(() => {}) };
+    fetch.mockResolvedValue(pendurada as unknown as Response);
+    ligarCadastro(document, deps);
+    preencherValido();
+    const antes = digitado();
+    enviar();
+    await vi.advanceTimersByTimeAsync(14_999);
+    expect(fetch).toHaveBeenCalledTimes(1);
+    expect(status().textContent).not.toMatch(f.conexao);
+    expect($<HTMLButtonElement>('#cadastro button[type="submit"]').disabled).toBe(true);
+    await vi.advanceTimersByTimeAsync(1);
+    expect(status().textContent).toMatch(f.conexao);
+    esperarFalhaTratada(turnstile, antes);
+    vi.useRealTimers();
+  });
+});
