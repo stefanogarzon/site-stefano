@@ -11,9 +11,11 @@ const outra: Plataforma = plataforma === 'macos' ? 'windows' : 'macos';
 
 const comum = {
   token: 'Quando o app pedir, cole o <strong>token</strong> de ativação que veio no mesmo e-mail. O token é pessoal: não o compartilhe.',
-  senha: 'Crie a <strong>senha do cofre</strong>. O cofre guarda no seu computador, protegida por essa senha, a chave da IA.',
+  codigo:
+    'Confirme a ativação: chega um segundo e-mail, “Código de ativação sarzel”. Digite o código desse e-mail na tela “Confirmar ativação”. O código vale 15 minutos.',
+  senha: 'Crie a <strong>senha do cofre</strong>. Ela protege os dados do app neste computador, inclusive a chave da IA.',
   recuperacao:
-    'Anote a <strong>chave de recuperação</strong> que o app mostra e guarde-a fora do computador. Ela abre o cofre se você esquecer a senha.',
+    'Anote a <strong>chave de recuperação</strong> que o app mostra e guarde-a fora do computador. Sem ela, quem esquecer a senha perde os dados, e o app não a mostra de novo.',
   chaveIa:
     'Cole a <strong>chave da API da Anthropic</strong>, que o Science Tutor usa para a análise do Claude. Se ainda não tiver uma, crie em <a href="https://console.anthropic.com/settings/keys">console.anthropic.com</a>, em API Keys.',
 };
@@ -26,6 +28,7 @@ const guias = {
       'Abra o DMG e arraste o Science Tutor para a pasta <strong>Aplicativos</strong>.',
       'Abra o Science Tutor pela pasta Aplicativos ou pelo Launchpad.',
       comum.token,
+      comum.codigo,
       comum.senha,
       comum.recuperacao,
       'Se o seu Mac tiver <strong>Touch ID</strong>, ative-o quando o app oferecer: assim você abre o cofre com a digital, sem digitar a senha.',
@@ -39,6 +42,7 @@ const guias = {
       'Instale o Science Tutor pela Microsoft Store, no botão Obter ou Instalar.',
       'Abra o Science Tutor pelo menu Iniciar.',
       comum.token,
+      comum.codigo,
       comum.senha,
       comum.recuperacao,
       comum.chaveIa,

@@ -13,6 +13,7 @@ const guias = [
       [/Aplicativos/],
       [/Abra/],
       [/token/],
+      [/Código de ativação sarzel/, /código/, /15 minutos/],
       [/senha do cofre/],
       [/chave de recuperação/],
       [/Touch ID/],
@@ -27,6 +28,7 @@ const guias = [
       [/Instale/],
       [/Abra/],
       [/token/],
+      [/Código de ativação sarzel/, /código/, /15 minutos/],
       [/senha do cofre/],
       [/chave de recuperação/],
       [/chave da API da Anthropic/],
@@ -56,6 +58,12 @@ describe.each(guias)('passo a passo ($plataforma)', (g) => {
     const itens = [...ol![1].matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)].map((m) => texto(m[1]));
     expect(itens).toHaveLength(g.passos.length);
     g.passos.forEach((res, i) => res.forEach((re) => expect(itens[i], `passo ${i + 1}`).toMatch(re)));
+  });
+
+  it('a chave de recuperação diz o que o app diz, sem prometer abrir o cofre', () => {
+    const passo = texto(corpo(read(arquivo(g.url))).match(/<li[^>]*>(?:(?!<\/li>)[\s\S])*chave de recuperação[\s\S]*?<\/li>/)![0]);
+    expect(passo).toMatch(/[Ss]em ela, quem esquecer a senha perde os dados/);
+    expect(passo).not.toMatch(/abre o cofre|recupera o cofre|recuperar o cofre/);
   });
 
   it('tem link de volta à página do Science Tutor', () => {
