@@ -156,6 +156,40 @@
         "src/scripts/exclusao*.ts",
         "src/data/science-tutor.mjs"
       ]
+    },
+    {
+      "nome": "passo-a-passo-mac",
+      "passos": [
+        {
+          "acao": "ir",
+          "alvo": "http://127.0.0.1:4391/downloads/science-tutor/passo-a-passo/mac/"
+        },
+        {
+          "acao": "esperar",
+          "alvo": "ol.passos"
+        }
+      ],
+      "arquivos": [
+        "src/pages/downloads/science-tutor/passo-a-passo/mac/**",
+        "src/components/InstallGuidePage.astro"
+      ]
+    },
+    {
+      "nome": "passo-a-passo-windows",
+      "passos": [
+        {
+          "acao": "ir",
+          "alvo": "http://127.0.0.1:4391/downloads/science-tutor/passo-a-passo/windows/"
+        },
+        {
+          "acao": "esperar",
+          "alvo": "ol.passos"
+        }
+      ],
+      "arquivos": [
+        "src/pages/downloads/science-tutor/passo-a-passo/windows/**",
+        "src/components/InstallGuidePage.astro"
+      ]
     }
   ],
   "viewports": [

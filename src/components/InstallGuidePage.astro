@@ -1,0 +1,72 @@
+---
+import Base from '../layouts/Base.astro';
+import { routes } from '../i18n/utils';
+
+type Plataforma = 'macos' | 'windows';
+interface Props { plataforma: Plataforma }
+const { plataforma } = Astro.props;
+// Portuguese only: the sarzel-dist e-mail is in Portuguese and links to these fixed URLs.
+const r = routes('pt');
+const outra: Plataforma = plataforma === 'macos' ? 'windows' : 'macos';
+
+const comum = {
+  token: 'Quando o app pedir, cole o <strong>token</strong> de ativação que veio no mesmo e-mail. O token é pessoal: não o compartilhe.',
+  senha: 'Crie a <strong>senha do cofre</strong>. O cofre guarda no seu computador, protegida por essa senha, a chave da IA.',
+  recuperacao:
+    'Anote a <strong>chave de recuperação</strong> que o app mostra e guarde-a fora do computador. Ela abre o cofre se você esquecer a senha.',
+  chaveIa:
+    'Cole a <strong>chave da API da Anthropic</strong>, que o Science Tutor usa para a análise do Claude. Se ainda não tiver uma, crie em <a href="https://console.anthropic.com/settings/keys">console.anthropic.com</a>, em API Keys.',
+};
+
+const guias = {
+  macos: {
+    nome: 'Mac',
+    passos: [
+      'No e-mail “Seu acesso ao Science Tutor”, clique no link para baixar o app para Mac. O arquivo baixado é um <strong>DMG</strong>; o link vale por 7 dias.',
+      'Abra o DMG e arraste o Science Tutor para a pasta <strong>Aplicativos</strong>.',
+      'Abra o Science Tutor pela pasta Aplicativos ou pelo Launchpad.',
+      comum.token,
+      comum.senha,
+      comum.recuperacao,
+      'Se o seu Mac tiver <strong>Touch ID</strong>, ative-o quando o app oferecer: assim você abre o cofre com a digital, sem digitar a senha.',
+      comum.chaveIa,
+    ],
+  },
+  windows: {
+    nome: 'Windows',
+    passos: [
+      'No e-mail “Seu acesso ao Science Tutor”, clique no link da <strong>Microsoft Store</strong>.',
+      'Instale o Science Tutor pela Microsoft Store, no botão Obter ou Instalar.',
+      'Abra o Science Tutor pelo menu Iniciar.',
+      comum.token,
+      comum.senha,
+      comum.recuperacao,
+      comum.chaveIa,
+    ],
+  },
+}[plataforma];
+
+const titulo = `Instalar o Science Tutor no ${guias.nome}`;
+const description = `Passo a passo para instalar e ativar o Science Tutor no ${guias.nome}, com o link e o token que chegam por e-mail.`;
+---
+<Base title={titulo} description={description} lang="pt" alternate={routes('en').scienceTutor}>
+  <div class="guia">
+    <p class="eyebrow">Passo a passo</p>
+    <h1>{titulo}</h1>
+    <p>Tenha à mão o e-mail “Seu acesso ao Science Tutor”, com o link de instalação e o token de ativação, e uma chave da API da Anthropic.</p>
+    <ol class="passos">
+      {guias.passos.map((passo) => <li set:html={passo} />)}
+    </ol>
+    <p>Usa {outra === 'macos' ? 'Mac' : 'Windows'}? Veja o <a href={r.scienceTutorSteps[outra]}>passo a passo do {outra === 'macos' ? 'Mac' : 'Windows'}</a>.</p>
+    <p><a href={r.scienceTutor}>Voltar ao Science Tutor</a></p>
+  </div>
+</Base>
+
+<style>
+  /* --accent on --bg is 3.4:1 in the light theme; link text needs 4.5:1. */
+  .guia { --accent-texto: color-mix(in srgb, var(--accent) 75%, var(--text)); }
+  /* :global reaches the links inside the steps, which come in through set:html. */
+  .guia :global(a) { color: var(--accent-texto); }
+  .passos { padding-left: 24px; margin: 24px 0 32px; }
+  .passos li { margin: 0 0 16px; padding-left: 4px; }
+</style>

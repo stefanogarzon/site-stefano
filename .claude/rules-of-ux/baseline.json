@@ -311,6 +311,110 @@
     "home@390x844/escuro/pt|padding-pequeno|html > body > main > div:nth-of-type(2) > a:nth-of-type(2)",
     "home@390x844/escuro/pt|padding-pequeno|html > body > main > div:nth-of-type(2) > a:nth-of-type(3)",
     "home@390x844/escuro/pt|padding-pequeno|html > body > main > div:nth-of-type(2) > a:nth-of-type(4)",
+    "passo-a-passo-mac@1280x800/claro/pt|alvo-pequeno|[aria-label=\"Buscar\"]",
+    "passo-a-passo-mac@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
+    "passo-a-passo-mac@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
+    "passo-a-passo-mac@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(3)",
+    "passo-a-passo-mac@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-mac@1280x800/claro/pt|fora-da-grade|html > body > footer > p",
+    "passo-a-passo-mac@1280x800/claro/pt|fora-da-grade|html > body > header > nav",
+    "passo-a-passo-mac@1280x800/claro/pt|fora-da-grade|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-mac@1280x800/claro/pt|fora-da-grade|html > body > main > div > h1",
+    "passo-a-passo-mac@1280x800/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
+    "passo-a-passo-mac@1280x800/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(3)",
+    "passo-a-passo-mac@1280x800/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(4)",
+    "passo-a-passo-mac@1280x800/claro/pt|grupo-ambiguo|html > body > header",
+    "passo-a-passo-mac@1280x800/escuro/pt|alvo-pequeno|[aria-label=\"Buscar\"]",
+    "passo-a-passo-mac@1280x800/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
+    "passo-a-passo-mac@1280x800/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
+    "passo-a-passo-mac@1280x800/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(3)",
+    "passo-a-passo-mac@1280x800/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-mac@1280x800/escuro/pt|fora-da-grade|html > body > footer > p",
+    "passo-a-passo-mac@1280x800/escuro/pt|fora-da-grade|html > body > header > nav",
+    "passo-a-passo-mac@1280x800/escuro/pt|fora-da-grade|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-mac@1280x800/escuro/pt|fora-da-grade|html > body > main > div > h1",
+    "passo-a-passo-mac@1280x800/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
+    "passo-a-passo-mac@1280x800/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(3)",
+    "passo-a-passo-mac@1280x800/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(4)",
+    "passo-a-passo-mac@1280x800/escuro/pt|grupo-ambiguo|html > body > header",
+    "passo-a-passo-mac@390x844/claro/pt|alvo-pequeno|[aria-label=\"Buscar\"]",
+    "passo-a-passo-mac@390x844/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
+    "passo-a-passo-mac@390x844/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
+    "passo-a-passo-mac@390x844/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(3)",
+    "passo-a-passo-mac@390x844/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-mac@390x844/claro/pt|fora-da-grade|html > body > footer > p",
+    "passo-a-passo-mac@390x844/claro/pt|fora-da-grade|html > body > header > nav",
+    "passo-a-passo-mac@390x844/claro/pt|fora-da-grade|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-mac@390x844/claro/pt|fora-da-grade|html > body > main > div > h1",
+    "passo-a-passo-mac@390x844/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
+    "passo-a-passo-mac@390x844/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(3)",
+    "passo-a-passo-mac@390x844/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(4)",
+    "passo-a-passo-mac@390x844/claro/pt|padding-pequeno|html > body > header",
+    "passo-a-passo-mac@390x844/escuro/pt|alvo-pequeno|[aria-label=\"Buscar\"]",
+    "passo-a-passo-mac@390x844/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
+    "passo-a-passo-mac@390x844/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
+    "passo-a-passo-mac@390x844/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(3)",
+    "passo-a-passo-mac@390x844/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-mac@390x844/escuro/pt|fora-da-grade|html > body > footer > p",
+    "passo-a-passo-mac@390x844/escuro/pt|fora-da-grade|html > body > header > nav",
+    "passo-a-passo-mac@390x844/escuro/pt|fora-da-grade|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-mac@390x844/escuro/pt|fora-da-grade|html > body > main > div > h1",
+    "passo-a-passo-mac@390x844/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
+    "passo-a-passo-mac@390x844/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(3)",
+    "passo-a-passo-mac@390x844/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(4)",
+    "passo-a-passo-mac@390x844/escuro/pt|padding-pequeno|html > body > header",
+    "passo-a-passo-windows@1280x800/claro/pt|alvo-pequeno|[aria-label=\"Buscar\"]",
+    "passo-a-passo-windows@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
+    "passo-a-passo-windows@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
+    "passo-a-passo-windows@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(3)",
+    "passo-a-passo-windows@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-windows@1280x800/claro/pt|fora-da-grade|html > body > footer > p",
+    "passo-a-passo-windows@1280x800/claro/pt|fora-da-grade|html > body > header > nav",
+    "passo-a-passo-windows@1280x800/claro/pt|fora-da-grade|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-windows@1280x800/claro/pt|fora-da-grade|html > body > main > div > h1",
+    "passo-a-passo-windows@1280x800/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
+    "passo-a-passo-windows@1280x800/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(3)",
+    "passo-a-passo-windows@1280x800/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(4)",
+    "passo-a-passo-windows@1280x800/claro/pt|grupo-ambiguo|html > body > header",
+    "passo-a-passo-windows@1280x800/escuro/pt|alvo-pequeno|[aria-label=\"Buscar\"]",
+    "passo-a-passo-windows@1280x800/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
+    "passo-a-passo-windows@1280x800/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
+    "passo-a-passo-windows@1280x800/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(3)",
+    "passo-a-passo-windows@1280x800/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-windows@1280x800/escuro/pt|fora-da-grade|html > body > footer > p",
+    "passo-a-passo-windows@1280x800/escuro/pt|fora-da-grade|html > body > header > nav",
+    "passo-a-passo-windows@1280x800/escuro/pt|fora-da-grade|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-windows@1280x800/escuro/pt|fora-da-grade|html > body > main > div > h1",
+    "passo-a-passo-windows@1280x800/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
+    "passo-a-passo-windows@1280x800/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(3)",
+    "passo-a-passo-windows@1280x800/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(4)",
+    "passo-a-passo-windows@1280x800/escuro/pt|grupo-ambiguo|html > body > header",
+    "passo-a-passo-windows@390x844/claro/pt|alvo-pequeno|[aria-label=\"Buscar\"]",
+    "passo-a-passo-windows@390x844/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
+    "passo-a-passo-windows@390x844/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
+    "passo-a-passo-windows@390x844/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(3)",
+    "passo-a-passo-windows@390x844/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-windows@390x844/claro/pt|fora-da-grade|html > body > footer > p",
+    "passo-a-passo-windows@390x844/claro/pt|fora-da-grade|html > body > header > nav",
+    "passo-a-passo-windows@390x844/claro/pt|fora-da-grade|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-windows@390x844/claro/pt|fora-da-grade|html > body > main > div > h1",
+    "passo-a-passo-windows@390x844/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
+    "passo-a-passo-windows@390x844/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(3)",
+    "passo-a-passo-windows@390x844/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(4)",
+    "passo-a-passo-windows@390x844/claro/pt|padding-pequeno|html > body > header",
+    "passo-a-passo-windows@390x844/escuro/pt|alvo-pequeno|[aria-label=\"Buscar\"]",
+    "passo-a-passo-windows@390x844/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
+    "passo-a-passo-windows@390x844/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
+    "passo-a-passo-windows@390x844/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(3)",
+    "passo-a-passo-windows@390x844/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-windows@390x844/escuro/pt|fora-da-grade|html > body > footer > p",
+    "passo-a-passo-windows@390x844/escuro/pt|fora-da-grade|html > body > header > nav",
+    "passo-a-passo-windows@390x844/escuro/pt|fora-da-grade|html > body > header > nav > a:nth-of-type(5)",
+    "passo-a-passo-windows@390x844/escuro/pt|fora-da-grade|html > body > main > div > h1",
+    "passo-a-passo-windows@390x844/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
+    "passo-a-passo-windows@390x844/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(3)",
+    "passo-a-passo-windows@390x844/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(4)",
+    "passo-a-passo-windows@390x844/escuro/pt|padding-pequeno|html > body > header",
     "privacidade-en@1280x800/claro/pt|alvo-pequeno|[aria-label=\"Search\"]",
     "privacidade-en@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
     "privacidade-en@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
@@ -3716,6 +3820,942 @@
       "tela": "home@390x844/escuro/pt",
       "seletor": "html > body > main > div:nth-of-type(2) > a:nth-of-type(4)",
       "evidencia": "padding abaixo de 16 px: top 0px, right 0px, bottom 0px, left 0px",
+      "correcao": "aumente o padding para 16 px",
+      "lei": "padrão"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@1280x800/claro/pt",
+      "seletor": "[aria-label=\"Buscar\"]",
+      "evidencia": "alvo de 16 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@1280x800/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(1)",
+      "evidencia": "alvo de 72.98 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@1280x800/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(2)",
+      "evidencia": "alvo de 45.2 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@1280x800/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(3)",
+      "evidencia": "alvo de 40.28 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@1280x800/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "alvo de 38.52 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/claro/pt",
+      "seletor": "html > body > footer > p",
+      "evidencia": "fora da grade de 4 px: marginTop 13.6px, marginBottom 13.6px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/claro/pt",
+      "seletor": "html > body > header > nav",
+      "evidencia": "fora da grade de 4 px: rowGap 18px, columnGap 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "fora da grade de 4 px: paddingLeft 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/claro/pt",
+      "seletor": "html > body > main > div > h1",
+      "evidencia": "fora da grade de 4 px: marginTop 15.36px, marginBottom 19.2px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/claro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/claro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(3)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/claro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(4)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "grupo-ambiguo",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/claro/pt",
+      "seletor": "html > body > header",
+      "evidencia": "espaço interno de 624.99 px ≥ 12 px até html > body > main",
+      "correcao": "separe os grupos com pelo menos o dobro do espaço interno",
+      "lei": "Law of Proximity"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@1280x800/escuro/pt",
+      "seletor": "[aria-label=\"Buscar\"]",
+      "evidencia": "alvo de 16 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@1280x800/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(1)",
+      "evidencia": "alvo de 72.98 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@1280x800/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(2)",
+      "evidencia": "alvo de 45.2 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@1280x800/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(3)",
+      "evidencia": "alvo de 40.28 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@1280x800/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "alvo de 38.52 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/escuro/pt",
+      "seletor": "html > body > footer > p",
+      "evidencia": "fora da grade de 4 px: marginTop 13.6px, marginBottom 13.6px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/escuro/pt",
+      "seletor": "html > body > header > nav",
+      "evidencia": "fora da grade de 4 px: rowGap 18px, columnGap 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "fora da grade de 4 px: paddingLeft 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > h1",
+      "evidencia": "fora da grade de 4 px: marginTop 15.36px, marginBottom 19.2px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(3)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(4)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "grupo-ambiguo",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@1280x800/escuro/pt",
+      "seletor": "html > body > header",
+      "evidencia": "espaço interno de 624.99 px ≥ 12 px até html > body > main",
+      "correcao": "separe os grupos com pelo menos o dobro do espaço interno",
+      "lei": "Law of Proximity"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@390x844/claro/pt",
+      "seletor": "[aria-label=\"Buscar\"]",
+      "evidencia": "alvo de 16 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@390x844/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(1)",
+      "evidencia": "alvo de 72.98 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@390x844/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(2)",
+      "evidencia": "alvo de 45.2 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@390x844/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(3)",
+      "evidencia": "alvo de 40.28 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@390x844/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "alvo de 38.52 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/claro/pt",
+      "seletor": "html > body > footer > p",
+      "evidencia": "fora da grade de 4 px: marginTop 13.6px, marginBottom 13.6px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/claro/pt",
+      "seletor": "html > body > header > nav",
+      "evidencia": "fora da grade de 4 px: rowGap 18px, columnGap 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "fora da grade de 4 px: paddingLeft 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/claro/pt",
+      "seletor": "html > body > main > div > h1",
+      "evidencia": "fora da grade de 4 px: marginTop 11.52px, marginBottom 14.4px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/claro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/claro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(3)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/claro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(4)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "padding-pequeno",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/claro/pt",
+      "seletor": "html > body > header",
+      "evidencia": "padding abaixo de 16 px: top 0px, bottom 0px",
+      "correcao": "aumente o padding para 16 px",
+      "lei": "padrão"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@390x844/escuro/pt",
+      "seletor": "[aria-label=\"Buscar\"]",
+      "evidencia": "alvo de 16 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@390x844/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(1)",
+      "evidencia": "alvo de 72.98 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@390x844/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(2)",
+      "evidencia": "alvo de 45.2 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@390x844/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(3)",
+      "evidencia": "alvo de 40.28 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-mac@390x844/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "alvo de 38.52 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/escuro/pt",
+      "seletor": "html > body > footer > p",
+      "evidencia": "fora da grade de 4 px: marginTop 13.6px, marginBottom 13.6px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/escuro/pt",
+      "seletor": "html > body > header > nav",
+      "evidencia": "fora da grade de 4 px: rowGap 18px, columnGap 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "fora da grade de 4 px: paddingLeft 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/escuro/pt",
+      "seletor": "html > body > main > div > h1",
+      "evidencia": "fora da grade de 4 px: marginTop 11.52px, marginBottom 14.4px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/escuro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/escuro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(3)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/escuro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(4)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "padding-pequeno",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-mac@390x844/escuro/pt",
+      "seletor": "html > body > header",
+      "evidencia": "padding abaixo de 16 px: top 0px, bottom 0px",
+      "correcao": "aumente o padding para 16 px",
+      "lei": "padrão"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@1280x800/claro/pt",
+      "seletor": "[aria-label=\"Buscar\"]",
+      "evidencia": "alvo de 16 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@1280x800/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(1)",
+      "evidencia": "alvo de 72.98 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@1280x800/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(2)",
+      "evidencia": "alvo de 45.2 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@1280x800/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(3)",
+      "evidencia": "alvo de 40.28 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@1280x800/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "alvo de 38.52 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/claro/pt",
+      "seletor": "html > body > footer > p",
+      "evidencia": "fora da grade de 4 px: marginTop 13.6px, marginBottom 13.6px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/claro/pt",
+      "seletor": "html > body > header > nav",
+      "evidencia": "fora da grade de 4 px: rowGap 18px, columnGap 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "fora da grade de 4 px: paddingLeft 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/claro/pt",
+      "seletor": "html > body > main > div > h1",
+      "evidencia": "fora da grade de 4 px: marginTop 15.36px, marginBottom 19.2px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/claro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/claro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(3)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/claro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(4)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "grupo-ambiguo",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/claro/pt",
+      "seletor": "html > body > header",
+      "evidencia": "espaço interno de 624.99 px ≥ 12 px até html > body > main",
+      "correcao": "separe os grupos com pelo menos o dobro do espaço interno",
+      "lei": "Law of Proximity"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@1280x800/escuro/pt",
+      "seletor": "[aria-label=\"Buscar\"]",
+      "evidencia": "alvo de 16 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@1280x800/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(1)",
+      "evidencia": "alvo de 72.98 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@1280x800/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(2)",
+      "evidencia": "alvo de 45.2 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@1280x800/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(3)",
+      "evidencia": "alvo de 40.28 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@1280x800/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "alvo de 38.52 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/escuro/pt",
+      "seletor": "html > body > footer > p",
+      "evidencia": "fora da grade de 4 px: marginTop 13.6px, marginBottom 13.6px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/escuro/pt",
+      "seletor": "html > body > header > nav",
+      "evidencia": "fora da grade de 4 px: rowGap 18px, columnGap 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "fora da grade de 4 px: paddingLeft 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > h1",
+      "evidencia": "fora da grade de 4 px: marginTop 15.36px, marginBottom 19.2px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(3)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(4)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "grupo-ambiguo",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@1280x800/escuro/pt",
+      "seletor": "html > body > header",
+      "evidencia": "espaço interno de 624.99 px ≥ 12 px até html > body > main",
+      "correcao": "separe os grupos com pelo menos o dobro do espaço interno",
+      "lei": "Law of Proximity"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@390x844/claro/pt",
+      "seletor": "[aria-label=\"Buscar\"]",
+      "evidencia": "alvo de 16 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@390x844/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(1)",
+      "evidencia": "alvo de 72.98 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@390x844/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(2)",
+      "evidencia": "alvo de 45.2 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@390x844/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(3)",
+      "evidencia": "alvo de 40.28 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@390x844/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "alvo de 38.52 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/claro/pt",
+      "seletor": "html > body > footer > p",
+      "evidencia": "fora da grade de 4 px: marginTop 13.6px, marginBottom 13.6px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/claro/pt",
+      "seletor": "html > body > header > nav",
+      "evidencia": "fora da grade de 4 px: rowGap 18px, columnGap 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/claro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "fora da grade de 4 px: paddingLeft 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/claro/pt",
+      "seletor": "html > body > main > div > h1",
+      "evidencia": "fora da grade de 4 px: marginTop 11.52px, marginBottom 14.4px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/claro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/claro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(3)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/claro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(4)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "padding-pequeno",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/claro/pt",
+      "seletor": "html > body > header",
+      "evidencia": "padding abaixo de 16 px: top 0px, bottom 0px",
+      "correcao": "aumente o padding para 16 px",
+      "lei": "padrão"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@390x844/escuro/pt",
+      "seletor": "[aria-label=\"Buscar\"]",
+      "evidencia": "alvo de 16 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@390x844/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(1)",
+      "evidencia": "alvo de 72.98 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@390x844/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(2)",
+      "evidencia": "alvo de 45.2 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@390x844/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(3)",
+      "evidencia": "alvo de 40.28 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "alvo-pequeno",
+      "severidade": "erro",
+      "tela": "passo-a-passo-windows@390x844/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "alvo de 38.52 × 23.77 px (mínimo 24 px)",
+      "correcao": "aumente a área clicável para pelo menos 24 × 24 px",
+      "lei": "Fitts's Law / WCAG 2.5.8"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/escuro/pt",
+      "seletor": "html > body > footer > p",
+      "evidencia": "fora da grade de 4 px: marginTop 13.6px, marginBottom 13.6px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/escuro/pt",
+      "seletor": "html > body > header > nav",
+      "evidencia": "fora da grade de 4 px: rowGap 18px, columnGap 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/escuro/pt",
+      "seletor": "html > body > header > nav > a:nth-of-type(5)",
+      "evidencia": "fora da grade de 4 px: paddingLeft 18px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/escuro/pt",
+      "seletor": "html > body > main > div > h1",
+      "evidencia": "fora da grade de 4 px: marginTop 11.52px, marginBottom 14.4px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/escuro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/escuro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(3)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/escuro/pt",
+      "seletor": "html > body > main > div > p:nth-of-type(4)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "padding-pequeno",
+      "severidade": "aviso",
+      "tela": "passo-a-passo-windows@390x844/escuro/pt",
+      "seletor": "html > body > header",
+      "evidencia": "padding abaixo de 16 px: top 0px, bottom 0px",
       "correcao": "aumente o padding para 16 px",
       "lei": "padrão"
     },
