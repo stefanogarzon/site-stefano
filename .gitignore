@@ -6,3 +6,4 @@ dist/
 .remember/
 .claude/security-reports/
 /images/
+.env

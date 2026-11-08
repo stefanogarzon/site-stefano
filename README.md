@@ -13,3 +13,8 @@ Site pessoal (Astro, estático, PT/EN). Conteúdo em `src/content/`, painel em `
 - Diagramas: bloco ```` ```mermaid ````.
 - Tradução: mesma `translationKey` nas versões PT e EN.
 - `draft: true` não publica.
+
+## Variáveis de build
+- `PUBLIC_TURNSTILE_SITEKEY` — chave pública do Cloudflare Turnstile do formulário de cadastro do Science Tutor (`/downloads/science-tutor/`). Modelo em `.env.example`. Sem ela, a página mostra "cadastro indisponível" e o build não quebra.
+- Antes de publicar, a variável tem de existir nas variáveis de build do projeto na Cloudflare Pages.
+- Os testes (`npm test`) usam a chave de teste pública da Cloudflare `1x00000000000000000000AA`, que sempre passa.
