@@ -1,0 +1,270 @@
+---
+import Base from '../layouts/Base.astro';
+import { otherLang, routes } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+import { turnstileSitekey } from '../lib/turnstile';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const r = routes(lang);
+const sitekey = turnstileSitekey(import.meta.env.PUBLIC_TURNSTILE_SITEKEY);
+
+const CONTATO = 'privacidade@sarzel.com';
+
+/** contato: text placed before the privacy contact link, closing the section. */
+interface Secao { titulo: string; paragrafos?: string[]; itens?: string[]; contato?: string }
+
+/** What stays with the revoked token hash after deletion (sarzel-dist excluir() keeps these tokens_v2 columns). */
+const FICA_COM_HASH = {
+  pt: 'a chave pública do aparelho (também a de uma ativação não confirmada), se ela fica no chip de segurança, e as datas da ativação e da última checagem',
+  en: 'the public key of the device (also that of an unconfirmed activation), whether it is kept in the security chip, and the dates of activation and of the last check',
+};
+
+const txt = {
+  pt: {
+    titulo: 'Aviso de privacidade do Science Tutor',
+    description: 'O que o cadastro do Science Tutor guarda, para quê, com que base legal, onde, por quanto tempo, os seus direitos e como pedir a exclusão dos seus dados.',
+    voltar: 'Voltar ao Science Tutor',
+    secoes: [
+      {
+        titulo: 'Quem é o responsável',
+        paragrafos: ['Stefano Garzon, que distribui o Science Tutor, é o responsável pelos dados do cadastro (controlador, nos termos da LGPD).'],
+        contato: 'Contato para assuntos de privacidade:',
+      },
+      {
+        titulo: 'O que é guardado',
+        itens: [
+          'nome, sobrenome e e-mail, como você os digitou no cadastro;',
+          'a data do aceite deste aviso;',
+          'o hash do token de acesso enviado a você (o token em si não fica guardado);',
+          'do aparelho em que o app é ativado: a chave pública do aparelho e se essa chave fica no chip de segurança do aparelho, gravadas já no pedido de ativação, mesmo que o código nunca seja confirmado; a data da ativação e a da última checagem do token pelo app;',
+          'o registro de cada pedido de cadastro ou de exclusão: um HMAC do IP (o IP em si não fica guardado), o e-mail informado e a hora. O HMAC do IP limita os pedidos por hora e o e-mail limita os pedidos em 24 h.',
+        ],
+      },
+      {
+        titulo: 'Para quê',
+        paragrafos: [
+          'Os dados servem para enviar o acesso ao app (o link de download e o token) e para ativar e manter válido o seu token. Não são vendidos, cedidos nem usados para publicidade.',
+        ],
+      },
+      {
+        titulo: 'Base legal',
+        paragrafos: [
+          'O tratamento se baseia na execução de contrato ou de procedimentos preliminares relacionados a contrato, a pedido do titular (LGPD, art. 7º, V): o cadastro existe para entregar o app que você pediu.',
+        ],
+      },
+      {
+        titulo: 'Os artigos que você lê',
+        paragrafos: [
+          'O app envia o PDF do artigo diretamente ao provedor de IA que você escolher, com a sua própria chave. O sarzel.com não recebe nem guarda os artigos.',
+        ],
+      },
+      {
+        titulo: 'Onde',
+        paragrafos: [
+          'Os dados ficam no servidor de distribuição sarzel.com, hospedado na Cloudflare. A Cloudflare também faz a verificação anti-robô (Turnstile) do formulário. O e-mail com o acesso é enviado pelo Resend, que recebe o seu endereço só para entregar a mensagem.',
+        ],
+      },
+      {
+        titulo: 'Por quanto tempo',
+        paragrafos: [
+          `Nome, sobrenome, e-mail e data do aceite ficam enquanto o cadastro existir, até a confirmação da exclusão pelo link (um pedido de exclusão sem confirmação não apaga nada). Na exclusão o token é revogado e o hash do token revogado continua guardado, sem o e-mail e sem prazo, para auditoria, junto com ${FICA_COM_HASH.pt}. O registro de cada pedido é apagado no primeiro pedido que chegar depois de 24 h e passar pelas verificações do formulário e anti-robô, ou na exclusão.`,
+        ],
+      },
+      {
+        titulo: 'Seus direitos',
+        paragrafos: ['Pela LGPD (art. 18), você pode pedir:'],
+        itens: [
+          'acesso aos seus dados;',
+          'correção de dados incompletos, inexatos ou desatualizados;',
+          'portabilidade dos dados;',
+          'informação sobre o compartilhamento dos dados: com quem foram compartilhados;',
+          'revogação do consentimento;',
+          'exclusão dos dados.',
+        ],
+        contato: 'A exclusão se pede pelo formulário desta página; os demais pedidos, pelo e-mail',
+      },
+      {
+        titulo: 'Como pedir a exclusão',
+        paragrafos: [
+          `Informe o e-mail do cadastro no formulário abaixo. Se ele estiver cadastrado, você recebe nele um link de confirmação, válido por 24 h. Confirmada, a exclusão apaga o seu cadastro e os registros dos seus pedidos e revoga o seu token de acesso. O hash do token revogado continua guardado, sem o e-mail, para auditoria, com ${FICA_COM_HASH.pt}.`,
+        ],
+      },
+    ] satisfies Secao[],
+    excluirTitulo: 'Excluir meus dados',
+    email: 'E-mail do cadastro',
+    enviar: 'Pedir a exclusão',
+    noscript: 'O formulário de exclusão precisa de JavaScript. Ative o JavaScript no navegador para pedir a exclusão.',
+    indisponivel: 'Pedido de exclusão indisponível no momento.',
+    okTitulo: 'Pedido recebido',
+    okTexto: 'Se o e-mail estiver cadastrado, você recebe nele um link para confirmar a exclusão. O link vale por 24 h.',
+  },
+  en: {
+    titulo: 'Science Tutor privacy notice',
+    description: 'What the Science Tutor sign-up stores, why, on what legal basis, where, for how long, your rights and how to ask for your data to be deleted.',
+    voltar: 'Back to Science Tutor',
+    secoes: [
+      {
+        titulo: 'Who is responsible',
+        paragrafos: ['Stefano Garzon, who distributes Science Tutor, is responsible for the sign-up data (the controller, under Brazil’s LGPD).'],
+        contato: 'Privacy contact:',
+      },
+      {
+        titulo: 'What is stored',
+        itens: [
+          'your first name, last name and email, as you typed them in the sign-up;',
+          'the date you accepted this notice;',
+          'a hash of the access token sent to you (the token itself is not stored);',
+          'about the device where the app is activated: the public key of the device and whether that key is kept in the device’s security chip, stored already when activation is requested, even if the code is never confirmed; the date of activation and the date of the last check of the token by the app;',
+          'a record of each request (sign-up or deletion): an HMAC of your IP address (the IP address itself is not stored), the email entered and the time. The HMAC of your IP limits requests per hour and the email limits requests over 24 hours.',
+        ],
+      },
+      {
+        titulo: 'Why',
+        paragrafos: [
+          'The data is used to send you access to the app (the download link and the token) and to activate your token and keep it valid. It is not sold, shared or used for advertising.',
+        ],
+      },
+      {
+        titulo: 'Legal basis',
+        paragrafos: [
+          'The processing is based on the performance of a contract or of preliminary procedures related to a contract, at the request of the data subject (LGPD, Art. 7(V)): the sign-up exists to deliver the app you asked for.',
+        ],
+      },
+      {
+        titulo: 'The articles you read',
+        paragrafos: [
+          'The app sends the article PDF directly to the AI provider you choose, using your own key. sarzel.com does not receive or store the articles.',
+        ],
+      },
+      {
+        titulo: 'Where',
+        paragrafos: [
+          'The data is stored on the sarzel.com distribution server, hosted on Cloudflare. Cloudflare also runs the anti-bot check (Turnstile) on the form. The email with your access is sent through Resend, which receives your address only to deliver the message.',
+        ],
+      },
+      {
+        titulo: 'For how long',
+        paragrafos: [
+          `Your first name, last name, email and acceptance date are kept as long as the sign-up exists, until the deletion is confirmed through the link (a deletion request that is not confirmed deletes nothing). On deletion the token is revoked and the hash of the revoked token stays, without your email and with no time limit, for auditing, together with ${FICA_COM_HASH.en}. The record of each request is deleted by the first request that arrives after 24 hours and passes the form and anti-bot checks, or on deletion.`,
+        ],
+      },
+      {
+        titulo: 'Your rights',
+        paragrafos: ['Under the LGPD (Art. 18), you can ask for:'],
+        itens: [
+          'access to your data;',
+          'correction of incomplete, inaccurate or outdated data;',
+          'portability of the data;',
+          'information about the sharing of the data: with whom it was shared;',
+          'revocation of consent;',
+          'deletion of the data.',
+        ],
+        contato: 'Deletion is requested through the form on this page; all other requests by email to',
+      },
+      {
+        titulo: 'How to ask for deletion',
+        paragrafos: [
+          `Enter your sign-up email in the form below. If it is registered, you will receive a confirmation link at that address, valid for 24 hours. Once confirmed, the deletion erases your sign-up and the records of your requests and revokes your access token. The hash of the revoked token stays, without your email, for auditing, with ${FICA_COM_HASH.en}.`,
+        ],
+      },
+    ] satisfies Secao[],
+    excluirTitulo: 'Delete my data',
+    email: 'Sign-up email',
+    enviar: 'Request deletion',
+    noscript: 'The deletion form needs JavaScript. Enable JavaScript in your browser to request deletion.',
+    indisponivel: 'Deletion requests are unavailable at the moment.',
+    okTitulo: 'Request received',
+    okTexto: 'If the email is registered, you will receive a link at that address to confirm the deletion. The link is valid for 24 hours.',
+  },
+}[lang];
+---
+<Base
+  title={txt.titulo}
+  description={txt.description}
+  lang={lang}
+  alternate={routes(otherLang(lang)).scienceTutorPrivacy}
+  hasTranslation
+>
+<div class="privacidade">
+  <p class="eyebrow"><a href={r.scienceTutor}>Science Tutor</a></p>
+  <h1>{txt.titulo}</h1>
+
+  {txt.secoes.map((s) => (
+    <section>
+      <h2>{s.titulo}</h2>
+      {s.paragrafos?.map((par) => <p>{par}</p>)}
+      {s.itens && <ul>{s.itens.map((item) => <li>{item}</li>)}</ul>}
+      {s.contato && <p>{s.contato} <a href={`mailto:${CONTATO}`}>{CONTATO}</a>.</p>}
+    </section>
+  ))}
+
+  <section class="exclusao" aria-labelledby="exclusao-titulo">
+    <h2 id="exclusao-titulo">{txt.excluirTitulo}</h2>
+    {sitekey === null ? (
+      <p class="aviso" id="exclusao-indisponivel">{txt.indisponivel}</p>
+    ) : (
+      <Fragment>
+        <noscript><p class="aviso">{txt.noscript}</p></noscript>
+        <form id="exclusao" novalidate data-lang={lang}>
+          <fieldset disabled>
+            <div class="campo">
+              <label for="exc-email">{txt.email}</label>
+              <input id="exc-email" name="email" type="email" maxlength="100" autocomplete="email" inputmode="email" required aria-describedby="erro-exc-email" />
+              <p class="erro" id="erro-exc-email" hidden></p>
+            </div>
+            <div class="campo">
+              <div class="cf-turnstile" data-sitekey={sitekey} data-language={lang === 'pt' ? 'pt-br' : 'en'}></div>
+              <p class="erro" id="erro-exc-turnstile" hidden></p>
+            </div>
+            <button type="submit">{txt.enviar}</button>
+            <p class="status" id="exclusao-status" role="status" aria-live="polite"></p>
+          </fieldset>
+        </form>
+        <div id="exclusao-ok" class="confirmacao" tabindex="-1" hidden>
+          <h3>{txt.okTitulo}</h3>
+          <p>{txt.okTexto}</p>
+        </div>
+        <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+      </Fragment>
+    )}
+  </section>
+
+  <p><a href={r.scienceTutor}>{txt.voltar}</a></p>
+</div>
+</Base>
+
+<style>
+  /* --accent on --bg is 3.4:1 in the light theme; link text needs 4.5:1. */
+  .privacidade { --accent-texto: color-mix(in srgb, var(--accent) 75%, var(--text)); }
+  .privacidade a { color: var(--accent-texto); }
+  .exclusao { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 8px 24px 24px; margin: 32px 0; }
+  .exclusao h2 { margin-top: 0.6em; }
+  fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+  .campo { margin: 0 0 18px; }
+  label { display: block; font-size: 0.9rem; font-weight: 500; margin-bottom: 6px; }
+  input[type='email'] {
+    width: 100%; min-height: 44px; padding: 8px 12px; font: inherit; color: var(--text);
+    background: var(--bg); border: 1px solid var(--muted); border-radius: 8px;
+  }
+  input:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  button {
+    min-height: 44px; padding: 10px 22px; font: inherit; font-weight: 600; border-radius: 8px; cursor: pointer;
+    background: var(--text); color: var(--bg); border: 1px solid var(--text);
+  }
+  button:disabled { opacity: 0.55; cursor: not-allowed; }
+  .erro { color: var(--accent-texto); font-size: 0.85rem; margin: 6px 0 0; }
+  .aviso { border-left: 3px solid var(--accent); padding: 8px 14px; background: var(--soft); border-radius: 0 8px 8px 0; }
+  .confirmacao h3 { margin-top: 0.4em; }
+  .confirmacao:focus { outline: none; }
+</style>
+
+<script>
+  import { ligarExclusao } from '../scripts/exclusao-form';
+  import type { TurnstileApi } from '../scripts/cadastro-form';
+
+  ligarExclusao(document, {
+    fetch: (...args) => window.fetch(...args),
+    turnstile: () => (window as unknown as { turnstile?: TurnstileApi }).turnstile,
+  });
+</script>

@@ -7,8 +7,14 @@ export default defineConfig({
   trailingSlash: 'always',
   // Cache separado para o build de testes, para o conteúdo de tests/fixtures/ não vazar.
   cacheDir: process.env.FIXTURES ? './node_modules/.astro-fixtures' : './node_modules/.astro',
+  // A revisão de UX roda o dev com FIXTURES=1; a barra de ferramentas do dev cobriria a tela.
+  devToolbar: { enabled: !process.env.FIXTURES },
   markdown: markdownConfig,
-  integrations: [sitemap({ filter: (page) => !page.includes('/404') })],
+  integrations: [
+    sitemap({
+      filter: (page) => !page.includes('/404'),
+    }),
+  ],
   i18n: {
     defaultLocale: 'pt',
     locales: ['pt', 'en'],

@@ -1,0 +1,168 @@
+---
+import Base from '../layouts/Base.astro';
+import { otherLang, routes } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+import { turnstileSitekey } from '../lib/turnstile';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const r = routes(lang);
+const sitekey = turnstileSitekey(import.meta.env.PUBLIC_TURNSTILE_SITEKEY);
+
+const txt = {
+  pt: {
+    description:
+      'Science Tutor: app para Mac e Windows que ensina leitura crítica de artigos médicos a partir do PDF do artigo. Cadastre-se para receber o acesso por e-mail.',
+    eyebrow: 'Download',
+    intro: [
+      'O Science Tutor ensina leitura crítica de artigos médicos. Você envia o PDF de um artigo; o app identifica o desenho do estudo e monta um roteiro de avaliação para ele.',
+      'Você responde ao roteiro pergunta por pergunta e recebe a correção, com o trecho do artigo (e a página) que sustenta cada resposta e uma explicação curta do conceito. No fim, um relatório mostra o que você acertou e o que precisa revisar.',
+      'Funciona no Mac e no Windows. A análise é feita pelo Claude, da Anthropic, com a sua própria chave da API da Anthropic.',
+    ],
+    signup: 'Cadastro',
+    signupIntro: 'Preencha o formulário para receber por e-mail o link de download e o token de acesso.',
+    nome: 'Nome',
+    sobrenome: 'Sobrenome',
+    email: 'E-mail',
+    plataforma: 'Computador',
+    aceiteAntes: 'Li e aceito o ',
+    aceiteLink: 'aviso de privacidade',
+    aceiteDepois: '.',
+    enviar: 'Enviar cadastro',
+    noscript: 'O formulário de cadastro precisa de JavaScript. Ative o JavaScript no navegador para se cadastrar.',
+    indisponivel: 'Cadastro indisponível no momento.',
+    okTitulo: 'Cadastro recebido',
+    okTexto: 'Enviamos para o seu e-mail o link de download e o token de acesso. Se não encontrar a mensagem, confira a caixa de spam.',
+    okPasso: { macos: 'Passo a passo de instalação no Mac', windows: 'Passo a passo de instalação no Windows' },
+  },
+  en: {
+    description:
+      'Science Tutor: Mac and Windows app that teaches critical appraisal of medical articles from the article PDF. Sign up to receive access by email.',
+    eyebrow: 'Download',
+    intro: [
+      'Science Tutor teaches critical appraisal of medical articles. You upload the PDF of an article; the app identifies the study design and builds an appraisal guide for it.',
+      'You answer the guide question by question and get graded, with the article passage (and page) that supports each answer and a short explanation of the concept. A final report shows what you got right and what to review.',
+      'It runs on Mac and Windows. The analysis is done by Claude, from Anthropic, using your own Anthropic API key. The app interface is in Brazilian Portuguese.',
+    ],
+    signup: 'Sign up',
+    signupIntro: 'Fill in the form to receive the download link and your access token by email.',
+    nome: 'First name',
+    sobrenome: 'Last name',
+    email: 'Email',
+    plataforma: 'Computer',
+    aceiteAntes: 'I have read and accept the ',
+    aceiteLink: 'privacy notice',
+    aceiteDepois: '.',
+    enviar: 'Sign up',
+    noscript: 'The sign-up form needs JavaScript. Enable JavaScript in your browser to sign up.',
+    indisponivel: 'Sign-up is unavailable at the moment.',
+    okTitulo: 'Sign-up received',
+    okTexto: 'We sent the download link and your access token to your email. If you cannot find the message, check your spam folder.',
+    okPasso: { macos: 'Installation guide for Mac (in Portuguese)', windows: 'Installation guide for Windows (in Portuguese)' },
+  },
+}[lang];
+---
+<Base title="Science Tutor" description={txt.description} lang={lang} alternate={routes(otherLang(lang)).scienceTutor} hasTranslation>
+  <p class="eyebrow">{txt.eyebrow}</p>
+  <h1>Science Tutor</h1>
+  {txt.intro.map((par) => <p>{par}</p>)}
+
+  <section class="cadastro" aria-labelledby="cadastro-titulo">
+    <h2 id="cadastro-titulo">{txt.signup}</h2>
+    {sitekey === null ? (
+      <p class="aviso" id="cadastro-indisponivel">{txt.indisponivel}</p>
+    ) : (
+      <Fragment>
+        <p class="muted">{txt.signupIntro}</p>
+        <noscript><p class="aviso">{txt.noscript}</p></noscript>
+        <form id="cadastro" novalidate data-lang={lang}>
+          <fieldset disabled>
+            <div class="linha">
+              <div class="campo">
+                <label for="cad-nome">{txt.nome}</label>
+                <input id="cad-nome" name="nome" type="text" maxlength="100" autocomplete="given-name" required aria-describedby="erro-nome" />
+                <p class="erro" id="erro-nome" hidden></p>
+              </div>
+              <div class="campo">
+                <label for="cad-sobrenome">{txt.sobrenome}</label>
+                <input id="cad-sobrenome" name="sobrenome" type="text" maxlength="100" autocomplete="family-name" required aria-describedby="erro-sobrenome" />
+                <p class="erro" id="erro-sobrenome" hidden></p>
+              </div>
+            </div>
+            <div class="campo">
+              <label for="cad-email">{txt.email}</label>
+              <input id="cad-email" name="email" type="email" maxlength="100" autocomplete="email" inputmode="email" required aria-describedby="erro-email" />
+              <p class="erro" id="erro-email" hidden></p>
+            </div>
+            <fieldset class="campo plataforma" aria-describedby="erro-plataforma">
+              <legend>{txt.plataforma}</legend>
+              <label class="opcao"><input type="radio" name="plataforma" value="macos" required /> Mac</label>
+              <label class="opcao"><input type="radio" name="plataforma" value="windows" /> Windows</label>
+              <p class="erro" id="erro-plataforma" hidden></p>
+            </fieldset>
+            <div class="campo">
+              <label class="opcao">
+                <input type="checkbox" name="aceite_privacidade" required aria-describedby="erro-aceite_privacidade" />
+                <span>{txt.aceiteAntes}<a href={r.scienceTutorPrivacy}>{txt.aceiteLink}</a>{txt.aceiteDepois}</span>
+              </label>
+              <p class="erro" id="erro-aceite_privacidade" hidden></p>
+            </div>
+            <div class="campo">
+              <div class="cf-turnstile" data-sitekey={sitekey} data-language={lang === 'pt' ? 'pt-br' : 'en'}></div>
+              <p class="erro" id="erro-turnstile" hidden></p>
+            </div>
+            <button type="submit">{txt.enviar}</button>
+            <p class="status" id="cadastro-status" role="status" aria-live="polite"></p>
+          </fieldset>
+        </form>
+        <div id="cadastro-ok" class="confirmacao" tabindex="-1" hidden>
+          <h3>{txt.okTitulo}</h3>
+          <p>{txt.okTexto}</p>
+          {(['macos', 'windows'] as const).map((pl) => (
+            <p data-plataforma={pl} hidden><a href={r.scienceTutorSteps[pl]}>{txt.okPasso[pl]}</a></p>
+          ))}
+        </div>
+        <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+      </Fragment>
+    )}
+  </section>
+</Base>
+
+<script>
+  import { ligarCadastro, type TurnstileApi } from '../scripts/cadastro-form';
+
+  ligarCadastro(document, {
+    fetch: (...args) => window.fetch(...args),
+    turnstile: () => (window as unknown as { turnstile?: TurnstileApi }).turnstile,
+  });
+</script>
+
+<style>
+  /* --accent on --card is 3.7:1 in the light theme; text in the form needs 4.5:1. */
+  .cadastro { --accent-texto: color-mix(in srgb, var(--accent) 75%, var(--text)); }
+  .cadastro a { color: var(--accent-texto); }
+  .cadastro { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 8px 24px 24px; margin: 32px 0 48px; }
+  .cadastro h2 { margin-top: 0.6em; }
+  fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+  .linha { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
+  @media (max-width: 520px) { .linha { grid-template-columns: 1fr; } }
+  .campo { margin: 0 0 18px; }
+  label, legend { display: block; font-size: 0.9rem; font-weight: 500; margin-bottom: 6px; padding: 0; }
+  input[type='text'], input[type='email'] {
+    width: 100%; min-height: 44px; padding: 8px 12px; font: inherit; color: var(--text);
+    background: var(--bg); border: 1px solid var(--muted); border-radius: 8px;
+  }
+  input:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .opcao { display: flex; align-items: center; gap: 10px; font-weight: 400; font-size: 1rem; min-height: 44px; margin: 0; cursor: pointer; }
+  .plataforma .opcao { display: inline-flex; margin-right: 24px; }
+  .opcao input { width: 20px; height: 20px; margin: 0; accent-color: var(--accent); flex: none; }
+  button {
+    min-height: 44px; padding: 10px 22px; font: inherit; font-weight: 600; border-radius: 8px; cursor: pointer;
+    background: var(--text); color: var(--bg); border: 1px solid var(--text);
+  }
+  button:disabled { opacity: 0.55; cursor: not-allowed; }
+  .erro { color: var(--accent-texto); font-size: 0.85rem; margin: 6px 0 0; }
+  .aviso { border-left: 3px solid var(--accent); padding: 8px 14px; background: var(--soft); border-radius: 0 8px 8px 0; }
+  .confirmacao h3 { margin-top: 0.4em; }
+  .confirmacao:focus { outline: none; }
+</style>

@@ -1,4 +1,5 @@
 import { categories, categorySlugs, ui, type Category, type Lang, type UiKey } from './ui';
+import { PRIVACIDADE_PATH } from '../data/science-tutor.mjs';
 
 export type Kind = 'reviews' | 'posts';
 
@@ -21,6 +22,13 @@ export const routes = (lang: Lang) => {
     posts: lang === 'pt' ? '/textos/' : '/en/posts/',
     about: lang === 'pt' ? '/sobre/' : '/en/about/',
     search: lang === 'pt' ? '/busca/' : '/en/search/',
+    scienceTutor: `${p}/downloads/science-tutor/`,
+    scienceTutorPrivacy: PRIVACIDADE_PATH[lang],
+    // Install guides exist only in Portuguese: the sarzel-dist e-mail links to these fixed URLs.
+    scienceTutorSteps: {
+      macos: '/downloads/science-tutor/passo-a-passo/mac/',
+      windows: '/downloads/science-tutor/passo-a-passo/windows/',
+    },
     rss: `${p}/rss.xml`,
   };
 };
