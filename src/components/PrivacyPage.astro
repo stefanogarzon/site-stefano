@@ -10,12 +10,15 @@ const { lang } = Astro.props;
 const r = routes(lang);
 const sitekey = turnstileSitekey(import.meta.env.PUBLIC_TURNSTILE_SITEKEY);
 
-interface Secao { titulo: string; paragrafos?: string[]; itens?: string[] }
+const CONTATO = 'privacidade@sarzel.com';
+
+/** contato: text placed before the privacy contact link, closing the section. */
+interface Secao { titulo: string; paragrafos?: string[]; itens?: string[]; contato?: string }
 
 const txt = {
   pt: {
     titulo: 'Aviso de privacidade do Science Tutor',
-    description: 'O que o cadastro do Science Tutor guarda, para quê, onde, por quanto tempo e como pedir a exclusão dos seus dados.',
+    description: 'O que o cadastro do Science Tutor guarda, para quê, com que base legal, onde, por quanto tempo, os seus direitos e como pedir a exclusão dos seus dados.',
     rascunho: 'RASCUNHO — aguardando aprovação do dono',
     rascunhoTexto: 'Este texto ainda não foi aprovado e pode mudar.',
     voltar: 'Voltar ao Science Tutor',
@@ -23,6 +26,7 @@ const txt = {
       {
         titulo: 'Quem é o responsável',
         paragrafos: ['Stefano Garzon, que distribui o Science Tutor, é o responsável pelos dados do cadastro (controlador, nos termos da LGPD).'],
+        contato: 'Contato para assuntos de privacidade:',
       },
       {
         titulo: 'O que é guardado',
@@ -40,6 +44,18 @@ const txt = {
         ],
       },
       {
+        titulo: 'Base legal',
+        paragrafos: [
+          'O tratamento se baseia na execução de contrato ou de procedimentos preliminares relacionados a contrato, a pedido do titular (LGPD, art. 7º, V): o cadastro existe para entregar o app que você pediu.',
+        ],
+      },
+      {
+        titulo: 'Os artigos que você lê',
+        paragrafos: [
+          'O app envia o PDF do artigo diretamente ao provedor de IA que você escolher, com a sua própria chave. O sarzel.com não recebe nem guarda os artigos.',
+        ],
+      },
+      {
         titulo: 'Onde',
         paragrafos: [
           'Os dados ficam no servidor de distribuição sarzel.com, hospedado na Cloudflare. A Cloudflare também faz a verificação anti-robô (Turnstile) do formulário. O e-mail com o acesso é enviado pelo Resend, que recebe o seu endereço só para entregar a mensagem.',
@@ -50,6 +66,19 @@ const txt = {
         paragrafos: [
           'Nome, sobrenome, e-mail e data do aceite ficam enquanto o cadastro existir, até a confirmação da exclusão pelo link (um pedido de exclusão sem confirmação não apaga nada). Na exclusão o token é revogado e o hash dele continua guardado, sem o e-mail e sem prazo, para auditoria. O registro de cada pedido é apagado no primeiro pedido que chegar depois de 24 h e passar pelas verificações do formulário e anti-robô, ou na exclusão.',
         ],
+      },
+      {
+        titulo: 'Seus direitos',
+        paragrafos: ['Pela LGPD (art. 18), você pode pedir:'],
+        itens: [
+          'acesso aos seus dados;',
+          'correção de dados incompletos, inexatos ou desatualizados;',
+          'portabilidade dos dados;',
+          'informação sobre o compartilhamento dos dados: com quem foram compartilhados;',
+          'revogação do consentimento;',
+          'exclusão dos dados.',
+        ],
+        contato: 'A exclusão se pede pelo formulário desta página; os demais pedidos, pelo e-mail',
       },
       {
         titulo: 'Como pedir a exclusão',
@@ -68,7 +97,7 @@ const txt = {
   },
   en: {
     titulo: 'Science Tutor privacy notice',
-    description: 'What the Science Tutor sign-up stores, why, where, for how long and how to ask for your data to be deleted.',
+    description: 'What the Science Tutor sign-up stores, why, on what legal basis, where, for how long, your rights and how to ask for your data to be deleted.',
     rascunho: 'DRAFT — awaiting owner approval',
     rascunhoTexto: 'This text has not been approved yet and may change.',
     voltar: 'Back to Science Tutor',
@@ -76,6 +105,7 @@ const txt = {
       {
         titulo: 'Who is responsible',
         paragrafos: ['Stefano Garzon, who distributes Science Tutor, is responsible for the sign-up data (the controller, under Brazil’s LGPD).'],
+        contato: 'Privacy contact:',
       },
       {
         titulo: 'What is stored',
@@ -93,6 +123,18 @@ const txt = {
         ],
       },
       {
+        titulo: 'Legal basis',
+        paragrafos: [
+          'The processing is based on the performance of a contract or of preliminary procedures related to a contract, at the request of the data subject (LGPD, Art. 7(V)): the sign-up exists to deliver the app you asked for.',
+        ],
+      },
+      {
+        titulo: 'The articles you read',
+        paragrafos: [
+          'The app sends the article PDF directly to the AI provider you choose, using your own key. sarzel.com does not receive or store the articles.',
+        ],
+      },
+      {
         titulo: 'Where',
         paragrafos: [
           'The data is stored on the sarzel.com distribution server, hosted on Cloudflare. Cloudflare also runs the anti-bot check (Turnstile) on the form. The email with your access is sent through Resend, which receives your address only to deliver the message.',
@@ -103,6 +145,19 @@ const txt = {
         paragrafos: [
           'Your first name, last name, email and acceptance date are kept as long as the sign-up exists, until the deletion is confirmed through the link (a deletion request that is not confirmed deletes nothing). On deletion the token is revoked and its hash stays, without your email and with no time limit, for auditing. The record of each request is deleted by the first request that arrives after 24 hours and passes the form and anti-bot checks, or on deletion.',
         ],
+      },
+      {
+        titulo: 'Your rights',
+        paragrafos: ['Under the LGPD (Art. 18), you can ask for:'],
+        itens: [
+          'access to your data;',
+          'correction of incomplete, inaccurate or outdated data;',
+          'portability of the data;',
+          'information about the sharing of the data: with whom it was shared;',
+          'revocation of consent;',
+          'deletion of the data.',
+        ],
+        contato: 'Deletion is requested through the form on this page; all other requests by email to',
       },
       {
         titulo: 'How to ask for deletion',
@@ -144,6 +199,7 @@ const txt = {
       <h2>{s.titulo}</h2>
       {s.paragrafos?.map((par) => <p>{par}</p>)}
       {s.itens && <ul>{s.itens.map((item) => <li>{item}</li>)}</ul>}
+      {s.contato && <p>{s.contato} <a href={`mailto:${CONTATO}`}>{CONTATO}</a>.</p>}
     </section>
   ))}
 

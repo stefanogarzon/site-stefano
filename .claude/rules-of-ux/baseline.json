@@ -431,7 +431,8 @@
     "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > h1",
     "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
     "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > h2",
-    "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p",
+    "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+    "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
     "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > h2",
     "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > ul",
     "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(3) > h2",
@@ -442,10 +443,17 @@
     "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(5) > p",
     "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > h2",
     "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > p",
+    "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > h2",
+    "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > p",
+    "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > h2",
+    "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+    "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+    "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > ul",
+    "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > h2",
+    "privacidade-en@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > p",
     "privacidade-en@1280x800/claro/pt|grupo-ambiguo|html > body > header",
     "privacidade-en@1280x800/claro/pt|padding-pequeno|#exclusao > fieldset > button",
-    "privacidade-en@1280x800/claro/pt|padding-pequeno|[role=\"note\"]",
-    "privacidade-en@1280x800/claro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(7)",
+    "privacidade-en@1280x800/claro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(10)",
     "privacidade-en@1280x800/escuro/pt|alvo-pequeno|[aria-label=\"Search\"]",
     "privacidade-en@1280x800/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
     "privacidade-en@1280x800/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
@@ -462,7 +470,8 @@
     "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > h1",
     "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
     "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > h2",
-    "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p",
+    "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+    "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
     "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > h2",
     "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > ul",
     "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(3) > h2",
@@ -473,10 +482,17 @@
     "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(5) > p",
     "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > h2",
     "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > p",
+    "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > h2",
+    "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > p",
+    "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > h2",
+    "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+    "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+    "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > ul",
+    "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > h2",
+    "privacidade-en@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > p",
     "privacidade-en@1280x800/escuro/pt|grupo-ambiguo|html > body > header",
     "privacidade-en@1280x800/escuro/pt|padding-pequeno|#exclusao > fieldset > button",
-    "privacidade-en@1280x800/escuro/pt|padding-pequeno|[role=\"note\"]",
-    "privacidade-en@1280x800/escuro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(7)",
+    "privacidade-en@1280x800/escuro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(10)",
     "privacidade-en@390x844/claro/pt|alvo-pequeno|[aria-label=\"Search\"]",
     "privacidade-en@390x844/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
     "privacidade-en@390x844/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
@@ -493,7 +509,8 @@
     "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > h1",
     "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
     "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > h2",
-    "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p",
+    "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+    "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
     "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > h2",
     "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > ul",
     "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(3) > h2",
@@ -504,11 +521,17 @@
     "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(5) > p",
     "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > h2",
     "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > p",
-    "privacidade-en@390x844/claro/pt|grupo-ambiguo|html > body > header",
+    "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > h2",
+    "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > p",
+    "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > h2",
+    "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+    "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+    "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > ul",
+    "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > h2",
+    "privacidade-en@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > p",
     "privacidade-en@390x844/claro/pt|padding-pequeno|#exclusao > fieldset > button",
-    "privacidade-en@390x844/claro/pt|padding-pequeno|[role=\"note\"]",
     "privacidade-en@390x844/claro/pt|padding-pequeno|html > body > header",
-    "privacidade-en@390x844/claro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(7)",
+    "privacidade-en@390x844/claro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(10)",
     "privacidade-en@390x844/escuro/pt|alvo-pequeno|[aria-label=\"Search\"]",
     "privacidade-en@390x844/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
     "privacidade-en@390x844/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
@@ -525,7 +548,8 @@
     "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > h1",
     "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
     "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > h2",
-    "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p",
+    "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+    "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
     "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > h2",
     "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > ul",
     "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(3) > h2",
@@ -536,11 +560,17 @@
     "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(5) > p",
     "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > h2",
     "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > p",
-    "privacidade-en@390x844/escuro/pt|grupo-ambiguo|html > body > header",
+    "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > h2",
+    "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > p",
+    "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > h2",
+    "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+    "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+    "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > ul",
+    "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > h2",
+    "privacidade-en@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > p",
     "privacidade-en@390x844/escuro/pt|padding-pequeno|#exclusao > fieldset > button",
-    "privacidade-en@390x844/escuro/pt|padding-pequeno|[role=\"note\"]",
     "privacidade-en@390x844/escuro/pt|padding-pequeno|html > body > header",
-    "privacidade-en@390x844/escuro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(7)",
+    "privacidade-en@390x844/escuro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(10)",
     "privacidade@1280x800/claro/pt|alvo-pequeno|[aria-label=\"Buscar\"]",
     "privacidade@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
     "privacidade@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
@@ -557,7 +587,8 @@
     "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > h1",
     "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
     "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > h2",
-    "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p",
+    "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+    "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
     "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > h2",
     "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > ul",
     "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(3) > h2",
@@ -568,10 +599,17 @@
     "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(5) > p",
     "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > h2",
     "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > p",
+    "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > h2",
+    "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > p",
+    "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > h2",
+    "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+    "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+    "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > ul",
+    "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > h2",
+    "privacidade@1280x800/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > p",
     "privacidade@1280x800/claro/pt|grupo-ambiguo|html > body > header",
     "privacidade@1280x800/claro/pt|padding-pequeno|#exclusao > fieldset > button",
-    "privacidade@1280x800/claro/pt|padding-pequeno|[role=\"note\"]",
-    "privacidade@1280x800/claro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(7)",
+    "privacidade@1280x800/claro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(10)",
     "privacidade@1280x800/escuro/pt|alvo-pequeno|[aria-label=\"Buscar\"]",
     "privacidade@1280x800/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
     "privacidade@1280x800/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
@@ -588,7 +626,8 @@
     "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > h1",
     "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
     "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > h2",
-    "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p",
+    "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+    "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
     "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > h2",
     "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > ul",
     "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(3) > h2",
@@ -599,10 +638,17 @@
     "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(5) > p",
     "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > h2",
     "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > p",
+    "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > h2",
+    "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > p",
+    "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > h2",
+    "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+    "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+    "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > ul",
+    "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > h2",
+    "privacidade@1280x800/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > p",
     "privacidade@1280x800/escuro/pt|grupo-ambiguo|html > body > header",
     "privacidade@1280x800/escuro/pt|padding-pequeno|#exclusao > fieldset > button",
-    "privacidade@1280x800/escuro/pt|padding-pequeno|[role=\"note\"]",
-    "privacidade@1280x800/escuro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(7)",
+    "privacidade@1280x800/escuro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(10)",
     "privacidade@390x844/claro/pt|alvo-pequeno|[aria-label=\"Buscar\"]",
     "privacidade@390x844/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
     "privacidade@390x844/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
@@ -619,7 +665,8 @@
     "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > h1",
     "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
     "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > h2",
-    "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p",
+    "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+    "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
     "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > h2",
     "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > ul",
     "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(3) > h2",
@@ -630,11 +677,17 @@
     "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(5) > p",
     "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > h2",
     "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > p",
-    "privacidade@390x844/claro/pt|grupo-ambiguo|html > body > header",
+    "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > h2",
+    "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > p",
+    "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > h2",
+    "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+    "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+    "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > ul",
+    "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > h2",
+    "privacidade@390x844/claro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > p",
     "privacidade@390x844/claro/pt|padding-pequeno|#exclusao > fieldset > button",
-    "privacidade@390x844/claro/pt|padding-pequeno|[role=\"note\"]",
     "privacidade@390x844/claro/pt|padding-pequeno|html > body > header",
-    "privacidade@390x844/claro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(7)",
+    "privacidade@390x844/claro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(10)",
     "privacidade@390x844/escuro/pt|alvo-pequeno|[aria-label=\"Buscar\"]",
     "privacidade@390x844/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
     "privacidade@390x844/escuro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
@@ -651,7 +704,8 @@
     "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > h1",
     "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > p:nth-of-type(2)",
     "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > h2",
-    "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p",
+    "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+    "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
     "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > h2",
     "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(2) > ul",
     "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(3) > h2",
@@ -662,11 +716,17 @@
     "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(5) > p",
     "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > h2",
     "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(6) > p",
-    "privacidade@390x844/escuro/pt|grupo-ambiguo|html > body > header",
+    "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > h2",
+    "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(7) > p",
+    "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > h2",
+    "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+    "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+    "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(8) > ul",
+    "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > h2",
+    "privacidade@390x844/escuro/pt|fora-da-grade|html > body > main > div > section:nth-of-type(9) > p",
     "privacidade@390x844/escuro/pt|padding-pequeno|#exclusao > fieldset > button",
-    "privacidade@390x844/escuro/pt|padding-pequeno|[role=\"note\"]",
     "privacidade@390x844/escuro/pt|padding-pequeno|html > body > header",
-    "privacidade@390x844/escuro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(7)",
+    "privacidade@390x844/escuro/pt|padding-pequeno|html > body > main > div > section:nth-of-type(10)",
     "science-tutor-en@1280x800/claro/pt|alvo-pequeno|[aria-label=\"Search\"]",
     "science-tutor-en@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(1)",
     "science-tutor-en@1280x800/claro/pt|alvo-pequeno|html > body > header > nav > a:nth-of-type(2)",
@@ -4907,7 +4967,16 @@
       "regra": "fora-da-grade",
       "severidade": "aviso",
       "tela": "privacidade-en@1280x800/claro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(1) > p",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
       "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
       "correcao": "use múltiplos de 4 px",
       "lei": "padrão 8 px"
@@ -5003,11 +5072,83 @@
       "lei": "padrão 8 px"
     },
     {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(7) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(7) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > ul",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
       "regra": "grupo-ambiguo",
       "severidade": "aviso",
       "tela": "privacidade-en@1280x800/claro/pt",
       "seletor": "html > body > header",
-      "evidencia": "espaço interno de 650.03 px ≥ 8 px até html > body > main",
+      "evidencia": "espaço interno de 650.03 px ≥ 12 px até html > body > main",
       "correcao": "separe os grupos com pelo menos o dobro do espaço interno",
       "lei": "Law of Proximity"
     },
@@ -5024,16 +5165,7 @@
       "regra": "padding-pequeno",
       "severidade": "aviso",
       "tela": "privacidade-en@1280x800/claro/pt",
-      "seletor": "[role=\"note\"]",
-      "evidencia": "padding abaixo de 16 px: top 12px, bottom 12px",
-      "correcao": "aumente o padding para 16 px",
-      "lei": "padrão"
-    },
-    {
-      "regra": "padding-pequeno",
-      "severidade": "aviso",
-      "tela": "privacidade-en@1280x800/claro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(7)",
+      "seletor": "html > body > main > div > section:nth-of-type(10)",
       "evidencia": "padding abaixo de 16 px: top 8px",
       "correcao": "aumente o padding para 16 px",
       "lei": "padrão"
@@ -5186,7 +5318,16 @@
       "regra": "fora-da-grade",
       "severidade": "aviso",
       "tela": "privacidade-en@1280x800/escuro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(1) > p",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
       "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
       "correcao": "use múltiplos de 4 px",
       "lei": "padrão 8 px"
@@ -5282,11 +5423,83 @@
       "lei": "padrão 8 px"
     },
     {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(7) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(7) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > ul",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
       "regra": "grupo-ambiguo",
       "severidade": "aviso",
       "tela": "privacidade-en@1280x800/escuro/pt",
       "seletor": "html > body > header",
-      "evidencia": "espaço interno de 650.03 px ≥ 8 px até html > body > main",
+      "evidencia": "espaço interno de 650.03 px ≥ 12 px até html > body > main",
       "correcao": "separe os grupos com pelo menos o dobro do espaço interno",
       "lei": "Law of Proximity"
     },
@@ -5303,16 +5516,7 @@
       "regra": "padding-pequeno",
       "severidade": "aviso",
       "tela": "privacidade-en@1280x800/escuro/pt",
-      "seletor": "[role=\"note\"]",
-      "evidencia": "padding abaixo de 16 px: top 12px, bottom 12px",
-      "correcao": "aumente o padding para 16 px",
-      "lei": "padrão"
-    },
-    {
-      "regra": "padding-pequeno",
-      "severidade": "aviso",
-      "tela": "privacidade-en@1280x800/escuro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(7)",
+      "seletor": "html > body > main > div > section:nth-of-type(10)",
       "evidencia": "padding abaixo de 16 px: top 8px",
       "correcao": "aumente o padding para 16 px",
       "lei": "padrão"
@@ -5465,7 +5669,16 @@
       "regra": "fora-da-grade",
       "severidade": "aviso",
       "tela": "privacidade-en@390x844/claro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(1) > p",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
       "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
       "correcao": "use múltiplos de 4 px",
       "lei": "padrão 8 px"
@@ -5561,13 +5774,76 @@
       "lei": "padrão 8 px"
     },
     {
-      "regra": "grupo-ambiguo",
+      "regra": "fora-da-grade",
       "severidade": "aviso",
       "tela": "privacidade-en@390x844/claro/pt",
-      "seletor": "html > body > header",
-      "evidencia": "espaço interno de 8 px ≥ 8 px até html > body > main",
-      "correcao": "separe os grupos com pelo menos o dobro do espaço interno",
-      "lei": "Law of Proximity"
+      "seletor": "html > body > main > div > section:nth-of-type(7) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(7) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > ul",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
     },
     {
       "regra": "padding-pequeno",
@@ -5575,15 +5851,6 @@
       "tela": "privacidade-en@390x844/claro/pt",
       "seletor": "#exclusao > fieldset > button",
       "evidencia": "padding abaixo de 16 px: top 10px, bottom 10px",
-      "correcao": "aumente o padding para 16 px",
-      "lei": "padrão"
-    },
-    {
-      "regra": "padding-pequeno",
-      "severidade": "aviso",
-      "tela": "privacidade-en@390x844/claro/pt",
-      "seletor": "[role=\"note\"]",
-      "evidencia": "padding abaixo de 16 px: top 12px, bottom 12px",
       "correcao": "aumente o padding para 16 px",
       "lei": "padrão"
     },
@@ -5600,7 +5867,7 @@
       "regra": "padding-pequeno",
       "severidade": "aviso",
       "tela": "privacidade-en@390x844/claro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(7)",
+      "seletor": "html > body > main > div > section:nth-of-type(10)",
       "evidencia": "padding abaixo de 16 px: top 8px",
       "correcao": "aumente o padding para 16 px",
       "lei": "padrão"
@@ -5753,7 +6020,16 @@
       "regra": "fora-da-grade",
       "severidade": "aviso",
       "tela": "privacidade-en@390x844/escuro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(1) > p",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
       "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
       "correcao": "use múltiplos de 4 px",
       "lei": "padrão 8 px"
@@ -5849,13 +6125,76 @@
       "lei": "padrão 8 px"
     },
     {
-      "regra": "grupo-ambiguo",
+      "regra": "fora-da-grade",
       "severidade": "aviso",
       "tela": "privacidade-en@390x844/escuro/pt",
-      "seletor": "html > body > header",
-      "evidencia": "espaço interno de 8 px ≥ 8 px até html > body > main",
-      "correcao": "separe os grupos com pelo menos o dobro do espaço interno",
-      "lei": "Law of Proximity"
+      "seletor": "html > body > main > div > section:nth-of-type(7) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(7) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > ul",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade-en@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
     },
     {
       "regra": "padding-pequeno",
@@ -5863,15 +6202,6 @@
       "tela": "privacidade-en@390x844/escuro/pt",
       "seletor": "#exclusao > fieldset > button",
       "evidencia": "padding abaixo de 16 px: top 10px, bottom 10px",
-      "correcao": "aumente o padding para 16 px",
-      "lei": "padrão"
-    },
-    {
-      "regra": "padding-pequeno",
-      "severidade": "aviso",
-      "tela": "privacidade-en@390x844/escuro/pt",
-      "seletor": "[role=\"note\"]",
-      "evidencia": "padding abaixo de 16 px: top 12px, bottom 12px",
       "correcao": "aumente o padding para 16 px",
       "lei": "padrão"
     },
@@ -5888,7 +6218,7 @@
       "regra": "padding-pequeno",
       "severidade": "aviso",
       "tela": "privacidade-en@390x844/escuro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(7)",
+      "seletor": "html > body > main > div > section:nth-of-type(10)",
       "evidencia": "padding abaixo de 16 px: top 8px",
       "correcao": "aumente o padding para 16 px",
       "lei": "padrão"
@@ -6041,7 +6371,16 @@
       "regra": "fora-da-grade",
       "severidade": "aviso",
       "tela": "privacidade@1280x800/claro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(1) > p",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
       "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
       "correcao": "use múltiplos de 4 px",
       "lei": "padrão 8 px"
@@ -6137,11 +6476,83 @@
       "lei": "padrão 8 px"
     },
     {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(7) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(7) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > ul",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
       "regra": "grupo-ambiguo",
       "severidade": "aviso",
       "tela": "privacidade@1280x800/claro/pt",
       "seletor": "html > body > header",
-      "evidencia": "espaço interno de 624.99 px ≥ 8 px até html > body > main",
+      "evidencia": "espaço interno de 624.99 px ≥ 12 px até html > body > main",
       "correcao": "separe os grupos com pelo menos o dobro do espaço interno",
       "lei": "Law of Proximity"
     },
@@ -6158,16 +6569,7 @@
       "regra": "padding-pequeno",
       "severidade": "aviso",
       "tela": "privacidade@1280x800/claro/pt",
-      "seletor": "[role=\"note\"]",
-      "evidencia": "padding abaixo de 16 px: top 12px, bottom 12px",
-      "correcao": "aumente o padding para 16 px",
-      "lei": "padrão"
-    },
-    {
-      "regra": "padding-pequeno",
-      "severidade": "aviso",
-      "tela": "privacidade@1280x800/claro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(7)",
+      "seletor": "html > body > main > div > section:nth-of-type(10)",
       "evidencia": "padding abaixo de 16 px: top 8px",
       "correcao": "aumente o padding para 16 px",
       "lei": "padrão"
@@ -6320,7 +6722,16 @@
       "regra": "fora-da-grade",
       "severidade": "aviso",
       "tela": "privacidade@1280x800/escuro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(1) > p",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
       "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
       "correcao": "use múltiplos de 4 px",
       "lei": "padrão 8 px"
@@ -6416,11 +6827,83 @@
       "lei": "padrão 8 px"
     },
     {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(7) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(7) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > ul",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@1280x800/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
       "regra": "grupo-ambiguo",
       "severidade": "aviso",
       "tela": "privacidade@1280x800/escuro/pt",
       "seletor": "html > body > header",
-      "evidencia": "espaço interno de 624.99 px ≥ 8 px até html > body > main",
+      "evidencia": "espaço interno de 624.99 px ≥ 12 px até html > body > main",
       "correcao": "separe os grupos com pelo menos o dobro do espaço interno",
       "lei": "Law of Proximity"
     },
@@ -6437,16 +6920,7 @@
       "regra": "padding-pequeno",
       "severidade": "aviso",
       "tela": "privacidade@1280x800/escuro/pt",
-      "seletor": "[role=\"note\"]",
-      "evidencia": "padding abaixo de 16 px: top 12px, bottom 12px",
-      "correcao": "aumente o padding para 16 px",
-      "lei": "padrão"
-    },
-    {
-      "regra": "padding-pequeno",
-      "severidade": "aviso",
-      "tela": "privacidade@1280x800/escuro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(7)",
+      "seletor": "html > body > main > div > section:nth-of-type(10)",
       "evidencia": "padding abaixo de 16 px: top 8px",
       "correcao": "aumente o padding para 16 px",
       "lei": "padrão"
@@ -6599,7 +7073,16 @@
       "regra": "fora-da-grade",
       "severidade": "aviso",
       "tela": "privacidade@390x844/claro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(1) > p",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
       "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
       "correcao": "use múltiplos de 4 px",
       "lei": "padrão 8 px"
@@ -6695,13 +7178,76 @@
       "lei": "padrão 8 px"
     },
     {
-      "regra": "grupo-ambiguo",
+      "regra": "fora-da-grade",
       "severidade": "aviso",
       "tela": "privacidade@390x844/claro/pt",
-      "seletor": "html > body > header",
-      "evidencia": "espaço interno de 8 px ≥ 8 px até html > body > main",
-      "correcao": "separe os grupos com pelo menos o dobro do espaço interno",
-      "lei": "Law of Proximity"
+      "seletor": "html > body > main > div > section:nth-of-type(7) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(7) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > ul",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/claro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
     },
     {
       "regra": "padding-pequeno",
@@ -6709,15 +7255,6 @@
       "tela": "privacidade@390x844/claro/pt",
       "seletor": "#exclusao > fieldset > button",
       "evidencia": "padding abaixo de 16 px: top 10px, bottom 10px",
-      "correcao": "aumente o padding para 16 px",
-      "lei": "padrão"
-    },
-    {
-      "regra": "padding-pequeno",
-      "severidade": "aviso",
-      "tela": "privacidade@390x844/claro/pt",
-      "seletor": "[role=\"note\"]",
-      "evidencia": "padding abaixo de 16 px: top 12px, bottom 12px",
       "correcao": "aumente o padding para 16 px",
       "lei": "padrão"
     },
@@ -6734,7 +7271,7 @@
       "regra": "padding-pequeno",
       "severidade": "aviso",
       "tela": "privacidade@390x844/claro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(7)",
+      "seletor": "html > body > main > div > section:nth-of-type(10)",
       "evidencia": "padding abaixo de 16 px: top 8px",
       "correcao": "aumente o padding para 16 px",
       "lei": "padrão"
@@ -6887,7 +7424,16 @@
       "regra": "fora-da-grade",
       "severidade": "aviso",
       "tela": "privacidade@390x844/escuro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(1) > p",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(1) > p:nth-of-type(2)",
       "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
       "correcao": "use múltiplos de 4 px",
       "lei": "padrão 8 px"
@@ -6983,13 +7529,76 @@
       "lei": "padrão 8 px"
     },
     {
-      "regra": "grupo-ambiguo",
+      "regra": "fora-da-grade",
       "severidade": "aviso",
       "tela": "privacidade@390x844/escuro/pt",
-      "seletor": "html > body > header",
-      "evidencia": "espaço interno de 8 px ≥ 8 px até html > body > main",
-      "correcao": "separe os grupos com pelo menos o dobro do espaço interno",
-      "lei": "Law of Proximity"
+      "seletor": "html > body > main > div > section:nth-of-type(7) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(7) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(1)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > p:nth-of-type(2)",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(8) > ul",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > h2",
+      "evidencia": "fora da grade de 4 px: marginTop 43.2px, marginBottom 8.64px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
+    },
+    {
+      "regra": "fora-da-grade",
+      "severidade": "aviso",
+      "tela": "privacidade@390x844/escuro/pt",
+      "seletor": "html > body > main > div > section:nth-of-type(9) > p",
+      "evidencia": "fora da grade de 4 px: marginTop 17px, marginBottom 17px",
+      "correcao": "use múltiplos de 4 px",
+      "lei": "padrão 8 px"
     },
     {
       "regra": "padding-pequeno",
@@ -6997,15 +7606,6 @@
       "tela": "privacidade@390x844/escuro/pt",
       "seletor": "#exclusao > fieldset > button",
       "evidencia": "padding abaixo de 16 px: top 10px, bottom 10px",
-      "correcao": "aumente o padding para 16 px",
-      "lei": "padrão"
-    },
-    {
-      "regra": "padding-pequeno",
-      "severidade": "aviso",
-      "tela": "privacidade@390x844/escuro/pt",
-      "seletor": "[role=\"note\"]",
-      "evidencia": "padding abaixo de 16 px: top 12px, bottom 12px",
       "correcao": "aumente o padding para 16 px",
       "lei": "padrão"
     },
@@ -7022,7 +7622,7 @@
       "regra": "padding-pequeno",
       "severidade": "aviso",
       "tela": "privacidade@390x844/escuro/pt",
-      "seletor": "html > body > main > div > section:nth-of-type(7)",
+      "seletor": "html > body > main > div > section:nth-of-type(10)",
       "evidencia": "padding abaixo de 16 px: top 8px",
       "correcao": "aumente o padding para 16 px",
       "lei": "padrão"

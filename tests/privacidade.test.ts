@@ -13,6 +13,17 @@ const paginas = [
     outraLang: 'en',
     cadastro: 'downloads/science-tutor/index.html',
     rascunho: 'RASCUNHO — aguardando aprovação do dono',
+    secoes: {
+      responsavel: /^Quem é o responsável$/,
+      baseLegal: /^Base legal$/,
+      direitos: /^Seus direitos$/,
+      artigos: /^(Para quê|Os artigos que você lê)$/,
+    },
+    aprovado: {
+      baseLegal: [/execução de contrato/i, /procedimentos preliminares/i, /a pedido do titular/i, /LGPD/, /art\. 7º, V/],
+      direitos: [/acesso/i, /correção/i, /portabilidade/i, /compartilhamento/i, /revogação/i, /exclusão/i, /LGPD/, /art\. 18/, /formulário/i, /privacidade@sarzel\.com/],
+      artigos: [/PDF/, /diretamente ao provedor de IA que você escolher/i, /sua própria chave/i, /sarzel\.com não recebe nem guarda os artigos/i],
+    },
     texto: {
       guardado: [/nome/i, /sobrenome/i, /e-mail/i, /data do aceite/i, /hash do token/i, /HMAC do IP/i, /24 h/],
       finalidade: [/enviar o acesso/i],
@@ -30,6 +41,17 @@ const paginas = [
     outraLang: 'pt',
     cadastro: 'en/downloads/science-tutor/index.html',
     rascunho: 'DRAFT — awaiting owner approval',
+    secoes: {
+      responsavel: /^Who is responsible$/,
+      baseLegal: /^Legal basis$/,
+      direitos: /^Your rights$/,
+      artigos: /^(Why|The articles you read)$/,
+    },
+    aprovado: {
+      baseLegal: [/performance of a contract/i, /preliminary (steps|procedures)/i, /at the request of the data subject/i, /LGPD/, /Art\. 7\(V\)/],
+      direitos: [/access/i, /correct/i, /portability/i, /shar/i, /revo/i, /delet/i, /LGPD/, /Art\. 18/, /form/i, /privacidade@sarzel\.com/],
+      artigos: [/PDF/, /directly to the AI provider you choose/i, /your own key/i, /sarzel\.com does not receive or store the articles/i],
+    },
     texto: {
       guardado: [/first name/i, /last name/i, /email/i, /date you accepted/i, /hash of the access token/i, /HMAC of your IP/i, /24 hours/],
       finalidade: [/send you access/i],
@@ -52,6 +74,17 @@ const semTags = (html: string) =>
 
 const corpo = (html: string) => html.match(/<main[^>]*>([\s\S]*)<\/main>/)![1];
 
+/** HTML of every <section> of the page whose <h2> text matches the title. */
+const secoes = (html: string, titulo: RegExp) => {
+  const todas = [...corpo(html).matchAll(/<section[^>]*>[\s\S]*?<\/section>/g)].map((m) => m[0]);
+  const achadas = todas.filter((s) => {
+    const h2 = s.match(/<h2[^>]*>([\s\S]*?)<\/h2>/);
+    return h2 !== null && titulo.test(semTags(h2[1]).trim());
+  });
+  expect(achadas.length, `seção ${titulo}`).toBeGreaterThan(0);
+  return achadas.join('\n');
+};
+
 describe.each(paginas)('aviso de privacidade ($lang)', (p) => {
   it('existe com canonical e hreflang da tradução', () => {
     expect(exists(p.arquivo)).toBe(true);
@@ -70,22 +103,31 @@ describe.each(paginas)('aviso de privacidade ($lang)', (p) => {
     expect(exists(`${href.slice(1)}index.html`)).toBe(true);
   });
 
-  it('faixa de rascunho no topo do conteúdo', () => {
-    const main = corpo(read(p.arquivo));
-    const texto = semTags(main).trim();
-    expect(texto.startsWith(p.rascunho)).toBe(true);
-    const faixa = tag(main, /<[a-z]+[^>]*class="[^"]*rascunho[^"]*"[^>]*>/);
-    expect(faixa).toBeTruthy();
+  it('aprovado: sem faixa de rascunho', () => {
+    const html = read(p.arquivo);
+    expect(html).not.toContain(p.rascunho);
+    expect(html).not.toMatch(/class="[^"]*rascunho[^"]*"/);
   });
 
-  it('noindex, fora do sitemap e fora da busca', () => {
+  it('aprovado: indexável e no sitemap, fora da busca', () => {
     const html = read(p.arquivo);
-    expect(html).toContain('<meta name="robots" content="noindex">');
+    expect(html).not.toContain('name="robots"');
+    expect(html).not.toContain('noindex');
     expect(html).not.toContain('data-pagefind-body');
-    expect(read('sitemap-0.xml')).not.toContain(`${SITE}${p.url}`);
-    // As demais páginas continuam indexáveis.
+    expect(read('sitemap-0.xml')).toContain(`<loc>${SITE}${p.url}</loc>`);
     expect(read(p.cadastro)).not.toContain('name="robots"');
     expect(read('sitemap-0.xml')).toContain(`${SITE}/${p.cadastro.replace('index.html', '')}`);
+  });
+
+  it.each(['baseLegal', 'direitos', 'artigos'] as const)('texto aprovado: seção %s', (chave) => {
+    const texto = semTags(secoes(read(p.arquivo), p.secoes[chave]));
+    for (const re of p.aprovado[chave]) expect(texto, `${chave}: ${re}`).toMatch(re);
+  });
+
+  it.each(['responsavel', 'direitos'] as const)('contato privacidade@sarzel.com na seção %s', (chave) => {
+    const html = secoes(read(p.arquivo), p.secoes[chave]);
+    expect(html).toContain('href="mailto:privacidade@sarzel.com"');
+    expect(semTags(html)).toContain('privacidade@sarzel.com');
   });
 
   it.each(['guardado', 'finalidade', 'onde', 'prazo', 'exclusao'] as const)('texto diz o %s', (secao) => {
