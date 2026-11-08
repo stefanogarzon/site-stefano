@@ -22,6 +22,8 @@ const paginas = [
       exclusao: /^Como pedir a exclusão$/,
     },
     aparelho: [/chave pública do aparelho/i, /chip/i, /data da ativação/i, /última checagem/i],
+    pedidoSemConfirmar: /já no pedido de ativação, mesmo que o código nunca seja confirmado/i,
+    naoConfirmada: /ativação não confirmada/i,
     ficaComHash: [/chave pública do aparelho/i, /datas? da ativação/i, /última checagem/i, /hash do token revogado/i],
     aprovado: {
       baseLegal: [/execução de contrato/i, /procedimentos preliminares/i, /a pedido do titular/i, /LGPD/, /art\. 7º, V/],
@@ -54,6 +56,8 @@ const paginas = [
       exclusao: /^How to ask for deletion$/,
     },
     aparelho: [/public key of the device/i, /chip/i, /date of activation/i, /last check/i],
+    pedidoSemConfirmar: /already when activation is requested, even if the code is never confirmed/i,
+    naoConfirmada: /unconfirmed activation/i,
     ficaComHash: [/public key of the device/i, /dates? of activation/i, /last check/i, /hash of the revoked token/i],
     aprovado: {
       baseLegal: [/performance of a contract/i, /preliminary (steps|procedures)/i, /at the request of the data subject/i, /LGPD/, /Art\. 7\(V\)/],
@@ -140,6 +144,15 @@ describe.each(paginas)('aviso de privacidade ($lang)', (p) => {
   it.each(['prazo', 'exclusao'] as const)('seção %s: os dados do aparelho ficam com o hash do token revogado', (chave) => {
     const texto = semTags(secoes(read(p.arquivo), p.secoes[chave]));
     for (const re of p.ficaComHash) expect(texto, `${chave}: ${re}`).toMatch(re);
+  });
+
+  it('a chave do aparelho é gravada já no pedido de ativação, mesmo sem confirmar o código', () => {
+    const texto = semTags(secoes(read(p.arquivo), /^(O que é guardado|What is stored)$/));
+    expect(texto).toMatch(p.pedidoSemConfirmar);
+  });
+
+  it.each(['prazo', 'exclusao'] as const)('seção %s: a chave de uma ativação não confirmada também fica com o hash', (chave) => {
+    expect(semTags(secoes(read(p.arquivo), p.secoes[chave]))).toMatch(p.naoConfirmada);
   });
 
   it.each(['responsavel', 'direitos'] as const)('contato privacidade@sarzel.com na seção %s', (chave) => {
