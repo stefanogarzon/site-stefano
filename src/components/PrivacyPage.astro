@@ -30,7 +30,7 @@ const txt = {
           'nome, sobrenome e e-mail, como você os digitou no cadastro;',
           'a data do aceite deste aviso;',
           'o hash do token de acesso enviado a você (o token em si não fica guardado);',
-          'por 24 h, um HMAC do IP de cada pedido de cadastro ou de exclusão, para limitar o número de pedidos (o IP em si não fica guardado).',
+          'o registro de cada pedido de cadastro ou de exclusão: um HMAC do IP (o IP em si não fica guardado), o e-mail informado e a hora, usados por 24 h para limitar o número de pedidos.',
         ],
       },
       {
@@ -48,13 +48,13 @@ const txt = {
       {
         titulo: 'Por quanto tempo',
         paragrafos: [
-          'Enquanto o cadastro existir, até o pedido de exclusão. O HMAC do IP é apagado depois de 24 h.',
+          'Nome, sobrenome, e-mail, data do aceite e hash do token ficam enquanto o cadastro existir, até a confirmação da exclusão pelo link (um pedido de exclusão sem confirmação não apaga nada). O registro de cada pedido é apagado no primeiro pedido que chegar depois de 24 h, ou na exclusão.',
         ],
       },
       {
         titulo: 'Como pedir a exclusão',
         paragrafos: [
-          'Informe o e-mail do cadastro no formulário abaixo. Você recebe nesse e-mail um link de confirmação, válido por 24 h. Confirmada, a exclusão apaga o seu cadastro e desativa o seu token de acesso.',
+          'Informe o e-mail do cadastro no formulário abaixo. Se ele estiver cadastrado, você recebe nele um link de confirmação, válido por 24 h. Confirmada, a exclusão apaga o seu cadastro e os registros dos seus pedidos e revoga o seu token de acesso. O hash do token revogado continua guardado, sem o e-mail, para auditoria.',
         ],
       },
     ] satisfies Secao[],
@@ -83,7 +83,7 @@ const txt = {
           'your first name, last name and email, as you typed them in the sign-up;',
           'the date you accepted this notice;',
           'a hash of the access token sent to you (the token itself is not stored);',
-          'for 24 hours, an HMAC of your IP address for each sign-up or deletion request, to limit the number of requests (the IP address itself is not stored).',
+          'a record of each request (sign-up or deletion): an HMAC of your IP address (the IP address itself is not stored), the email entered and the time, used for 24 hours to limit the number of requests.',
         ],
       },
       {
@@ -100,12 +100,14 @@ const txt = {
       },
       {
         titulo: 'For how long',
-        paragrafos: ['As long as the sign-up exists, until your deletion request. The IP HMAC is deleted after 24 hours.'],
+        paragrafos: [
+          'Your name, email, acceptance date and token hash are kept as long as the sign-up exists, until the deletion is confirmed through the link (a deletion request that is not confirmed deletes nothing). The record of each request is deleted by the first request that arrives after 24 hours, or on deletion.',
+        ],
       },
       {
         titulo: 'How to ask for deletion',
         paragrafos: [
-          'Enter your sign-up email in the form below. You will receive a confirmation link at that address, valid for 24 hours. Once confirmed, the deletion erases your sign-up and deactivates your access token.',
+          'Enter your sign-up email in the form below. If it is registered, you will receive a confirmation link at that address, valid for 24 hours. Once confirmed, the deletion erases your sign-up and the records of your requests and revokes your access token. The hash of the revoked token stays, without your email, for auditing.',
         ],
       },
     ] satisfies Secao[],
