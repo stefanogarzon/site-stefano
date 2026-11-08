@@ -31,6 +31,9 @@ const txt = {
     enviar: 'Enviar cadastro',
     noscript: 'O formulário de cadastro precisa de JavaScript. Ative o JavaScript no navegador para se cadastrar.',
     indisponivel: 'Cadastro indisponível no momento.',
+    okTitulo: 'Cadastro recebido',
+    okTexto: 'Enviamos para o seu e-mail o link de download e o token de acesso. Se não encontrar a mensagem, confira a caixa de spam.',
+    okPasso: { macos: 'Passo a passo de instalação no Mac', windows: 'Passo a passo de instalação no Windows' },
   },
   en: {
     description:
@@ -53,6 +56,9 @@ const txt = {
     enviar: 'Sign up',
     noscript: 'The sign-up form needs JavaScript. Enable JavaScript in your browser to sign up.',
     indisponivel: 'Sign-up is unavailable at the moment.',
+    okTitulo: 'Sign-up received',
+    okTexto: 'We sent the download link and your access token to your email. If you cannot find the message, check your spam folder.',
+    okPasso: { macos: 'Installation guide for Mac (in Portuguese)', windows: 'Installation guide for Windows (in Portuguese)' },
   },
 }[lang];
 ---
@@ -109,6 +115,13 @@ const txt = {
             <p class="status" id="cadastro-status" role="status" aria-live="polite"></p>
           </fieldset>
         </form>
+        <div id="cadastro-ok" class="confirmacao" tabindex="-1" hidden>
+          <h3>{txt.okTitulo}</h3>
+          <p>{txt.okTexto}</p>
+          {(['macos', 'windows'] as const).map((pl) => (
+            <p data-plataforma={pl} hidden><a href={r.scienceTutorSteps[pl]}>{txt.okPasso[pl]}</a></p>
+          ))}
+        </div>
         <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
       </Fragment>
     )}
@@ -150,5 +163,6 @@ const txt = {
   button:disabled { opacity: 0.55; cursor: not-allowed; }
   .erro { color: var(--accent-texto); font-size: 0.85rem; margin: 6px 0 0; }
   .aviso { border-left: 3px solid var(--accent); padding: 8px 14px; background: var(--soft); border-radius: 0 8px 8px 0; }
-  .status:empty { display: none; }
+  .confirmacao h3 { margin-top: 0.4em; }
+  .confirmacao:focus { outline: none; }
 </style>

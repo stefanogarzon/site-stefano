@@ -176,3 +176,76 @@ describe('página sem o formulário (build sem PUBLIC_TURNSTILE_SITEKEY)', () =>
     expect(ligarCadastro(document, criarDeps().deps)).toBeNull();
   });
 });
+
+const URL_CADASTRO = 'https://downloads.sarzel.com/api/v2/cadastro';
+const PASSO = {
+  macos: '/downloads/science-tutor/passo-a-passo/mac/',
+  windows: '/downloads/science-tutor/passo-a-passo/windows/',
+} as const;
+
+/** Elemento visível: nem ele nem um ancestral tem `hidden`. */
+const visivel = (el: Element | null) => !!el && el.closest('[hidden]') === null;
+
+describe.each(paginas)('formulário de cadastro ($lang): envio válido', (p) => {
+  const html = read(p.arquivo);
+
+  beforeEach(() => {
+    document.body.innerHTML = corpo(html);
+  });
+
+  it('a confirmação estática traz os links dos dois passo a passo', () => {
+    for (const href of Object.values(PASSO)) expect(html).toContain(`href="${href}"`);
+  });
+
+  it('POST JSON na rota do contrato com exatamente as seis chaves', async () => {
+    const { deps, fetch } = criarDeps();
+    ligarCadastro(document, deps);
+    preencherValido();
+    $<HTMLInputElement>('#cad-nome').value = '  Ana ';
+    $<HTMLInputElement>('input[name="plataforma"][value="windows"]').checked = true;
+    enviar();
+    await vi.waitFor(() => expect(fetch).toHaveBeenCalledTimes(1));
+    const [url, init] = fetch.mock.calls[0] as unknown as [string, RequestInit];
+    expect(url).toBe(URL_CADASTRO);
+    expect(init.method).toBe('POST');
+    expect(new Headers(init.headers).get('Content-Type')).toBe('application/json');
+    const body = JSON.parse(init.body as string);
+    expect(Object.keys(body).sort()).toEqual(
+      ['aceite_privacidade', 'email', 'nome', 'plataforma', 'sobrenome', 'turnstile'],
+    );
+    expect(body).toEqual({
+      nome: 'Ana',
+      sobrenome: 'Souza',
+      email: 'ana@exemplo.com.br',
+      plataforma: 'windows',
+      aceite_privacidade: true,
+      turnstile: 'tok-teste',
+    });
+  });
+
+  it('botão desabilitado durante o envio; segundo submit não chama o fetch', async () => {
+    const { deps, fetch } = criarDeps();
+    fetch.mockImplementation(() => new Promise<Response>(() => {}));
+    ligarCadastro(document, deps);
+    preencherValido();
+    enviar();
+    await vi.waitFor(() => expect(fetch).toHaveBeenCalledTimes(1));
+    expect($<HTMLButtonElement>('#cadastro button[type="submit"]').disabled).toBe(true);
+    enviar();
+    await new Promise((r) => setTimeout(r, 0));
+    expect(fetch).toHaveBeenCalledTimes(1);
+  });
+
+  it.each(['macos', 'windows'] as const)('201 com %s: confirmação com o link do passo a passo', async (plataforma) => {
+    const { deps } = criarDeps();
+    ligarCadastro(document, deps);
+    preencherValido();
+    $<HTMLInputElement>(`input[name="plataforma"][value="${plataforma}"]`).checked = true;
+    enviar();
+    await vi.waitFor(() => expect(visivel($('#cadastro-ok'))).toBe(true));
+    expect(visivel($('#cadastro'))).toBe(false);
+    const links = [...document.querySelectorAll<HTMLAnchorElement>('#cadastro-ok a')].filter(visivel);
+    expect(links.map((a) => a.getAttribute('href'))).toEqual([PASSO[plataforma]]);
+    expect($('#cadastro-ok').textContent).toMatch(p.lang === 'pt' ? /e-mail/ : /email/);
+  });
+});

@@ -2,6 +2,8 @@
 export const EMAIL_RE = /^[^\s@]+@[^\s@.]+(\.[^\s@.]+)+$/;
 export const MAX_CAMPO = 100;
 
+export const URL_CADASTRO = 'https://downloads.sarzel.com/api/v2/cadastro';
+
 export interface TurnstileApi {
   getResponse(widget?: string | HTMLElement): string | undefined;
   reset(widget?: string | HTMLElement): void;
@@ -16,12 +18,13 @@ export interface CadastroDeps {
 type Lang = 'pt' | 'en';
 type Campo = 'nome' | 'sobrenome' | 'email' | 'plataforma' | 'aceite_privacidade' | 'turnstile';
 
-const MSG: Record<Lang, Record<Campo, string> & { emailInvalido: string }> = {
+const MSG: Record<Lang, Record<Campo, string> & { emailInvalido: string; enviando: string }> = {
   pt: {
     nome: `Preencha o nome (até ${MAX_CAMPO} caracteres).`,
     sobrenome: `Preencha o sobrenome (até ${MAX_CAMPO} caracteres).`,
     email: `Preencha o e-mail (até ${MAX_CAMPO} caracteres).`,
     emailInvalido: 'E-mail inválido. Confira o endereço digitado.',
+    enviando: 'Enviando…',
     plataforma: 'Escolha o computador: Mac ou Windows.',
     aceite_privacidade: 'Para se cadastrar, aceite o aviso de privacidade.',
     turnstile: 'Confirme que você não é um robô e envie de novo.',
@@ -31,6 +34,7 @@ const MSG: Record<Lang, Record<Campo, string> & { emailInvalido: string }> = {
     sobrenome: `Enter your last name (up to ${MAX_CAMPO} characters).`,
     email: `Enter your email (up to ${MAX_CAMPO} characters).`,
     emailInvalido: 'Invalid email. Check the address you typed.',
+    enviando: 'Sending…',
     plataforma: 'Choose your computer: Mac or Windows.',
     aceite_privacidade: 'To sign up, accept the privacy notice.',
     turnstile: 'Confirm you are not a robot and submit again.',
@@ -101,11 +105,34 @@ export function ligarCadastro(raiz: Document, deps: CadastroDeps): HTMLFormEleme
   const widget = form.querySelector<HTMLElement>('.cf-turnstile') ?? undefined;
   form.querySelector('fieldset')?.removeAttribute('disabled');
 
-  form.addEventListener('submit', (ev) => {
+  const botao = form.querySelector<HTMLButtonElement>('button[type="submit"]')!;
+  const status = form.querySelector<HTMLElement>('#cadastro-status');
+  const confirmacao = raiz.querySelector<HTMLElement>('#cadastro-ok');
+
+  form.addEventListener('submit', async (ev) => {
     ev.preventDefault();
+    if (botao.disabled) return;
     const token = deps.turnstile()?.getResponse(widget) ?? '';
     const r = validar(form, lang, token);
     mostrarErros(form, r.ok ? {} : r.erros);
+    if (!r.ok) return;
+
+    botao.disabled = true;
+    if (status) status.textContent = MSG[lang].enviando;
+    const res = await deps.fetch(URL_CADASTRO, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(r.corpo),
+    });
+    if (res.status === 201 && confirmacao) {
+      form.hidden = true;
+      confirmacao.querySelector<HTMLElement>(`[data-plataforma="${r.corpo.plataforma}"]`)?.removeAttribute('hidden');
+      confirmacao.hidden = false;
+      confirmacao.focus();
+      return;
+    }
+    if (status) status.textContent = '';
+    botao.disabled = false;
   });
   return form;
 }

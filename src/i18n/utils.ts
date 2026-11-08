@@ -23,6 +23,11 @@ export const routes = (lang: Lang) => {
     search: lang === 'pt' ? '/busca/' : '/en/search/',
     scienceTutor: `${p}/downloads/science-tutor/`,
     scienceTutorPrivacy: lang === 'pt' ? '/downloads/science-tutor/privacidade/' : '/en/downloads/science-tutor/privacy/',
+    // Install guides exist only in Portuguese: the sarzel-dist e-mail links to these fixed URLs.
+    scienceTutorSteps: {
+      macos: '/downloads/science-tutor/passo-a-passo/mac/',
+      windows: '/downloads/science-tutor/passo-a-passo/windows/',
+    },
     rss: `${p}/rss.xml`,
   };
 };
