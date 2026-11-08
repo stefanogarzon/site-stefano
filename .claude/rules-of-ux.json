@@ -1,0 +1,177 @@
+{
+  "app": {
+    "comando": "node node_modules/astro/bin/astro.mjs dev --ignore-lock --port 4391 --host 127.0.0.1",
+    "cwd": ".",
+    "env": {
+      "FIXTURES": "1",
+      "PUBLIC_TURNSTILE_SITEKEY": "1x00000000000000000000AA",
+      "ASTRO_TELEMETRY_DISABLED": "1"
+    },
+    "url": "http://127.0.0.1:4391/",
+    "pronto_timeout": 120,
+    "porta": 4391
+  },
+  "telas": [
+    {
+      "nome": "home",
+      "passos": [
+        {
+          "acao": "esperar",
+          "alvo": "main"
+        }
+      ],
+      "arquivos": [
+        "src/pages/index.astro",
+        "src/pages/en/index.astro",
+        "src/components/Home.astro",
+        "src/components/Cards.astro",
+        "src/components/Shape.astro"
+      ]
+    },
+    {
+      "nome": "avaliacoes",
+      "passos": [
+        {
+          "acao": "ir",
+          "alvo": "http://127.0.0.1:4391/avaliacoes/"
+        },
+        {
+          "acao": "esperar",
+          "alvo": "main"
+        }
+      ],
+      "arquivos": [
+        "src/pages/avaliacoes/**",
+        "src/pages/en/reviews/**",
+        "src/pages/textos/**",
+        "src/pages/en/posts/**",
+        "src/components/ListPage.astro"
+      ]
+    },
+    {
+      "nome": "avaliacao",
+      "passos": [
+        {
+          "acao": "ir",
+          "alvo": "http://127.0.0.1:4391/avaliacoes/exemplo-estatina/"
+        },
+        {
+          "acao": "esperar",
+          "alvo": "article"
+        }
+      ],
+      "arquivos": [
+        "src/components/ReviewPage.astro",
+        "src/components/PostPage.astro"
+      ]
+    },
+    {
+      "nome": "sobre",
+      "passos": [
+        {
+          "acao": "ir",
+          "alvo": "http://127.0.0.1:4391/sobre/"
+        },
+        {
+          "acao": "esperar",
+          "alvo": "main h1"
+        }
+      ],
+      "arquivos": [
+        "src/pages/sobre/**",
+        "src/pages/en/about/**",
+        "src/components/AboutPage.astro"
+      ]
+    },
+    {
+      "nome": "science-tutor",
+      "passos": [
+        {
+          "acao": "ir",
+          "alvo": "http://127.0.0.1:4391/downloads/science-tutor/"
+        },
+        {
+          "acao": "esperar",
+          "alvo": "form#cadastro"
+        }
+      ],
+      "arquivos": [
+        "src/pages/downloads/**",
+        "src/components/ScienceTutorPage.astro",
+        "src/scripts/cadastro*.ts"
+      ]
+    },
+    {
+      "nome": "science-tutor-en",
+      "passos": [
+        {
+          "acao": "ir",
+          "alvo": "http://127.0.0.1:4391/en/downloads/science-tutor/"
+        },
+        {
+          "acao": "esperar",
+          "alvo": "form#cadastro"
+        }
+      ],
+      "arquivos": [
+        "src/pages/en/downloads/**",
+        "src/components/ScienceTutorPage.astro",
+        "src/scripts/cadastro*.ts"
+      ]
+    }
+  ],
+  "viewports": [
+    [
+      1280,
+      800
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "temas": {
+    "claro": [],
+    "escuro": []
+  },
+  "idiomas": {
+    "pt": []
+  },
+  "padrao_arquivos": [
+    "src/**/*.astro",
+    "src/**/*.css"
+  ],
+  "sistema_design": [
+    "src/styles/global.css",
+    "src/layouts/Base.astro"
+  ],
+  "desligadas": {},
+  "escala": {
+    "fontes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      21,
+      22,
+      29,
+      38
+    ],
+    "raio_controle": [
+      8,
+      999
+    ],
+    "raio_painel": [
+      8,
+      10
+    ],
+    "familias_max": 3,
+    "destaque": [
+      "#c4643f",
+      "#e0896a"
+    ]
+  }
+}

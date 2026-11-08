@@ -7,3 +7,5 @@ dist/
 .claude/security-reports/
 /images/
 .env
+.claude/rules-of-ux/runs/
+.claude/rules-of-ux/propostas/
