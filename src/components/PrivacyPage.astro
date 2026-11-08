@@ -3,7 +3,6 @@ import Base from '../layouts/Base.astro';
 import { otherLang, routes } from '../i18n/utils';
 import type { Lang } from '../i18n/ui';
 import { turnstileSitekey } from '../lib/turnstile';
-import { PRIVACIDADE_RASCUNHO } from '../data/science-tutor.mjs';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -15,12 +14,16 @@ const CONTATO = 'privacidade@sarzel.com';
 /** contato: text placed before the privacy contact link, closing the section. */
 interface Secao { titulo: string; paragrafos?: string[]; itens?: string[]; contato?: string }
 
+/** What stays with the revoked token hash after deletion (sarzel-dist excluir() keeps these tokens_v2 columns). */
+const FICA_COM_HASH = {
+  pt: 'a chave pública do aparelho (também a de uma ativação não confirmada), se ela fica no chip de segurança, e as datas da ativação e da última checagem',
+  en: 'the public key of the device (also that of an unconfirmed activation), whether it is kept in the security chip, and the dates of activation and of the last check',
+};
+
 const txt = {
   pt: {
     titulo: 'Aviso de privacidade do Science Tutor',
     description: 'O que o cadastro do Science Tutor guarda, para quê, com que base legal, onde, por quanto tempo, os seus direitos e como pedir a exclusão dos seus dados.',
-    rascunho: 'RASCUNHO — aguardando aprovação do dono',
-    rascunhoTexto: 'Este texto ainda não foi aprovado e pode mudar.',
     voltar: 'Voltar ao Science Tutor',
     secoes: [
       {
@@ -65,7 +68,7 @@ const txt = {
       {
         titulo: 'Por quanto tempo',
         paragrafos: [
-          'Nome, sobrenome, e-mail e data do aceite ficam enquanto o cadastro existir, até a confirmação da exclusão pelo link (um pedido de exclusão sem confirmação não apaga nada). Na exclusão o token é revogado e o hash do token revogado continua guardado, sem o e-mail e sem prazo, para auditoria, junto com a chave pública do aparelho (também a de uma ativação não confirmada), se ela fica no chip de segurança e as datas da ativação e da última checagem. O registro de cada pedido é apagado no primeiro pedido que chegar depois de 24 h e passar pelas verificações do formulário e anti-robô, ou na exclusão.',
+          `Nome, sobrenome, e-mail e data do aceite ficam enquanto o cadastro existir, até a confirmação da exclusão pelo link (um pedido de exclusão sem confirmação não apaga nada). Na exclusão o token é revogado e o hash do token revogado continua guardado, sem o e-mail e sem prazo, para auditoria, junto com ${FICA_COM_HASH.pt}. O registro de cada pedido é apagado no primeiro pedido que chegar depois de 24 h e passar pelas verificações do formulário e anti-robô, ou na exclusão.`,
         ],
       },
       {
@@ -84,7 +87,7 @@ const txt = {
       {
         titulo: 'Como pedir a exclusão',
         paragrafos: [
-          'Informe o e-mail do cadastro no formulário abaixo. Se ele estiver cadastrado, você recebe nele um link de confirmação, válido por 24 h. Confirmada, a exclusão apaga o seu cadastro e os registros dos seus pedidos e revoga o seu token de acesso. O hash do token revogado continua guardado, sem o e-mail, para auditoria, com a chave pública do aparelho (também a de uma ativação não confirmada), se ela fica no chip de segurança e as datas da ativação e da última checagem.',
+          `Informe o e-mail do cadastro no formulário abaixo. Se ele estiver cadastrado, você recebe nele um link de confirmação, válido por 24 h. Confirmada, a exclusão apaga o seu cadastro e os registros dos seus pedidos e revoga o seu token de acesso. O hash do token revogado continua guardado, sem o e-mail, para auditoria, com ${FICA_COM_HASH.pt}.`,
         ],
       },
     ] satisfies Secao[],
@@ -99,8 +102,6 @@ const txt = {
   en: {
     titulo: 'Science Tutor privacy notice',
     description: 'What the Science Tutor sign-up stores, why, on what legal basis, where, for how long, your rights and how to ask for your data to be deleted.',
-    rascunho: 'DRAFT — awaiting owner approval',
-    rascunhoTexto: 'This text has not been approved yet and may change.',
     voltar: 'Back to Science Tutor',
     secoes: [
       {
@@ -145,7 +146,7 @@ const txt = {
       {
         titulo: 'For how long',
         paragrafos: [
-          'Your first name, last name, email and acceptance date are kept as long as the sign-up exists, until the deletion is confirmed through the link (a deletion request that is not confirmed deletes nothing). On deletion the token is revoked and the hash of the revoked token stays, without your email and with no time limit, for auditing, together with the public key of the device (also that of an unconfirmed activation), whether it is kept in the security chip and the dates of activation and of the last check. The record of each request is deleted by the first request that arrives after 24 hours and passes the form and anti-bot checks, or on deletion.',
+          `Your first name, last name, email and acceptance date are kept as long as the sign-up exists, until the deletion is confirmed through the link (a deletion request that is not confirmed deletes nothing). On deletion the token is revoked and the hash of the revoked token stays, without your email and with no time limit, for auditing, together with ${FICA_COM_HASH.en}. The record of each request is deleted by the first request that arrives after 24 hours and passes the form and anti-bot checks, or on deletion.`,
         ],
       },
       {
@@ -164,7 +165,7 @@ const txt = {
       {
         titulo: 'How to ask for deletion',
         paragrafos: [
-          'Enter your sign-up email in the form below. If it is registered, you will receive a confirmation link at that address, valid for 24 hours. Once confirmed, the deletion erases your sign-up and the records of your requests and revokes your access token. The hash of the revoked token stays, without your email, for auditing, with the public key of the device (also that of an unconfirmed activation), whether it is kept in the security chip and the dates of activation and of the last check.',
+          `Enter your sign-up email in the form below. If it is registered, you will receive a confirmation link at that address, valid for 24 hours. Once confirmed, the deletion erases your sign-up and the records of your requests and revokes your access token. The hash of the revoked token stays, without your email, for auditing, with ${FICA_COM_HASH.en}.`,
         ],
       },
     ] satisfies Secao[],
@@ -184,15 +185,8 @@ const txt = {
   lang={lang}
   alternate={routes(otherLang(lang)).scienceTutorPrivacy}
   hasTranslation
-  noindex={PRIVACIDADE_RASCUNHO}
 >
 <div class="privacidade">
-  {PRIVACIDADE_RASCUNHO && (
-    <div class="rascunho" role="note">
-      <strong>{txt.rascunho}</strong>
-      <span>{txt.rascunhoTexto}</span>
-    </div>
-  )}
   <p class="eyebrow"><a href={r.scienceTutor}>Science Tutor</a></p>
   <h1>{txt.titulo}</h1>
 
@@ -241,10 +235,6 @@ const txt = {
 </Base>
 
 <style>
-  .rascunho {
-    display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline;
-    margin: 0 0 24px; padding: 12px 16px; border: 2px dashed var(--text); border-radius: 8px; background: var(--soft);
-  }
   /* --accent on --bg is 3.4:1 in the light theme; link text needs 4.5:1. */
   .privacidade { --accent-texto: color-mix(in srgb, var(--accent) 75%, var(--text)); }
   .privacidade a { color: var(--accent-texto); }

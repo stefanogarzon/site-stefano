@@ -1,10 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { markdownConfig } from './src/lib/markdown-config.mjs';
-import { PRIVACIDADE_PATH, PRIVACIDADE_RASCUNHO } from './src/data/science-tutor.mjs';
-
-// A draft page is noindex and stays out of the sitemap.
-const foraDoSitemap = PRIVACIDADE_RASCUNHO ? Object.values(PRIVACIDADE_PATH) : [];
 
 export default defineConfig({
   site: 'https://stefanogarzon.com',
@@ -16,7 +12,7 @@ export default defineConfig({
   markdown: markdownConfig,
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/404') && !foraDoSitemap.some((path) => new URL(page).pathname === path),
+      filter: (page) => !page.includes('/404'),
     }),
   ],
   i18n: {
