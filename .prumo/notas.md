@@ -19,3 +19,4 @@
 - [2026-11-08 19:25] [0009] [0009] Linha de base de UX regravada com as telas privacidade/privacidade-en depois de corrigir o contraste dos links da página; o que entrou de erro é só o alvo-pequeno do nav do Header, o mesmo já na linha de base de todas as telas.
 - [2026-11-08 19:30] [0011] [0011] Correção é no helper de teste (o teste modelava mal o que o navegador carrega: não seguia import de chunk compartilhado); o vermelho que prova é o do aceite do M3 antes da mudança (2 falhas em 'a página carrega o script do formulário'). Asserções intactas.
 - [2026-11-08 19:31] [M3] revisao M3: HEAD f8c5338
+- [2026-11-08 19:52] [M3] [M3] triagem: revisão 1 achado (0012), re-revisão 1 dois achados no mesmo texto (0014), re-revisão 2 sem achado; limpezas 1, 2 e 4 na 0013; limpeza 3 (ramo PRIVACIDADE_RASCUNHO=false sem teste) adiada para quando o dono aprovar o texto, pede teste novo.

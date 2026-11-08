@@ -1,15 +1,14 @@
 # Retomada
 
 ## Onde parou
-M2 fechado e verificado (aceite verde: 63 testes em `tests/cadastro-form.test.ts`, `npm test` com 140; revisão com 1 achado corrigido na 0008, re-revisão sem achado). Próximo: M3 (aviso de privacidade + exclusão), tarefas ainda por escrever.
+M3 fechado e verificado (aceite verde: privacidade + exclusão 63 testes; `npm test` 222 em 18 arquivos). Revisão com 1 achado (0012), re-revisão com 2 achados no mesmo texto (0014), limpeza 0013 (envio e regra de e-mail compartilhados em `cadastro-form.ts`). Próximo: M4 (passo a passo Mac e Windows), tarefas ainda por escrever.
 
 ## Por que
-- O M3 reaproveita `enviarJson(fetch, url, corpo, esperado, msg)` de `src/scripts/cadastro-form.ts` (esperado 202 na exclusão); o prazo de 15 s cobre cabeçalhos e corpo.
-- No M3, testar que `dist/` tem o arquivo apontado pelo href do checkbox (limpeza adiada do M1).
-- Limpeza do revisor não feita: EMAIL_RE/MAX_CAMPO copiados do sarzel-dist sem teste cruzado (ver nota de triagem).
-- Opcionais do M2: depois de falha do servidor, um novo envio barrado na validação deixa a mensagem antiga em `#cadastro-status`; `getResponse/reset(elemento)` do Turnstile não conferido contra a API real.
+- O texto do aviso foi conferido frase a frase contra `../sarzel-dist` (branch `plano/cadastro-science-tutor`: `cadastro-repo.ts`, `cadastro-exclusao.ts`, `cadastro.ts`). Se o servidor mudar retenção ou limite, mudar o aviso junto; `tests/privacidade-retencao.test.ts` e `tests/privacidade-prazos.test.ts` fixam as frases.
+- Limpeza não feita: o ramo `PRIVACIDADE_RASCUNHO = false` (faixa some, robots sai, URLs entram no sitemap) não tem teste; pede teste novo, não é limpeza. Fazer quando o dono aprovar o texto.
+- Opcionais: falta o caso de e-mail com exatamente 100 caracteres aceito no teste da exclusão; `tests/scripts-da-pagina.ts` não segue import de script inline nem caminho absoluto `/_astro/`; mensagem de falha antiga fica em `#exclusao-status`/`#cadastro-status` quando o envio seguinte reprova na validação; sucesso sem o bloco de confirmação na página deixa o form sem retorno (latente, as páginas sempre têm o bloco).
 
 ## Armadilha
-- zsh não divide `$P` com espaços: usar função `p(){ python3 "$PRUMO_ROOT/scripts/prumo.py" "$@"; }`.
-- Saída do vitest em happy-dom vem cheia de "Failed to load script ... api.js" (ruído, não falha): filtrar com `grep -v "Failed to load"`.
-- Teste com timers falsos: usar `vi.advanceTimersByTimeAsync`, não `vi.waitFor` (avança o relógio sozinho).
+- `prumo tarefa-nova` lê o stdin quando não é TTY e fica pendurado: passar `--corpo ''` e `</dev/null`.
+- Código importado por duas páginas vira chunk compartilhado no Vite; teste que lê o JS da página usa `tests/scripts-da-pagina.ts` (segue os import).
+- Tela nova no rules-of-ux traz como "erro novo" o alvo-pequeno do nav do Header (já na linha de base das outras telas): corrigir os erros da página e regravar com `ux.py baseline`.
