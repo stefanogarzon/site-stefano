@@ -1,14 +1,15 @@
 # Retomada
 
 ## Onde parou
-M3 fechado e verificado (aceite verde: privacidade + exclusão 63 testes; `npm test` 222 em 18 arquivos). Revisão com 1 achado (0012), re-revisão com 2 achados no mesmo texto (0014), limpeza 0013 (envio e regra de e-mail compartilhados em `cadastro-form.ts`). Próximo: M4 (passo a passo Mac e Windows), tarefas ainda por escrever.
+M4 fechado e verificado, e com ele o plano inteiro (M1–M4 verificados). Aceite do M4 verde: passo-a-passo 10/10; `npm test` 232 em 19 arquivos. Páginas `/downloads/science-tutor/passo-a-passo/mac/` e `/windows/` (só PT, `InstallGuidePage.astro`). Nada de deploy nem push feito.
 
 ## Por que
-- O texto do aviso foi conferido frase a frase contra `../sarzel-dist` (branch `plano/cadastro-science-tutor`: `cadastro-repo.ts`, `cadastro-exclusao.ts`, `cadastro.ts`). Se o servidor mudar retenção ou limite, mudar o aviso junto; `tests/privacidade-retencao.test.ts` e `tests/privacidade-prazos.test.ts` fixam as frases.
-- Limpeza não feita: o ramo `PRIVACIDADE_RASCUNHO = false` (faixa some, robots sai, URLs entram no sitemap) não tem teste; pede teste novo, não é limpeza. Fazer quando o dono aprovar o texto.
-- Opcionais: falta o caso de e-mail com exatamente 100 caracteres aceito no teste da exclusão; `tests/scripts-da-pagina.ts` não segue import de script inline nem caminho absoluto `/_astro/`; mensagem de falha antiga fica em `#exclusao-status`/`#cadastro-status` quando o envio seguinte reprova na validação; sucesso sem o bloco de confirmação na página deixa o form sem retorno (latente, as páginas sempre têm o bloco).
+- O texto do guia foi conferido contra o fluxo do sarzel-kit (`../science_tutor/mac/.build/checkouts/sarzel-kit`, `SarzelFluxoView.swift`) e o `activate.ts` do sarzel-dist: token → código do segundo e-mail (15 min) → senha → chave de recuperação → Touch ID → chave da Anthropic. Se o kit mudar o fluxo, mudar o guia junto.
+- O guia do Windows segue o kit por suposição: o science_tutor ainda não tem build Windows.
+- Pendências para o dono: aprovar o texto do aviso de privacidade (`PRIVACIDADE_RASCUNHO`, e aí escrever o teste do ramo `false`); o e-mail do sarzel-dist usa `https://www.stefanogarzon.com/...` sem barra, o que depende de redirect www→apex na Cloudflare.
+- Opcionais: texto da senha sem asserção; `/código/` redundante no teste; mensagem de falha antiga fica em `#cadastro-status`/`#exclusao-status` quando o envio seguinte reprova na validação.
 
 ## Armadilha
-- `prumo tarefa-nova` lê o stdin quando não é TTY e fica pendurado: passar `--corpo ''` e `</dev/null`.
-- Código importado por duas páginas vira chunk compartilhado no Vite; teste que lê o JS da página usa `tests/scripts-da-pagina.ts` (segue os import).
-- Tela nova no rules-of-ux traz como "erro novo" o alvo-pequeno do nav do Header (já na linha de base das outras telas): corrigir os erros da página e regravar com `ux.py baseline`.
+- Estilo com escopo do Astro não alcança HTML injetado por `set:html`: usar `:global(a)`.
+- `hreflang="en"` também aparece no seletor de idioma do Header (`<a class="lang">`); teste de tradução mira `<link rel="alternate" hreflang=...>`.
+- `prumo tarefa-nova` lê o stdin quando não é TTY: passar `--corpo ''` e `</dev/null`.

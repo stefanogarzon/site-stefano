@@ -25,3 +25,4 @@
 - [2026-11-08 20:04] [M4] revisao M4: HEAD 32120af
 - [2026-11-08 20:09] [0016] [M4] triagem: revisão M4 com 2 achados no texto do guia (código de ativação ausente; chave de recuperação prometia abrir o cofre), numa tarefa só (0016); sem limpezas. Windows: o science_tutor ainda não tem build Windows (sarzel.json só macos), então o fluxo do Windows segue o do kit por suposição.
 - [2026-11-08 20:11] [0016] [0016] Passo do código fala só em digitar o código: o e-mail também traz um link de ativação, mas não conferi se o app percebe a ativação feita pelo link. PLANO.md (produto final) ganhou o passo do código nas duas listas.
+- [2026-11-08 20:13] [M4] [M4] triagem: revisão 2 achados (0016), re-revisão sem achado nem limpeza. Opcionais: texto da senha sem asserção; /código/ redundante no teste; etapa TOTP do kit não está no guia (tier normal, sem TOTP).

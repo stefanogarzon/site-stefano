@@ -32,7 +32,7 @@ Verificação: os testes do repo (`npm test`, que faz um build com `FIXTURES=1` 
 | M1 | página do Science Tutor com o formulário (PT/EN) | npx vitest run tests/science-tutor.test.ts tests/turnstile.test.ts && npm test && test -z "$(git ls-files writings)" | verificado |
 | M2 | envio do cadastro e entradas inválidas | npx vitest run tests/cadastro-form.test.ts && npm test && test -z "$(git ls-files writings)" | verificado |
 | M3 | aviso de privacidade em rascunho com pedido de exclusão | npx vitest run tests/privacidade.test.ts tests/exclusao-form.test.ts && npm test && test -z "$(git ls-files writings)" | verificado |
-| M4 | passo a passo Mac e Windows | npx vitest run tests/passo-a-passo.test.ts && npm test && test -z "$(git ls-files writings)" | pendente |
+| M4 | passo a passo Mac e Windows | npx vitest run tests/passo-a-passo.test.ts && npm test && test -z "$(git ls-files writings)" | verificado |
 
 ### O que cada aceite afirma
 
