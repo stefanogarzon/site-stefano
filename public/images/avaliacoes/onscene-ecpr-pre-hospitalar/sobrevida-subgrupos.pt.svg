@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 318" width="680" height="318" role="img" aria-label="Sobrevida à alta: braço ECPR com canulação tentada 35%, braço ECPR nunca canulado 50%, convencional com ECPR no hospital 25%, convencional sem ECPR 17%.">
+<title>Sobrevida à alta: braço ECPR com canulação tentada 35%, braço ECPR nunca canulado 50%, convencional com ECPR no hospital 25%, convencional sem ECPR 17%.</title>
+<style>
+.bg{fill:#faf6ee;stroke:#e2d9c8}
+.t{fill:#211c16}.m{fill:#6b6257}
+.a{fill:#c4643f}.b{fill:#3f6ea8}.n{fill:#b3a898}
+.ia{fill:#fff}.in{fill:#211c16}
+.grid{stroke:#e2d9c8}.ax{stroke:#6b6257}.ink{stroke:#211c16}.inkf{fill:#211c16}
+.ref{stroke:#c4643f}.reft{fill:#c4643f}
+text{font-family:'Inter Variable', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.v{font-family:'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;font-size:18px}
+@media (prefers-color-scheme: dark){
+.bg{fill:#26221d;stroke:#3a342c}
+.t{fill:#efe8dc}.m{fill:#a89f92}
+.a{fill:#cc6d4e}.b{fill:#5f8fd6}.n{fill:#6b6257}
+.ia{fill:#1d1a16}.in{fill:#efe8dc}
+.grid{stroke:#3a342c}.ax{stroke:#a89f92}.ink{stroke:#efe8dc}.inkf{fill:#efe8dc}
+.ref{stroke:#e0896a}.reft{fill:#e0896a}
+}</style>
+<rect class="bg" x="0.5" y="0.5" width="679" height="317" rx="10"/>
+<text class="m" x="24" y="34" font-size="13">Sobrevida à alta por subgrupo</text>
+<text class="t" x="24" y="76" font-size="13" font-weight="600">Braço ECPR (intervenção)</text>
+<text class="t" x="24" y="102" font-size="13">Canulação tentada</text>
+<text class="m" x="24" y="117" font-size="11.5">34/98</text>
+<rect class="a" x="250" y="95" width="179.3" height="18" rx="3"/>
+<text class="t v" x="439.2833333333333" y="110">35%</text>
+<text class="t" x="24" y="142" font-size="13">Nunca canulado</text>
+<text class="m" x="24" y="157" font-size="11.5">23/46 (32 com RCE antes)</text>
+<rect class="a" x="250" y="135" width="258.3" height="18" rx="3"/>
+<text class="t v" x="518.3333333333333" y="150">50%</text>
+<text class="t" x="24" y="188" font-size="13" font-weight="600">Braço convencional</text>
+<text class="t" x="24" y="214" font-size="13">ECPR no hospital</text>
+<text class="m" x="24" y="229" font-size="11.5">6/24</text>
+<rect class="b" x="250" y="207" width="129.2" height="18" rx="3"/>
+<text class="t v" x="389.16666666666663" y="222">25%</text>
+<text class="t" x="24" y="254" font-size="13">Sem ECPR</text>
+<text class="m" x="24" y="269" font-size="11.5">11/63</text>
+<rect class="b" x="250" y="247" width="90.4" height="18" rx="3"/>
+<text class="t v" x="350.4166666666667" y="262">17%</text>
+<text class="m" x="24" y="300" font-size="12">Subgrupos não randomizados. Nunca canulado e sem ECPR: cálculo meu.</text>
+</svg>

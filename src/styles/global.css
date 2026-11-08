@@ -84,6 +84,11 @@ blockquote { margin: 1.2em 0; padding-left: 16px; border-left: 2px solid var(--l
 table { border-collapse: collapse; width: 100%; font-size: 0.9rem; display: block; overflow-x: auto; }
 th, td { border-bottom: 1px solid var(--line); padding: 6px 10px; text-align: left; }
 
+figure { margin: 1.6em 0; overflow-x: auto; }
+/* No celular a figura rola dentro do bloco, como as tabelas, para o texto do SVG não ficar ilegível. */
+figure img { display: block; width: 100%; min-width: 540px; height: auto; }
+figcaption { margin-top: 0.5em; font-size: 0.85rem; line-height: 1.5; color: var(--muted); }
+
 .astro-code { background-color: var(--soft) !important; }
 @media (prefers-color-scheme: dark) {
   .astro-code, .astro-code span { color: var(--shiki-dark) !important; background-color: var(--soft) !important; }

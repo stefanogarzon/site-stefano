@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 268" width="680" height="268" role="img" aria-label="POCE at 1 year. Intention to treat: QFR 7.4%, usual care 6.1%. Per protocol: QFR 5.5%, usual care 5.3%.">
+<title>POCE at 1 year. Intention to treat: QFR 7.4%, usual care 6.1%. Per protocol: QFR 5.5%, usual care 5.3%.</title>
+<style>
+.bg{fill:#faf6ee;stroke:#e2d9c8}
+.t{fill:#211c16}.m{fill:#6b6257}
+.a{fill:#c4643f}.b{fill:#3f6ea8}.n{fill:#b3a898}
+.ia{fill:#fff}.in{fill:#211c16}
+.grid{stroke:#e2d9c8}.ax{stroke:#6b6257}.ink{stroke:#211c16}.inkf{fill:#211c16}
+.ref{stroke:#c4643f}.reft{fill:#c4643f}
+text{font-family:'Inter Variable', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.v{font-family:'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;font-size:18px}
+@media (prefers-color-scheme: dark){
+.bg{fill:#26221d;stroke:#3a342c}
+.t{fill:#efe8dc}.m{fill:#a89f92}
+.a{fill:#cc6d4e}.b{fill:#5f8fd6}.n{fill:#6b6257}
+.ia{fill:#1d1a16}.in{fill:#efe8dc}
+.grid{stroke:#3a342c}.ax{stroke:#a89f92}.ink{stroke:#efe8dc}.inkf{fill:#efe8dc}
+.ref{stroke:#e0896a}.reft{fill:#e0896a}
+}</style>
+<rect class="bg" x="0.5" y="0.5" width="679" height="267" rx="10"/>
+<text class="m" x="24" y="34" font-size="13">POCE at 1 year</text>
+<text class="t" x="24" y="76" font-size="13" font-weight="600">Intention to treat</text>
+<text class="t" x="24" y="108" font-size="13">QFR</text>
+<rect class="a" x="220" y="95" width="314.5" height="18" rx="3"/>
+<text class="t v" x="544.5" y="110">7.4%</text>
+<text class="t" x="24" y="142" font-size="13">Usual care</text>
+<rect class="b" x="220" y="129" width="259.3" height="18" rx="3"/>
+<text class="t v" x="489.25" y="144">6.1%</text>
+<text class="t" x="24" y="176" font-size="13" font-weight="600">Per protocol</text>
+<text class="t" x="24" y="208" font-size="13">QFR</text>
+<rect class="a" x="220" y="195" width="233.8" height="18" rx="3"/>
+<text class="t v" x="463.75" y="210">5.5%</text>
+<text class="t" x="24" y="242" font-size="13">Usual care</text>
+<rect class="b" x="220" y="229" width="225.3" height="18" rx="3"/>
+<text class="t v" x="455.25" y="244">5.3%</text>
+
+</svg>

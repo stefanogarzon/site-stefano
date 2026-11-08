@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 270" width="680" height="270" role="img" aria-label="Pacientes ECPR e convencionais por base: Roterdã 87 e 8, Nijmegen 40 e 12, Groningen 8 e 16, Amsterdã 9 e 51.">
+<title>Pacientes ECPR e convencionais por base: Roterdã 87 e 8, Nijmegen 40 e 12, Groningen 8 e 16, Amsterdã 9 e 51.</title>
+<style>
+.bg{fill:#faf6ee;stroke:#e2d9c8}
+.t{fill:#211c16}.m{fill:#6b6257}
+.a{fill:#c4643f}.b{fill:#3f6ea8}.n{fill:#b3a898}
+.ia{fill:#fff}.in{fill:#211c16}
+.grid{stroke:#e2d9c8}.ax{stroke:#6b6257}.ink{stroke:#211c16}.inkf{fill:#211c16}
+.ref{stroke:#c4643f}.reft{fill:#c4643f}
+text{font-family:'Inter Variable', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.v{font-family:'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;font-size:18px}
+@media (prefers-color-scheme: dark){
+.bg{fill:#26221d;stroke:#3a342c}
+.t{fill:#efe8dc}.m{fill:#a89f92}
+.a{fill:#cc6d4e}.b{fill:#5f8fd6}.n{fill:#6b6257}
+.ia{fill:#1d1a16}.in{fill:#efe8dc}
+.grid{stroke:#3a342c}.ax{stroke:#a89f92}.ink{stroke:#efe8dc}.inkf{fill:#efe8dc}
+.ref{stroke:#e0896a}.reft{fill:#e0896a}
+}</style>
+<rect class="bg" x="0.5" y="0.5" width="679" height="269" rx="10"/>
+<text class="m" x="24" y="34" font-size="13">Pacientes por base de helicóptero (Tabela S9)</text>
+<text class="t" x="24" y="76" font-size="13">Roterdã</text>
+<rect class="a" x="130.0" y="61" width="428.4" height="22" rx="3"/>
+<text class="ia" x="344.2" y="76.5" font-size="12.5" font-weight="600" text-anchor="middle">87</text>
+<rect class="b" x="560.4" y="61" width="37.6" height="22" rx="3"/>
+<text class="ia" x="579.2" y="76.5" font-size="12.5" font-weight="600" text-anchor="middle">8</text>
+<text class="t" x="24" y="114" font-size="13">Nijmegen</text>
+<rect class="a" x="130.0" y="99" width="195.9" height="22" rx="3"/>
+<text class="ia" x="227.9" y="114.5" font-size="12.5" font-weight="600" text-anchor="middle">40</text>
+<rect class="b" x="327.9" y="99" width="57.4" height="22" rx="3"/>
+<text class="ia" x="356.6" y="114.5" font-size="12.5" font-weight="600" text-anchor="middle">12</text>
+<text class="t" x="24" y="152" font-size="13">Groningen</text>
+<rect class="a" x="130.0" y="137" width="37.6" height="22" rx="3"/>
+<text class="ia" x="148.8" y="152.5" font-size="12.5" font-weight="600" text-anchor="middle">8</text>
+<rect class="b" x="169.6" y="137" width="77.2" height="22" rx="3"/>
+<text class="ia" x="208.2" y="152.5" font-size="12.5" font-weight="600" text-anchor="middle">16</text>
+<text class="t" x="24" y="190" font-size="13">Amsterdã</text>
+<rect class="a" x="130.0" y="175" width="42.5" height="22" rx="3"/>
+<text class="ia" x="151.3" y="190.5" font-size="12.5" font-weight="600" text-anchor="middle">9</text>
+<rect class="b" x="174.5" y="175" width="250.3" height="22" rx="3"/>
+<text class="ia" x="299.7" y="190.5" font-size="12.5" font-weight="600" text-anchor="middle">51</text>
+<rect class="a" x="130" y="214" width="12" height="12" rx="2"/>
+<text class="m" x="148" y="224.5" font-size="12.5">ECPR</text>
+<rect class="b" x="188" y="214" width="12" height="12" rx="2"/>
+<text class="m" x="206" y="224.5" font-size="12.5">Convencional</text>
+<text class="m" x="24" y="252" font-size="12">Bases identificadas pela lista de instituições do Suplemento; totais batem com a Tabela S9.</text>
+</svg>

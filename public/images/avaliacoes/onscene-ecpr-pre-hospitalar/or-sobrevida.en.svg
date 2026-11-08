@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 312" width="680" height="312" role="img" aria-label="Survival odds ratio: paper GEE 2.72 (1.59 to 4.66); crude 2.70 (1.44 to 5.05); stratified by base 2.27; excluding Rotterdam 2.13 (0.98 to 4.61); VF/VT only 2.23 (1.15 to 4.34).">
+<title>Survival odds ratio: paper GEE 2.72 (1.59 to 4.66); crude 2.70 (1.44 to 5.05); stratified by base 2.27; excluding Rotterdam 2.13 (0.98 to 4.61); VF/VT only 2.23 (1.15 to 4.34).</title>
+<style>
+.bg{fill:#faf6ee;stroke:#e2d9c8}
+.t{fill:#211c16}.m{fill:#6b6257}
+.a{fill:#c4643f}.b{fill:#3f6ea8}.n{fill:#b3a898}
+.ia{fill:#fff}.in{fill:#211c16}
+.grid{stroke:#e2d9c8}.ax{stroke:#6b6257}.ink{stroke:#211c16}.inkf{fill:#211c16}
+.ref{stroke:#c4643f}.reft{fill:#c4643f}
+text{font-family:'Inter Variable', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.v{font-family:'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;font-size:18px}
+@media (prefers-color-scheme: dark){
+.bg{fill:#26221d;stroke:#3a342c}
+.t{fill:#efe8dc}.m{fill:#a89f92}
+.a{fill:#cc6d4e}.b{fill:#5f8fd6}.n{fill:#6b6257}
+.ia{fill:#1d1a16}.in{fill:#efe8dc}
+.grid{stroke:#3a342c}.ax{stroke:#a89f92}.ink{stroke:#efe8dc}.inkf{fill:#efe8dc}
+.ref{stroke:#e0896a}.reft{fill:#e0896a}
+}</style>
+<rect class="bg" x="0.5" y="0.5" width="679" height="311" rx="10"/>
+<text class="m" x="24" y="34" font-size="13">Odds ratio for survival to discharge and 95% CI, log scale</text>
+<line class="ax" x1="312.5" x2="312.5" y1="56" y2="256" stroke-width="1" stroke-dasharray="3 3"/>
+<text class="t" x="24" y="78" font-size="13">GEE, paper</text>
+<line class="ink" x1="354.3" x2="451.3" y1="74" y2="74" stroke-width="2"/>
+<circle class="inkf" cx="402.7" cy="74" r="5"/>
+<text class="t" x="516" y="78" font-size="13">2.72 (1.59–4.66)</text>
+<text class="t" x="24" y="112" font-size="13">Crude, no clustering</text>
+<text class="m" x="24" y="127" font-size="11.5">my calculation</text>
+<line class="ink" x1="345.4" x2="458.5" y1="114" y2="114" stroke-width="2"/>
+<circle class="inkf" cx="402.1" cy="114" r="5"/>
+<text class="t" x="516" y="118" font-size="13">2.70 (1.44–5.05)</text>
+<text class="t" x="24" y="152" font-size="13">Stratified by base</text>
+<text class="m" x="24" y="167" font-size="11.5">Mantel-Haenszel, my calculation</text>
+<circle class="inkf" cx="386.4" cy="154" r="5"/>
+<text class="t" x="516" y="158" font-size="13">2.27 (no CI)</text>
+<text class="t" x="24" y="192" font-size="13">Excluding Rotterdam</text>
+<text class="m" x="24" y="207" font-size="11.5">my calculation</text>
+<line class="ink" x1="310.7" x2="450.3" y1="194" y2="194" stroke-width="2"/>
+<circle class="inkf" cx="380.7" cy="194" r="5"/>
+<text class="t" x="516" y="198" font-size="13">2.13 (0.98–4.61)</text>
+<text class="t" x="24" y="232" font-size="13">VF/VT only</text>
+<text class="m" x="24" y="247" font-size="11.5">my calculation</text>
+<line class="ink" x1="325.1" x2="444.9" y1="234" y2="234" stroke-width="2"/>
+<circle class="inkf" cx="384.8" cy="234" r="5"/>
+<text class="t" x="516" y="238" font-size="13">2.23 (1.15–4.34)</text>
+<line class="grid" x1="250" x2="500" y1="258" y2="258" stroke-width="1"/>
+<line class="ax" x1="250.0" x2="250.0" y1="258" y2="263"/>
+<text class="m" x="250.0" y="277" font-size="12" text-anchor="middle">0.5</text>
+<line class="ax" x1="312.5" x2="312.5" y1="258" y2="263"/>
+<text class="m" x="312.5" y="277" font-size="12" text-anchor="middle">1</text>
+<line class="ax" x1="375.0" x2="375.0" y1="258" y2="263"/>
+<text class="m" x="375.0" y="277" font-size="12" text-anchor="middle">2</text>
+<line class="ax" x1="437.5" x2="437.5" y1="258" y2="263"/>
+<text class="m" x="437.5" y="277" font-size="12" text-anchor="middle">4</text>
+<line class="ax" x1="500.0" x2="500.0" y1="258" y2="263"/>
+<text class="m" x="500.0" y="277" font-size="12" text-anchor="middle">8</text>
+<text class="m" x="304.5" y="296" font-size="11.5" text-anchor="end">← conventional</text>
+<text class="m" x="320.5" y="296" font-size="11.5">ECPR →</text>
+
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 194" width="680" height="194" role="img" aria-label="Óbitos na estratégia invasiva: 308 cardiovasculares, 193 não cardiovasculares, 17 não classificados, total 518. Na conservadora: 364, 166 e 23, total 553.">
+<title>Óbitos na estratégia invasiva: 308 cardiovasculares, 193 não cardiovasculares, 17 não classificados, total 518. Na conservadora: 364, 166 e 23, total 553.</title>
+<style>
+.bg{fill:#faf6ee;stroke:#e2d9c8}
+.t{fill:#211c16}.m{fill:#6b6257}
+.a{fill:#c4643f}.b{fill:#3f6ea8}.n{fill:#b3a898}
+.ia{fill:#fff}.in{fill:#211c16}
+.grid{stroke:#e2d9c8}.ax{stroke:#6b6257}.ink{stroke:#211c16}.inkf{fill:#211c16}
+.ref{stroke:#c4643f}.reft{fill:#c4643f}
+text{font-family:'Inter Variable', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.v{font-family:'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;font-size:18px}
+@media (prefers-color-scheme: dark){
+.bg{fill:#26221d;stroke:#3a342c}
+.t{fill:#efe8dc}.m{fill:#a89f92}
+.a{fill:#cc6d4e}.b{fill:#5f8fd6}.n{fill:#6b6257}
+.ia{fill:#1d1a16}.in{fill:#efe8dc}
+.grid{stroke:#3a342c}.ax{stroke:#a89f92}.ink{stroke:#efe8dc}.inkf{fill:#efe8dc}
+.ref{stroke:#e0896a}.reft{fill:#e0896a}
+}</style>
+<rect class="bg" x="0.5" y="0.5" width="679" height="193" rx="10"/>
+<text class="m" x="24" y="34" font-size="13">Óbitos por causa, seguimento mediano de 9 anos</text>
+<text class="t" x="24" y="76" font-size="13">Invasiva</text>
+<rect class="a" x="150.0" y="61" width="226.4" height="22" rx="3"/>
+<text class="ia" x="263.2" y="76.5" font-size="12.5" font-weight="600" text-anchor="middle">308</text>
+<rect class="b" x="378.4" y="61" width="141.1" height="22" rx="3"/>
+<text class="ia" x="448.9" y="76.5" font-size="12.5" font-weight="600" text-anchor="middle">193</text>
+<rect class="n" x="521.4" y="61" width="10.6" height="22" rx="3"/>
+<text class="m" x="542.1" y="76" font-size="12.5">518</text>
+<text class="t" x="24" y="114" font-size="13">Conservadora</text>
+<rect class="a" x="150.0" y="99" width="267.9" height="22" rx="3"/>
+<text class="ia" x="283.9" y="114.5" font-size="12.5" font-weight="600" text-anchor="middle">364</text>
+<rect class="b" x="419.9" y="99" width="121.1" height="22" rx="3"/>
+<text class="ia" x="480.4" y="114.5" font-size="12.5" font-weight="600" text-anchor="middle">166</text>
+<rect class="n" x="542.9" y="99" width="15.1" height="22" rx="3"/>
+<text class="m" x="568.0" y="114" font-size="12.5">553</text>
+<rect class="a" x="150" y="138" width="12" height="12" rx="2"/>
+<text class="m" x="168" y="148.5" font-size="12.5">cardiovascular</text>
+<rect class="b" x="278" y="138" width="12" height="12" rx="2"/>
+<text class="m" x="296" y="148.5" font-size="12.5">não cardiovascular</text>
+<rect class="n" x="434" y="138" width="12" height="12" rx="2"/>
+<text class="m" x="452" y="148.5" font-size="12.5">não classificada</text>
+<text class="m" x="24" y="176" font-size="12">Não classificados: 17 e 23 (40 no total), por diferença.</text>
+</svg>

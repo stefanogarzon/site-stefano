@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 176" width="680" height="176" role="img" aria-label="POCE difference of 1.3 percentage points with an upper limit of 3.4, above the 3.2 margin.">
+<title>POCE difference of 1.3 percentage points with an upper limit of 3.4, above the 3.2 margin.</title>
+<style>
+.bg{fill:#faf6ee;stroke:#e2d9c8}
+.t{fill:#211c16}.m{fill:#6b6257}
+.a{fill:#c4643f}.b{fill:#3f6ea8}.n{fill:#b3a898}
+.ia{fill:#fff}.in{fill:#211c16}
+.grid{stroke:#e2d9c8}.ax{stroke:#6b6257}.ink{stroke:#211c16}.inkf{fill:#211c16}
+.ref{stroke:#c4643f}.reft{fill:#c4643f}
+text{font-family:'Inter Variable', Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif}
+.v{font-family:'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif;font-size:18px}
+@media (prefers-color-scheme: dark){
+.bg{fill:#26221d;stroke:#3a342c}
+.t{fill:#efe8dc}.m{fill:#a89f92}
+.a{fill:#cc6d4e}.b{fill:#5f8fd6}.n{fill:#6b6257}
+.ia{fill:#1d1a16}.in{fill:#efe8dc}
+.grid{stroke:#3a342c}.ax{stroke:#a89f92}.ink{stroke:#efe8dc}.inkf{fill:#efe8dc}
+.ref{stroke:#e0896a}.reft{fill:#e0896a}
+}</style>
+<rect class="bg" x="0.5" y="0.5" width="679" height="175" rx="10"/>
+<text class="m" x="24" y="34" font-size="13">Difference in 1-year POCE, percentage points</text>
+<line class="ax" x1="288.0" x2="288.0" y1="74" y2="114" stroke-width="1" stroke-dasharray="3 3"/>
+<text class="t" x="24" y="90" font-size="13">QFR − usual care</text>
+<text class="m" x="24" y="105" font-size="11.5">ITT</text>
+<line class="ink" x1="376.4" x2="519.2" y1="92" y2="92" stroke-width="2"/>
+<circle class="inkf" cx="376.4" cy="92" r="5"/>
+<text class="t" x="576" y="96" font-size="13"></text>
+<line class="grid" x1="220" x2="560" y1="116" y2="116" stroke-width="1"/>
+<line class="ax" x1="220.0" x2="220.0" y1="116" y2="121"/>
+<text class="m" x="220.0" y="135" font-size="12" text-anchor="middle">−1</text>
+<line class="ax" x1="288.0" x2="288.0" y1="116" y2="121"/>
+<text class="m" x="288.0" y="135" font-size="12" text-anchor="middle">0</text>
+<line class="ax" x1="356.0" x2="356.0" y1="116" y2="121"/>
+<text class="m" x="356.0" y="135" font-size="12" text-anchor="middle">+1</text>
+<line class="ax" x1="424.0" x2="424.0" y1="116" y2="121"/>
+<text class="m" x="424.0" y="135" font-size="12" text-anchor="middle">+2</text>
+<line class="ax" x1="492.0" x2="492.0" y1="116" y2="121"/>
+<text class="m" x="492.0" y="135" font-size="12" text-anchor="middle">+3</text>
+<line class="ax" x1="560.0" x2="560.0" y1="116" y2="121"/>
+<text class="m" x="560.0" y="135" font-size="12" text-anchor="middle">+4</text>
+<line class="ref" x1="505.6" x2="505.6" y1="60" y2="114" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text class="reft" x="499.6" y="56" font-size="12" text-anchor="end">margin +3.2</text>
+<line class="ink" x1="519.2" x2="519.2" y1="85" y2="99" stroke-width="2"/>
+<text class="t" x="527.2" y="96" font-size="12.5">3.4</text>
+<text class="t" x="376.4" y="80" font-size="12.5" text-anchor="middle">1.3</text>
+<text class="m" x="24" y="158" font-size="12">Point at 1.3: my calculation (7.4 − 6.1). Lower limit not reported.</text>
+</svg>
