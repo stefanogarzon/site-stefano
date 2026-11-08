@@ -19,7 +19,7 @@ export interface CadastroDeps {
 type Lang = 'pt' | 'en';
 type Campo = 'nome' | 'sobrenome' | 'email' | 'plataforma' | 'aceite_privacidade' | 'turnstile';
 
-const MSG: Record<Lang, Record<Campo, string> & { emailInvalido: string; enviando: string; conexao: string; generica: string }> = {
+export const MSG: Record<Lang, Record<Campo, string> & { emailInvalido: string; enviando: string; conexao: string; generica: string }> = {
   pt: {
     nome: `Preencha o nome (até ${MAX_CAMPO} caracteres).`,
     sobrenome: `Preencha o sobrenome (até ${MAX_CAMPO} caracteres).`,
@@ -55,6 +55,10 @@ export interface Cadastro {
   turnstile: string;
 }
 
+/** Message for an e-mail the server would refuse (already trimmed and lower-cased), or undefined. */
+export const erroDeEmail = (email: string, m: { email: string; emailInvalido: string }) =>
+  !valido(email) ? m.email : !EMAIL_RE.test(email) ? m.emailInvalido : undefined;
+
 const texto = (v: FormDataEntryValue | null) => (typeof v === 'string' ? v.trim() : '');
 const valido = (s: string) => s !== '' && s.length <= MAX_CAMPO;
 
@@ -71,8 +75,8 @@ function validar(form: HTMLFormElement, lang: Lang, turnstile: string): Validaca
   const plataforma = dados.get('plataforma');
   if (!valido(nome)) erros.nome = m.nome;
   if (!valido(sobrenome)) erros.sobrenome = m.sobrenome;
-  if (!valido(email)) erros.email = m.email;
-  else if (!EMAIL_RE.test(email)) erros.email = m.emailInvalido;
+  const msgEmail = erroDeEmail(email, m);
+  if (msgEmail) erros.email = msgEmail;
   if (plataforma !== 'macos' && plataforma !== 'windows') erros.plataforma = m.plataforma;
   if (dados.get('aceite_privacidade') === null) erros.aceite_privacidade = m.aceite_privacidade;
   if (!turnstile) erros.turnstile = m.turnstile;
@@ -148,6 +152,44 @@ export async function enviarJson(
   }
 }
 
+export interface Envio {
+  form: HTMLFormElement;
+  botao: HTMLButtonElement;
+  status: HTMLElement | null;
+  confirmacao: HTMLElement | null;
+  deps: CadastroDeps;
+  widget?: HTMLElement;
+  url: string;
+  corpo: unknown;
+  esperado: number;
+  msg: { enviando: string; conexao: string; generica: string };
+  antesDeConfirmar?: (confirmacao: HTMLElement) => void;
+}
+
+/**
+ * Sends a validated form: button disabled while it runs; on the expected status the form gives way
+ * to the confirmation; on failure the message shows, the Turnstile resets and the button comes back.
+ */
+export async function enviarFormulario(e: Envio): Promise<void> {
+  e.botao.disabled = true;
+  if (e.status) e.status.textContent = e.msg.enviando;
+  const falha = await enviarJson(e.deps.fetch, e.url, e.corpo, e.esperado, e.msg);
+  if (falha === null) {
+    // Success keeps the button disabled: a repeated request would only hit the rate limit.
+    if (e.status) e.status.textContent = '';
+    if (!e.confirmacao) return;
+    e.form.hidden = true;
+    e.antesDeConfirmar?.(e.confirmacao);
+    e.confirmacao.hidden = false;
+    e.confirmacao.focus();
+    return;
+  }
+  if (e.status) e.status.textContent = falha;
+  // The Turnstile token is single use: a failed attempt needs a fresh one.
+  e.deps.turnstile()?.reset(e.widget);
+  e.botao.disabled = false;
+}
+
 /** Wires the sign-up form; `null` when the page has none (build without PUBLIC_TURNSTILE_SITEKEY). */
 export function ligarCadastro(raiz: Document, deps: CadastroDeps): HTMLFormElement | null {
   const form = raiz.querySelector<HTMLFormElement>('form#cadastro');
@@ -168,20 +210,11 @@ export function ligarCadastro(raiz: Document, deps: CadastroDeps): HTMLFormEleme
     mostrarErros(form, r.ok ? {} : r.erros);
     if (!r.ok) return;
 
-    botao.disabled = true;
-    if (status) status.textContent = MSG[lang].enviando;
-    const falha = await enviarJson(deps.fetch, URL_CADASTRO, r.corpo, 201, MSG[lang]);
-    if (falha === null && confirmacao) {
-      form.hidden = true;
-      confirmacao.querySelector<HTMLElement>(`[data-plataforma="${r.corpo.plataforma}"]`)?.removeAttribute('hidden');
-      confirmacao.hidden = false;
-      confirmacao.focus();
-      return;
-    }
-    if (status) status.textContent = falha ?? MSG[lang].generica;
-    // The Turnstile token is single use: a failed attempt needs a fresh one.
-    deps.turnstile()?.reset(widget);
-    botao.disabled = false;
+    const plataforma = r.corpo.plataforma;
+    await enviarFormulario({
+      form, botao, status, confirmacao, deps, widget, url: URL_CADASTRO, corpo: r.corpo, esperado: 201, msg: MSG[lang],
+      antesDeConfirmar: (c) => c.querySelector<HTMLElement>(`[data-plataforma="${plataforma}"]`)?.removeAttribute('hidden'),
+    });
   });
   return form;
 }
