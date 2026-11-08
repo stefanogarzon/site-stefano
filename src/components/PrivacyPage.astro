@@ -208,3 +208,13 @@ const txt = {
   .confirmacao h3 { margin-top: 0.4em; }
   .confirmacao:focus { outline: none; }
 </style>
+
+<script>
+  import { ligarExclusao } from '../scripts/exclusao-form';
+  import type { TurnstileApi } from '../scripts/cadastro-form';
+
+  ligarExclusao(document, {
+    fetch: (...args) => window.fetch(...args),
+    turnstile: () => (window as unknown as { turnstile?: TurnstileApi }).turnstile,
+  });
+</script>
