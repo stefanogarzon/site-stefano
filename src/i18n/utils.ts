@@ -21,6 +21,8 @@ export const routes = (lang: Lang) => {
     posts: lang === 'pt' ? '/textos/' : '/en/posts/',
     about: lang === 'pt' ? '/sobre/' : '/en/about/',
     search: lang === 'pt' ? '/busca/' : '/en/search/',
+    scienceTutor: `${p}/downloads/science-tutor/`,
+    scienceTutorPrivacy: lang === 'pt' ? '/downloads/science-tutor/privacidade/' : '/en/downloads/science-tutor/privacy/',
     rss: `${p}/rss.xml`,
   };
 };
