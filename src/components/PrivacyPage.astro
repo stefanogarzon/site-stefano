@@ -30,7 +30,7 @@ const txt = {
           'nome, sobrenome e e-mail, como você os digitou no cadastro;',
           'a data do aceite deste aviso;',
           'o hash do token de acesso enviado a você (o token em si não fica guardado);',
-          'o registro de cada pedido de cadastro ou de exclusão: um HMAC do IP (o IP em si não fica guardado), o e-mail informado e a hora, usados por 24 h para limitar o número de pedidos.',
+          'o registro de cada pedido de cadastro ou de exclusão: um HMAC do IP (o IP em si não fica guardado), o e-mail informado e a hora. O HMAC do IP limita os pedidos por hora e o e-mail limita os pedidos em 24 h.',
         ],
       },
       {
@@ -48,7 +48,7 @@ const txt = {
       {
         titulo: 'Por quanto tempo',
         paragrafos: [
-          'Nome, sobrenome, e-mail, data do aceite e hash do token ficam enquanto o cadastro existir, até a confirmação da exclusão pelo link (um pedido de exclusão sem confirmação não apaga nada). O registro de cada pedido é apagado no primeiro pedido que chegar depois de 24 h, ou na exclusão.',
+          'Nome, sobrenome, e-mail e data do aceite ficam enquanto o cadastro existir, até a confirmação da exclusão pelo link (um pedido de exclusão sem confirmação não apaga nada). Na exclusão o token é revogado e o hash dele continua guardado, sem o e-mail e sem prazo, para auditoria. O registro de cada pedido é apagado no primeiro pedido que chegar depois de 24 h e passar pelas verificações do formulário e anti-robô, ou na exclusão.',
         ],
       },
       {
@@ -83,7 +83,7 @@ const txt = {
           'your first name, last name and email, as you typed them in the sign-up;',
           'the date you accepted this notice;',
           'a hash of the access token sent to you (the token itself is not stored);',
-          'a record of each request (sign-up or deletion): an HMAC of your IP address (the IP address itself is not stored), the email entered and the time, used for 24 hours to limit the number of requests.',
+          'a record of each request (sign-up or deletion): an HMAC of your IP address (the IP address itself is not stored), the email entered and the time. The HMAC of your IP limits requests per hour and the email limits requests over 24 hours.',
         ],
       },
       {
@@ -101,7 +101,7 @@ const txt = {
       {
         titulo: 'For how long',
         paragrafos: [
-          'Your name, email, acceptance date and token hash are kept as long as the sign-up exists, until the deletion is confirmed through the link (a deletion request that is not confirmed deletes nothing). The record of each request is deleted by the first request that arrives after 24 hours, or on deletion.',
+          'Your first name, last name, email and acceptance date are kept as long as the sign-up exists, until the deletion is confirmed through the link (a deletion request that is not confirmed deletes nothing). On deletion the token is revoked and its hash stays, without your email and with no time limit, for auditing. The record of each request is deleted by the first request that arrives after 24 hours and passes the form and anti-bot checks, or on deletion.',
         ],
       },
       {
