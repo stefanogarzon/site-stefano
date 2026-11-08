@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
+    "happy-dom": "^21.0.4",
     "pagefind": "^1.5.2",
     "vitest": "^4.1.12",
     "yaml": "^2.9.1"

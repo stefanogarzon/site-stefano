@@ -115,7 +115,19 @@ const txt = {
   </section>
 </Base>
 
+<script>
+  import { ligarCadastro, type TurnstileApi } from '../scripts/cadastro-form';
+
+  ligarCadastro(document, {
+    fetch: (...args) => window.fetch(...args),
+    turnstile: () => (window as unknown as { turnstile?: TurnstileApi }).turnstile,
+  });
+</script>
+
 <style>
+  /* --accent on --card is 3.7:1 in the light theme; text in the form needs 4.5:1. */
+  .cadastro { --accent-texto: color-mix(in srgb, var(--accent) 75%, var(--text)); }
+  .cadastro a { color: var(--accent-texto); }
   .cadastro { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 8px 24px 24px; margin: 32px 0 48px; }
   .cadastro h2 { margin-top: 0.6em; }
   fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
@@ -136,7 +148,7 @@ const txt = {
     background: var(--text); color: var(--bg); border: 1px solid var(--text);
   }
   button:disabled { opacity: 0.55; cursor: not-allowed; }
-  .erro { color: var(--accent); font-size: 0.85rem; margin: 6px 0 0; }
+  .erro { color: var(--accent-texto); font-size: 0.85rem; margin: 6px 0 0; }
   .aviso { border-left: 3px solid var(--accent); padding: 8px 14px; background: var(--soft); border-radius: 0 8px 8px 0; }
   .status:empty { display: none; }
 </style>
