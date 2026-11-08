@@ -1,6 +1,7 @@
 // @vitest-environment happy-dom
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { exists, read } from './dist';
+import { read } from './dist';
+import { scriptsDaPagina } from './scripts-da-pagina';
 import { ligarCadastro, type CadastroDeps } from '../src/scripts/cadastro-form';
 
 const paginas = [
@@ -33,16 +34,6 @@ const paginas = [
 type Campo = keyof (typeof paginas)[number]['msg'];
 
 const corpo = (html: string) => html.match(/<body[^>]*>([\s\S]*)<\/body>/)![1];
-
-/** Código JS que a página carrega: módulos inline e arquivos do dist/ apontados por src. */
-const scriptsDaPagina = (html: string) => {
-  let js = '';
-  for (const m of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)) {
-    const src = m[1].match(/\ssrc="(\/[^"]+)"/);
-    js += src ? (exists(src[1].slice(1)) ? read(src[1].slice(1)) : '') : m[2];
-  }
-  return js;
-};
 
 const $ = <T extends Element>(sel: string) => document.querySelector<T>(sel)!;
 
