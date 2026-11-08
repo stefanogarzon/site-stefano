@@ -118,6 +118,44 @@
         "src/components/ScienceTutorPage.astro",
         "src/scripts/cadastro*.ts"
       ]
+    },
+    {
+      "nome": "privacidade",
+      "passos": [
+        {
+          "acao": "ir",
+          "alvo": "http://127.0.0.1:4391/downloads/science-tutor/privacidade/"
+        },
+        {
+          "acao": "esperar",
+          "alvo": "form#exclusao"
+        }
+      ],
+      "arquivos": [
+        "src/pages/downloads/science-tutor/privacidade/**",
+        "src/components/PrivacyPage.astro",
+        "src/scripts/exclusao*.ts",
+        "src/data/science-tutor.mjs"
+      ]
+    },
+    {
+      "nome": "privacidade-en",
+      "passos": [
+        {
+          "acao": "ir",
+          "alvo": "http://127.0.0.1:4391/en/downloads/science-tutor/privacy/"
+        },
+        {
+          "acao": "esperar",
+          "alvo": "form#exclusao"
+        }
+      ],
+      "arquivos": [
+        "src/pages/en/downloads/science-tutor/privacy/**",
+        "src/components/PrivacyPage.astro",
+        "src/scripts/exclusao*.ts",
+        "src/data/science-tutor.mjs"
+      ]
     }
   ],
   "viewports": [

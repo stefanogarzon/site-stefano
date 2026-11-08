@@ -15,3 +15,5 @@
 - [2026-11-08 18:59] [M1] [M2] Tarefas: 0005 validação+ligação do script, 0006 envio+201, 0007 falhas. Turnstile e fetch injetados (deps), o script da página passa window.fetch e window.turnstile (lido na hora do submit, o api.js carrega async). Token lido por turnstile.getResponse(container).
 - [2026-11-08 19:08] [M2] revisao M2: HEAD 43e16df
 - [2026-11-08 19:10] [M2] [M2] triagem: limpeza do revisor (EMAIL_RE/MAX_CAMPO/mensagens copiados do sarzel-dist sem teste que compare) não vira tarefa: um teste que lê ../sarzel-dist quebraria no build da Cloudflare Pages e em qualquer clone sem o repo vizinho; a cópia está documentada no comentário do módulo.
+- [2026-11-08 19:20] [0009] [M3] prumo tarefa-nova lê o stdin quando não é TTY: no Bash do agente fica pendurado; passar --corpo '' (ou </dev/null).
+- [2026-11-08 19:25] [0009] [0009] Linha de base de UX regravada com as telas privacidade/privacidade-en depois de corrigir o contraste dos links da página; o que entrou de erro é só o alvo-pequeno do nav do Header, o mesmo já na linha de base de todas as telas.

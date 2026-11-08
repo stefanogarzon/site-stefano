@@ -18,9 +18,11 @@ interface Props {
   hasMermaid?: boolean;
   /** Página larga (home, listas); artigos usam a coluna de leitura. */
   wide?: boolean;
+  /** Keeps the page out of search engines (draft pages). */
+  noindex?: boolean;
 }
 
-const { title, description, lang, alternate, hasTranslation = false, image, type = 'website', hasMermaid = false, wide = false } = Astro.props;
+const { title, description, lang, alternate, hasTranslation = false, image, type = 'website', hasMermaid = false, wide = false, noindex = false } = Astro.props;
 const site = Astro.site!;
 const canonical = new URL(Astro.url.pathname, site).href;
 const ogImage = new URL(image ?? '/og-default.png', site).href;
@@ -35,6 +37,7 @@ const ptUrl = lang === 'pt' ? canonical : new URL(alternate, site).href;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
