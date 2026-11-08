@@ -1,15 +1,14 @@
 # Retomada
 
 ## Onde parou
-M4 fechado e verificado, e com ele o plano inteiro (M1–M4 verificados). Aceite do M4 verde: passo-a-passo 10/10; `npm test` 232 em 19 arquivos. Páginas `/downloads/science-tutor/passo-a-passo/mac/` e `/windows/` (só PT, `InstallGuidePage.astro`). Nada de deploy nem push feito.
+M5 fechado e verificado; com ele, M1–M5 verificados e o plano inteiro concluído. Aceite do M5 verde no HEAD final: privacidade 42/42; `npm test` 254 em 19 arquivos; `writings/` fora do git. O aviso de privacidade está publicado: base legal (LGPD 7º V), direitos (art. 18), `privacidade@sarzel.com`, PDF direto ao provedor de IA, dados do aparelho em `tokens_v2`. Ele sai indexável e no sitemap. Nada de deploy nem push feito (o loop externo cuida disso).
 
 ## Por que
-- O texto do guia foi conferido contra o fluxo do sarzel-kit (`../science_tutor/mac/.build/checkouts/sarzel-kit`, `SarzelFluxoView.swift`) e o `activate.ts` do sarzel-dist: token → código do segundo e-mail (15 min) → senha → chave de recuperação → Touch ID → chave da Anthropic. Se o kit mudar o fluxo, mudar o guia junto.
-- O guia do Windows segue o kit por suposição: o science_tutor ainda não tem build Windows.
-- Pendências para o dono: aprovar o texto do aviso de privacidade (`PRIVACIDADE_RASCUNHO`, e aí escrever o teste do ramo `false`); o e-mail do sarzel-dist usa `https://www.stefanogarzon.com/...` sem barra, o que depende de redirect www→apex na Cloudflare.
-- Opcionais: texto da senha sem asserção; `/código/` redundante no teste; mensagem de falha antiga fica em `#cadastro-status`/`#exclusao-status` quando o envio seguinte reprova na validação.
+- O ramo do rascunho (constante, faixa, `noindex`, filtro do sitemap) foi removido, não testado por fixture: se um rascunho voltar, ele está no commit 6507d56.
+- O texto da retenção segue as colunas de `tokens_v2` do sarzel-dist (`excluir()` só muda `revoked_at`, `email`, `label`). Se o servidor passar a apagar ou guardar outra coluna, mudar `FICA_COM_HASH` e a lista "O que é guardado" em `PrivacyPage.astro`.
+- Pendente fora deste repo: o e-mail do sarzel-dist usa `https://www.stefanogarzon.com/...`, e isso depende do redirect www→apex na Cloudflare.
+- Opcionais, para o dono decidir: "revogação do consentimento" aparece na lista de direitos, mas a base legal é contrato; o EN diz "not ... shared" e a lista fala em "sharing"; o teste não amarra "formulário" à exclusão; a regex `/chip/` é frouxa.
 
 ## Armadilha
-- Estilo com escopo do Astro não alcança HTML injetado por `set:html`: usar `:global(a)`.
-- `hreflang="en"` também aparece no seletor de idioma do Header (`<a class="lang">`); teste de tradução mira `<link rel="alternate" hreflang=...>`.
-- `prumo tarefa-nova` lê o stdin quando não é TTY: passar `--corpo ''` e `</dev/null`.
+- Cada revisão do texto do aviso achou mais uma coluna esquecida: conferir o caminho de cada coluna (pedido, confirmação, status, exclusão) antes de escrever.
+- `prumo tarefa-nova` lê o stdin: passar `--corpo ''` e `</dev/null`.
