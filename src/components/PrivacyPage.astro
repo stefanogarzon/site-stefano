@@ -65,7 +65,7 @@ const txt = {
       {
         titulo: 'Por quanto tempo',
         paragrafos: [
-          'Nome, sobrenome, e-mail e data do aceite ficam enquanto o cadastro existir, até a confirmação da exclusão pelo link (um pedido de exclusão sem confirmação não apaga nada). Na exclusão o token é revogado e o hash do token revogado continua guardado, sem o e-mail e sem prazo, para auditoria, junto com a chave pública do aparelho (também a de uma ativação não confirmada) e as datas da ativação e da última checagem. O registro de cada pedido é apagado no primeiro pedido que chegar depois de 24 h e passar pelas verificações do formulário e anti-robô, ou na exclusão.',
+          'Nome, sobrenome, e-mail e data do aceite ficam enquanto o cadastro existir, até a confirmação da exclusão pelo link (um pedido de exclusão sem confirmação não apaga nada). Na exclusão o token é revogado e o hash do token revogado continua guardado, sem o e-mail e sem prazo, para auditoria, junto com a chave pública do aparelho (também a de uma ativação não confirmada), se ela fica no chip de segurança e as datas da ativação e da última checagem. O registro de cada pedido é apagado no primeiro pedido que chegar depois de 24 h e passar pelas verificações do formulário e anti-robô, ou na exclusão.',
         ],
       },
       {
@@ -84,7 +84,7 @@ const txt = {
       {
         titulo: 'Como pedir a exclusão',
         paragrafos: [
-          'Informe o e-mail do cadastro no formulário abaixo. Se ele estiver cadastrado, você recebe nele um link de confirmação, válido por 24 h. Confirmada, a exclusão apaga o seu cadastro e os registros dos seus pedidos e revoga o seu token de acesso. O hash do token revogado continua guardado, sem o e-mail, para auditoria, com a chave pública do aparelho (também a de uma ativação não confirmada) e as datas da ativação e da última checagem.',
+          'Informe o e-mail do cadastro no formulário abaixo. Se ele estiver cadastrado, você recebe nele um link de confirmação, válido por 24 h. Confirmada, a exclusão apaga o seu cadastro e os registros dos seus pedidos e revoga o seu token de acesso. O hash do token revogado continua guardado, sem o e-mail, para auditoria, com a chave pública do aparelho (também a de uma ativação não confirmada), se ela fica no chip de segurança e as datas da ativação e da última checagem.',
         ],
       },
     ] satisfies Secao[],
@@ -145,7 +145,7 @@ const txt = {
       {
         titulo: 'For how long',
         paragrafos: [
-          'Your first name, last name, email and acceptance date are kept as long as the sign-up exists, until the deletion is confirmed through the link (a deletion request that is not confirmed deletes nothing). On deletion the token is revoked and the hash of the revoked token stays, without your email and with no time limit, for auditing, together with the public key of the device (also that of an unconfirmed activation) and the dates of activation and of the last check. The record of each request is deleted by the first request that arrives after 24 hours and passes the form and anti-bot checks, or on deletion.',
+          'Your first name, last name, email and acceptance date are kept as long as the sign-up exists, until the deletion is confirmed through the link (a deletion request that is not confirmed deletes nothing). On deletion the token is revoked and the hash of the revoked token stays, without your email and with no time limit, for auditing, together with the public key of the device (also that of an unconfirmed activation), whether it is kept in the security chip and the dates of activation and of the last check. The record of each request is deleted by the first request that arrives after 24 hours and passes the form and anti-bot checks, or on deletion.',
         ],
       },
       {
@@ -164,7 +164,7 @@ const txt = {
       {
         titulo: 'How to ask for deletion',
         paragrafos: [
-          'Enter your sign-up email in the form below. If it is registered, you will receive a confirmation link at that address, valid for 24 hours. Once confirmed, the deletion erases your sign-up and the records of your requests and revokes your access token. The hash of the revoked token stays, without your email, for auditing, with the public key of the device (also that of an unconfirmed activation) and the dates of activation and of the last check.',
+          'Enter your sign-up email in the form below. If it is registered, you will receive a confirmation link at that address, valid for 24 hours. Once confirmed, the deletion erases your sign-up and the records of your requests and revokes your access token. The hash of the revoked token stays, without your email, for auditing, with the public key of the device (also that of an unconfirmed activation), whether it is kept in the security chip and the dates of activation and of the last check.',
         ],
       },
     ] satisfies Secao[],

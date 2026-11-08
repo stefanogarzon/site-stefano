@@ -24,7 +24,7 @@ const paginas = [
     aparelho: [/chave pública do aparelho/i, /chip/i, /data da ativação/i, /última checagem/i],
     pedidoSemConfirmar: /já no pedido de ativação, mesmo que o código nunca seja confirmado/i,
     naoConfirmada: /ativação não confirmada/i,
-    ficaComHash: [/chave pública do aparelho/i, /datas? da ativação/i, /última checagem/i, /hash do token revogado/i],
+    ficaComHash: [/chave pública do aparelho/i, /se ela fica no chip de segurança/i, /datas? da ativação/i, /última checagem/i, /hash do token revogado/i],
     aprovado: {
       baseLegal: [/execução de contrato/i, /procedimentos preliminares/i, /a pedido do titular/i, /LGPD/, /art\. 7º, V/],
       direitos: [/acesso/i, /correção/i, /portabilidade/i, /compartilhamento/i, /revogação/i, /exclusão/i, /LGPD/, /art\. 18/, /formulário/i, /privacidade@sarzel\.com/],
@@ -58,7 +58,7 @@ const paginas = [
     aparelho: [/public key of the device/i, /chip/i, /date of activation/i, /last check/i],
     pedidoSemConfirmar: /already when activation is requested, even if the code is never confirmed/i,
     naoConfirmada: /unconfirmed activation/i,
-    ficaComHash: [/public key of the device/i, /dates? of activation/i, /last check/i, /hash of the revoked token/i],
+    ficaComHash: [/public key of the device/i, /whether it is kept in the security chip/i, /dates? of activation/i, /last check/i, /hash of the revoked token/i],
     aprovado: {
       baseLegal: [/performance of a contract/i, /preliminary (steps|procedures)/i, /at the request of the data subject/i, /LGPD/, /Art\. 7\(V\)/],
       direitos: [/access/i, /correct/i, /portability/i, /shar/i, /revo/i, /delet/i, /LGPD/, /Art\. 18/, /form/i, /privacidade@sarzel\.com/],
