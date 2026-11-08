@@ -249,3 +249,116 @@ describe.each(paginas)('formulário de cadastro ($lang): envio válido', (p) => 
     expect($('#cadastro-ok').textContent).toMatch(p.lang === 'pt' ? /e-mail/ : /email/);
   });
 });
+
+const msgFalha = {
+  pt: { conexao: /conexão/i, generica: /Não foi possível concluir o cadastro/ },
+  en: { conexao: /connection/i, generica: /Could not complete the sign-up/ },
+} as const;
+
+const status = () => $<HTMLElement>('#cadastro-status');
+
+/** O que o aluno digitou, para conferir que a falha não apaga nada. */
+const digitado = () => ({
+  nome: $<HTMLInputElement>('#cad-nome').value,
+  sobrenome: $<HTMLInputElement>('#cad-sobrenome').value,
+  email: $<HTMLInputElement>('#cad-email').value,
+  mac: $<HTMLInputElement>('input[name="plataforma"][value="macos"]').checked,
+  aceite: $<HTMLInputElement>('input[name="aceite_privacidade"]').checked,
+});
+
+function esperarFalhaTratada(turnstile: { reset: ReturnType<typeof vi.fn> }, antes: ReturnType<typeof digitado>) {
+  expect(turnstile.reset).toHaveBeenCalledTimes(1);
+  expect($<HTMLButtonElement>('#cadastro button[type="submit"]').disabled).toBe(false);
+  expect(digitado()).toEqual(antes);
+  expect(visivel($('#cadastro'))).toBe(true);
+  expect(visivel($('#cadastro-ok'))).toBe(false);
+}
+
+describe.each(paginas)('formulário de cadastro ($lang): falhas do envio', (p) => {
+  const html = read(p.arquivo);
+  const f = msgFalha[p.lang];
+
+  beforeEach(() => {
+    vi.useRealTimers();
+    document.body.innerHTML = corpo(html);
+  });
+
+  it.each([
+    [400, 'E-mail inválido. Confira o endereço digitado.'],
+    [403, 'Não foi possível confirmar que você não é um robô. Recarregue a página e tente de novo.'],
+    [429, 'Muitos pedidos de cadastro. Tente de novo mais tarde.'],
+    [503, 'O Science Tutor para Mac ainda não está disponível. Tente de novo mais tarde.'],
+  ])('%i com {message}: mostra a message do servidor como veio', async (codigo, message) => {
+    const { deps, fetch, turnstile } = criarDeps();
+    fetch.mockResolvedValue(new Response(JSON.stringify({ error: 'x', message }), { status: codigo }));
+    ligarCadastro(document, deps);
+    preencherValido();
+    const antes = digitado();
+    enviar();
+    await vi.waitFor(() => expect(status().textContent).toBe(message));
+    esperarFalhaTratada(turnstile, antes);
+  });
+
+  it.each([
+    ['corpo que não é JSON', () => new Response('<html>Bad gateway</html>', { status: 502 })],
+    ['JSON sem message', () => new Response(JSON.stringify({ error: 'x' }), { status: 400 })],
+  ])('%s: mensagem genérica', async (_nome, resposta) => {
+    const { deps, fetch, turnstile } = criarDeps();
+    fetch.mockResolvedValue(resposta());
+    ligarCadastro(document, deps);
+    preencherValido();
+    const antes = digitado();
+    enviar();
+    await vi.waitFor(() => expect(status().textContent).toMatch(f.generica));
+    esperarFalhaTratada(turnstile, antes);
+  });
+
+  it('erro de rede: falha de conexão com os campos intactos', async () => {
+    const { deps, fetch, turnstile } = criarDeps();
+    fetch.mockRejectedValue(new TypeError('Failed to fetch'));
+    ligarCadastro(document, deps);
+    preencherValido();
+    const antes = digitado();
+    enviar();
+    await vi.waitFor(() => expect(status().textContent).toMatch(f.conexao));
+    esperarFalhaTratada(turnstile, antes);
+  });
+
+  it('sem resposta em 15 s: aborta e mostra a falha de conexão', async () => {
+    vi.useFakeTimers();
+    const { deps, fetch, turnstile } = criarDeps();
+    let sinal: AbortSignal | undefined;
+    fetch.mockImplementation(
+      (_url: unknown, init?: RequestInit) =>
+        new Promise<Response>((_ok, falha) => {
+          sinal = init?.signal ?? undefined;
+          sinal?.addEventListener('abort', () => falha(new DOMException('Aborted', 'AbortError')));
+        }),
+    );
+    ligarCadastro(document, deps);
+    preencherValido();
+    const antes = digitado();
+    enviar();
+    await vi.advanceTimersByTimeAsync(14_999);
+    expect(fetch).toHaveBeenCalledTimes(1);
+    expect(sinal?.aborted).toBe(false);
+    expect(status().textContent).not.toMatch(f.conexao);
+    await vi.advanceTimersByTimeAsync(1);
+    expect(sinal?.aborted).toBe(true);
+    expect(status().textContent).toMatch(f.conexao);
+    esperarFalhaTratada(turnstile, antes);
+    vi.useRealTimers();
+  });
+
+  it('depois da falha, novo envio com o token novo chama o fetch de novo', async () => {
+    const { deps, fetch } = criarDeps();
+    fetch.mockRejectedValueOnce(new TypeError('Failed to fetch'));
+    ligarCadastro(document, deps);
+    preencherValido();
+    enviar();
+    await vi.waitFor(() => expect(status().textContent).toMatch(f.conexao));
+    enviar();
+    await vi.waitFor(() => expect(visivel($('#cadastro-ok'))).toBe(true));
+    expect(fetch).toHaveBeenCalledTimes(2);
+  });
+});

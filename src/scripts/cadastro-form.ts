@@ -3,6 +3,7 @@ export const EMAIL_RE = /^[^\s@]+@[^\s@.]+(\.[^\s@.]+)+$/;
 export const MAX_CAMPO = 100;
 
 export const URL_CADASTRO = 'https://downloads.sarzel.com/api/v2/cadastro';
+export const TIMEOUT_MS = 15_000;
 
 export interface TurnstileApi {
   getResponse(widget?: string | HTMLElement): string | undefined;
@@ -18,13 +19,15 @@ export interface CadastroDeps {
 type Lang = 'pt' | 'en';
 type Campo = 'nome' | 'sobrenome' | 'email' | 'plataforma' | 'aceite_privacidade' | 'turnstile';
 
-const MSG: Record<Lang, Record<Campo, string> & { emailInvalido: string; enviando: string }> = {
+const MSG: Record<Lang, Record<Campo, string> & { emailInvalido: string; enviando: string; conexao: string; generica: string }> = {
   pt: {
     nome: `Preencha o nome (até ${MAX_CAMPO} caracteres).`,
     sobrenome: `Preencha o sobrenome (até ${MAX_CAMPO} caracteres).`,
     email: `Preencha o e-mail (até ${MAX_CAMPO} caracteres).`,
     emailInvalido: 'E-mail inválido. Confira o endereço digitado.',
     enviando: 'Enviando…',
+    conexao: 'Falha de conexão com o servidor de cadastro. Confira a internet e tente de novo.',
+    generica: 'Não foi possível concluir o cadastro. Tente de novo mais tarde.',
     plataforma: 'Escolha o computador: Mac ou Windows.',
     aceite_privacidade: 'Para se cadastrar, aceite o aviso de privacidade.',
     turnstile: 'Confirme que você não é um robô e envie de novo.',
@@ -35,6 +38,8 @@ const MSG: Record<Lang, Record<Campo, string> & { emailInvalido: string; enviand
     email: `Enter your email (up to ${MAX_CAMPO} characters).`,
     emailInvalido: 'Invalid email. Check the address you typed.',
     enviando: 'Sending…',
+    conexao: 'Connection to the sign-up server failed. Check your internet connection and try again.',
+    generica: 'Could not complete the sign-up. Try again later.',
     plataforma: 'Choose your computer: Mac or Windows.',
     aceite_privacidade: 'To sign up, accept the privacy notice.',
     turnstile: 'Confirm you are not a robot and submit again.',
@@ -97,6 +102,38 @@ function mostrarErros(form: HTMLFormElement, erros: Partial<Record<Campo, string
   primeiro?.focus();
 }
 
+/**
+ * POSTs `corpo` as JSON, aborting after TIMEOUT_MS. Returns null on the `esperado` status, otherwise
+ * the message to show: the server's `message` as sent (pt-BR), or a client message for network
+ * failure, timeout and bodies without a usable `message`.
+ */
+export async function enviarJson(
+  fetchFn: typeof fetch,
+  url: string,
+  corpo: unknown,
+  esperado: number,
+  msg: { conexao: string; generica: string },
+): Promise<string | null> {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
+  let res: Response;
+  try {
+    res = await fetchFn(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(corpo),
+      signal: ctrl.signal,
+    });
+  } catch {
+    return msg.conexao;
+  } finally {
+    clearTimeout(timer);
+  }
+  if (res.status === esperado) return null;
+  const dados = (await res.json().catch(() => null)) as { message?: unknown } | null;
+  return typeof dados?.message === 'string' && dados.message ? dados.message : msg.generica;
+}
+
 /** Wires the sign-up form; `null` when the page has none (build without PUBLIC_TURNSTILE_SITEKEY). */
 export function ligarCadastro(raiz: Document, deps: CadastroDeps): HTMLFormElement | null {
   const form = raiz.querySelector<HTMLFormElement>('form#cadastro');
@@ -119,19 +156,17 @@ export function ligarCadastro(raiz: Document, deps: CadastroDeps): HTMLFormEleme
 
     botao.disabled = true;
     if (status) status.textContent = MSG[lang].enviando;
-    const res = await deps.fetch(URL_CADASTRO, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(r.corpo),
-    });
-    if (res.status === 201 && confirmacao) {
+    const falha = await enviarJson(deps.fetch, URL_CADASTRO, r.corpo, 201, MSG[lang]);
+    if (falha === null && confirmacao) {
       form.hidden = true;
       confirmacao.querySelector<HTMLElement>(`[data-plataforma="${r.corpo.plataforma}"]`)?.removeAttribute('hidden');
       confirmacao.hidden = false;
       confirmacao.focus();
       return;
     }
-    if (status) status.textContent = '';
+    if (status) status.textContent = falha ?? MSG[lang].generica;
+    // The Turnstile token is single use: a failed attempt needs a fresh one.
+    deps.turnstile()?.reset(widget);
     botao.disabled = false;
   });
   return form;
